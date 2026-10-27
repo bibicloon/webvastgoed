@@ -1,5 +1,6 @@
 import React from 'react';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function FAQSection() {
   const faqs = [
@@ -9,15 +10,23 @@ export default function FAQSection() {
     },
     {
       question: 'Wat houdt de tijdelijke Portfolio Actie van € 250,- precies in?',
-      answer: 'Omdat wij ons portfolio met onze nieuwste ontwikkelsoftware verder uitbreiden, bouwen wij tijdelijk een complete, professionele maatwerk website tot maximaal 3 pagina’s (bijvoorbeeld Home, Diensten/Over ons en Contact) voor € 250,- excl. btw. Heeft u meer pagina’s of extra functies nodig? Dat is altijd mogelijk tegen een vooraf afgesproken meerprijs.',
+      answer: 'Omdat wij ons portfolio met onze nieuwste ontwikkelsoftware verder uitbreiden, bouwen wij tijdelijk een complete, professionele maatwerk website tot maximaal 3 pagina’s (bijvoorbeeld Home, Diensten en Contact) voor € 250,- excl. btw. Heeft u meer pagina’s of extra functies nodig? Dat is altijd mogelijk tegen een vooraf afgesproken meerprijs.',
     },
     {
       question: 'Kan ik kiezen tussen eenmalig betalen of een vast bedrag per maand?',
       answer: 'Ja. U kunt uw website eenmalig aanschaffen (eventueel met optioneel hosting en onderhoudspakket vanaf € 20,- p/m), of kiezen voor ons volledig ontzorgde maandpakket vanaf € 59,- per maand waarbij ontwerp, hosting, SSL, beveiliging en aanpassingen zijn inbegrepen.',
     },
     {
+      question: 'Bouwen jullie ook maatwerk webshops met iDEAL en Bancontact?',
+      answer: 'Jazeker. Wij ontwikkelen razendsnelle maatwerk webshops (zoals Pastry Company) met een luxe uitstraling, overzichtelijk productbeheer en directe betaling via iDEAL, Bancontact en creditcard. Beschikbaar vanaf € 99,- per maand of tegen een eenmalige investering.',
+    },
+    {
+      question: 'Voor welke branches bouwen jullie websites op maat?',
+      answer: 'Wij bouwen maatwerk websites voor uiteenlopende MKB en ZZP bedrijven in Nederland en België: van koeriersbedrijven en transport (zoals OnPoint Koeriers) en bouw en afbouwspecialisten (zoals Brökling Afbouw) tot webshops, zakelijke dienstverleners en internationale platforms.',
+    },
+    {
       question: 'Hoe snel staat mijn nieuwe website online?',
-      answer: 'Een website tot 3 pagina’s staat na het aanleveren van uw wensen en teksten/foto’s doorgaans al binnen enkele werkdagen tot een week online. Voor grotere websites of webshops rekenen wij gemiddeld 1 tot 2 weken.',
+      answer: 'Een website tot 3 pagina’s staat na het aanleveren van uw wensen en teksten of foto’s doorgaans al binnen enkele werkdagen tot een week online. Voor grotere websites of webshops rekenen wij gemiddeld 1 tot 2 weken.',
     },
     {
       question: 'Blijft mijn domeinnaam en inhoud van mijzelf?',
@@ -93,6 +102,16 @@ export default function FAQSection() {
               </div>
             </details>
           ))}
+        </div>
+
+        <div style={{ textAlign: 'center', marginTop: '2.5rem', display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '1rem' }}>
+          <Link to="/faq" className="btn-secondary">
+            <span>Bekijk Alle Veelgestelde Vragen</span>
+          </Link>
+          <Link to="/kennisbank" className="btn-primary">
+            <span>Naar Onze Kennisbank</span>
+            <ArrowRight size={16} />
+          </Link>
         </div>
       </div>
     </section>

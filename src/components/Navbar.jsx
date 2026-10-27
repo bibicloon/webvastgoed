@@ -10,7 +10,8 @@ export default function Navbar() {
     { name: 'Tarieven', path: '/investeringsplannen' },
     { name: 'SEO & Groei', path: '/digitale-groei' },
     { name: 'Over Ons', path: '/over-ons' },
-    { name: 'Veelgestelde Vragen', path: '/faq' },
+    { name: 'Kennisbank', path: '/kennisbank' },
+    { name: 'FAQ', path: '/faq' },
     { name: 'Contact', path: '/contact' },
   ];
 

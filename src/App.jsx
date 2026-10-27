@@ -9,6 +9,7 @@ import DigitaleGroei from './pages/DigitaleGroei';
 import Portfolio from './pages/Portfolio';
 import OverOns from './pages/OverOns';
 import FAQPage from './pages/FAQPage';
+import Kennisbank from './pages/Kennisbank';
 import Contact from './pages/Contact';
 import Privacybeleid from './pages/Privacybeleid';
 import AlgemeneVoorwaarden from './pages/AlgemeneVoorwaarden';
@@ -41,6 +42,8 @@ export default function App() {
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/over-ons" element={<OverOns />} />
             <Route path="/faq" element={<FAQPage />} />
+            <Route path="/kennisbank" element={<Kennisbank />} />
+            <Route path="/kennisbank/:slug" element={<Kennisbank />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacybeleid" element={<Privacybeleid />} />
             <Route path="/algemene-voorwaarden" element={<AlgemeneVoorwaarden />} />

@@ -69,6 +69,7 @@ export default function Footer() {
               <li><Link to="/investeringsplannen" style={{ color: '#CBD5E1', textDecoration: 'none' }}>Tarieven &amp; Pakketten</Link></li>
               <li><Link to="/digitale-groei" style={{ color: '#CBD5E1', textDecoration: 'none' }}>SEO &amp; Vindbaarheid</Link></li>
               <li><Link to="/over-ons" style={{ color: '#CBD5E1', textDecoration: 'none' }}>Over Ons</Link></li>
+              <li><Link to="/kennisbank" style={{ color: '#CBD5E1', textDecoration: 'none' }}>Kennisbank &amp; Advies</Link></li>
               <li><Link to="/faq" style={{ color: '#CBD5E1', textDecoration: 'none' }}>Veelgestelde Vragen</Link></li>
               <li><Link to="/contact" style={{ color: '#CBD5E1', textDecoration: 'none' }}>Contact</Link></li>
             </ul>
