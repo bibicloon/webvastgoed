@@ -1,0 +1,100 @@
+import React from 'react';
+import { ChevronDown } from 'lucide-react';
+
+export default function FAQSection() {
+  const faqs = [
+    {
+      question: 'Waarom werken jullie niet met WordPress of PHP-templates?',
+      answer: 'Traditionele WordPress- en PHP-websites zijn afhankelijk van tientallen losse plug-ins die regelmatig verouderen, de site vertragen of kwetsbaar maken voor aanvallen. Wij bouwen elke website met moderne React en Next.js websoftware. Daardoor laadt uw website direct, scoort deze hoger in Google en loopt u geen risico op lekke plug-ins.',
+    },
+    {
+      question: 'Wat houdt de tijdelijke Portfolio Actie van € 250,- precies in?',
+      answer: 'Omdat wij ons portfolio met onze nieuwste ontwikkelsoftware verder uitbreiden, bouwen wij tijdelijk een complete, professionele maatwerk website tot maximaal 3 pagina’s (bijvoorbeeld Home, Diensten/Over ons en Contact) voor € 250,- excl. btw. Heeft u meer pagina’s of extra functies nodig? Dat is altijd mogelijk tegen een vooraf afgesproken meerprijs.',
+    },
+    {
+      question: 'Kan ik kiezen tussen eenmalig betalen of een vast bedrag per maand?',
+      answer: 'Ja. U kunt uw website eenmalig aanschaffen (eventueel met optioneel hosting- en onderhoudspakket vanaf € 20,- p/m), of kiezen voor ons volledig ontzorgde maandpakket vanaf € 59,- per maand waarbij ontwerp, hosting, SSL, beveiliging en aanpassingen zijn inbegrepen.',
+    },
+    {
+      question: 'Hoe snel staat mijn nieuwe website online?',
+      answer: 'Een website tot 3 pagina’s staat na het aanleveren van uw wensen en teksten/foto’s doorgaans al binnen enkele werkdagen tot een week online. Voor grotere websites of webshops rekenen wij gemiddeld 1 tot 2 weken.',
+    },
+    {
+      question: 'Blijft mijn domeinnaam en inhoud van mijzelf?',
+      answer: 'Uiteraard. Uw domeinnaam, logo’s, foto’s en teksten blijven altijd 100% uw eigendom. Geen kleine lettertjes of onduidelijke contracten.',
+    },
+  ];
+
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': faqs.map(faq => ({
+      '@type': 'Question',
+      'name': faq.question,
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': faq.answer,
+      },
+    })),
+  };
+
+  return (
+    <section
+      style={{
+        backgroundImage: `linear-gradient(180deg, rgba(9, 14, 23, 0.88) 0%, rgba(17, 26, 46, 0.82) 50%, rgba(9, 14, 23, 0.92) 100%), url('/assets/hero_faq.jpg?v=2')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        color: '#F5EFE4',
+        padding: '6rem 0',
+        borderTop: '1px solid rgba(197, 160, 89, 0.25)',
+      }}
+    >
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
+      <div className="container">
+        <div style={{ textAlign: 'center', maxWidth: '740px', margin: '0 auto 3.25rem auto' }}>
+          <div className="badge-tag" style={{ marginBottom: '1rem' }}>
+            <span>Veelgestelde Vragen</span>
+          </div>
+
+          <h2 style={{ color: '#F5EFE4', marginBottom: '0.75rem' }}>
+            Duidelijke antwoorden vooraf
+          </h2>
+          <p style={{ fontSize: '1.08rem', color: '#CBD5E1', lineHeight: 1.65 }}>
+            Alles over onze maatwerk aanpak, het verschil met standaard templates en onze tarieven.
+          </p>
+        </div>
+
+        {/* Centered Native <details> Exclusive Accordion */}
+        <div style={{ maxWidth: '900px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+          {faqs.map((faq, idx) => (
+            <details
+              key={idx}
+              className="faq-disclosure"
+              name="home-faq"
+              open={idx === 0}
+            >
+              <summary>
+                <span>{faq.question}</span>
+                <ChevronDown size={20} color="#C5A059" className="faq-chevron" />
+              </summary>
+              <div
+                style={{
+                  padding: '1.35rem 1.75rem 1.6rem 1.75rem',
+                  fontSize: '0.98rem',
+                  color: '#E2E8F0',
+                  lineHeight: 1.7,
+                }}
+              >
+                <p>{faq.answer}</p>
+              </div>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

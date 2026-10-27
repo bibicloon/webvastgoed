@@ -1,0 +1,368 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { ArrowRight, CheckCircle2 } from 'lucide-react';
+import SEO from '../components/SEO';
+import FAQSection from '../components/FAQSection';
+import { PORTFOLIO_PROJECTS } from './Portfolio';
+
+export default function Home() {
+  const homeSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ProfessionalService',
+    'name': 'Webvastgoed.nl',
+    'description': 'Maatwerk websites en webshops gebouwd met React en Next.js. Geen standaard templates of kwetsbare PHP-plug-ins. Maandelijks ontzorgd of eenmalig afrekenen.',
+    'url': 'https://webvastgoed.nl',
+    'telephone': '+31630037257',
+    'email': 'info@webvastgoed.nl',
+    'areaServed': ['NL', 'BE'],
+    'priceRange': '€250 - €2500',
+    'knowsAbout': [
+      'Maatwerk website laten maken',
+      'Webshop laten bouwen',
+      'React & Next.js webarchitectuur',
+      'Zoekmachine optimalisatie (SEO)'
+    ]
+  };
+
+  return (
+    <div>
+      <SEO
+        title="Maatwerk Websites & Webshops zonder Standaard Templates"
+        description="Razendsnelle maatwerk websites en webshops op React & Next.js architectuur. Geen kwetsbare PHP-plug-ins of standaard templates. Tijdelijke portfolio-actie vanaf €250,- of volledig ontzorgd per maand."
+        keywords="maatwerk website laten maken, website zonder wordpress, react webdesign, zakelijke website laten bouwen, webvastgoed"
+        schema={homeSchema}
+      />
+
+      {/* 1. HERO SECTIE MET DONKERE LUXE OVERLAY VOor MAXIMAAL CONTRAST */}
+      <section
+        className="bg-luxury-cover"
+        style={{
+          backgroundImage: `linear-gradient(95deg, rgba(9, 14, 23, 0.94) 0%, rgba(13, 21, 38, 0.88) 52%, rgba(17, 26, 46, 0.82) 100%), url('/assets/hero_architecture.jpg?v=2')`,
+          color: '#F5EFE4',
+          paddingTop: 'clamp(3rem, 6vw, 5.25rem)',
+          paddingBottom: 'clamp(3.5rem, 7vw, 6rem)',
+          borderBottom: '1px solid rgba(197, 160, 89, 0.28)',
+        }}
+      >
+        <div className="container">
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 340px), 1fr))',
+              gap: 'clamp(2rem, 4vw, 3.5rem)',
+              alignItems: 'center',
+            }}
+          >
+            {/* Left Column: Clear, High-Contrast Proposition */}
+            <div style={{ textShadow: '0 2px 14px rgba(0, 0, 0, 0.65)' }}>
+              <div className="badge-tag" style={{ marginBottom: '1.35rem', textShadow: 'none' }}>
+                <span>100% Maatwerk · Geen PHP of Standaard Templates</span>
+              </div>
+
+              <h1
+                style={{
+                  color: '#F5EFE4',
+                  marginBottom: '1.25rem',
+                  lineHeight: 1.2,
+                }}
+              >
+                Razendsnelle websites op maat,{' '}
+                <span style={{ color: '#C5A059', fontWeight: 700 }}>
+                  gebouwd voor resultaat.
+                </span>
+              </h1>
+
+              <p
+                style={{
+                  fontSize: 'clamp(1rem, 0.95rem + 0.3vw, 1.1rem)',
+                  color: '#F1F5F9',
+                  lineHeight: 1.72,
+                  marginBottom: '1.6rem',
+                }}
+              >
+                Waar de meeste webbureaus werken met trage WordPress-templates en kwetsbare PHP-plug-ins, bouwen wij uw website volledig op maat met moderne React &amp; Next.js software. Haarscherp op laptop, telefoon én tablet.
+              </p>
+
+              {/* Key USPs */}
+              <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.75rem', marginBottom: '2.25rem' }}>
+                {[
+                  'Tijdelijke Portfolio Actie: complete starter-website (tot 3 pagina’s) voor € 250,- eenmalig',
+                  'Uitgebreide bedrijfswebsites & webshops: eenmalig afrekenen óf vast bedrag per maand',
+                  'Maximale veiligheid: géén verouderde PHP-systemen die gehackt kunnen worden',
+                ].map((item, idx) => (
+                  <li key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.7rem', fontSize: '0.96rem', color: '#F8FAFC', fontWeight: 500 }}>
+                    <CheckCircle2 size={18} color="#C5A059" style={{ flexShrink: 0, marginTop: '3px' }} />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+
+              {/* Buttons */}
+              <div className="hero-btn-group" style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', textShadow: 'none' }}>
+                <Link to="/investeringsplannen" className="btn-primary">
+                  <span>Bekijk Tarieven &amp; Actie</span>
+                  <ArrowRight size={17} />
+                </Link>
+
+                <Link to="/portfolio" className="btn-secondary">
+                  <span>Bekijk Recente Projecten</span>
+                </Link>
+              </div>
+            </div>
+
+            {/* Right Column: Real Multi-Device Showcase Image (LCP Image) */}
+            <div>
+              <Link
+                to="/portfolio"
+                className="portfolio-card"
+                style={{
+                  display: 'block',
+                  borderRadius: '10px',
+                  overflow: 'hidden',
+                  border: '1px solid rgba(197, 160, 89, 0.48)',
+                  boxShadow: '0 24px 54px rgba(0, 0, 0, 0.7)',
+                  backgroundColor: '#090E17',
+                }}
+              >
+                <img
+                  src="/assets/marktplaats_1_onpoint_koeriers.png"
+                  alt="OnPoint Koeriers maatwerk website weergave op laptop, telefoon en tablet"
+                  fetchPriority="high"
+                  width="1200"
+                  height="800"
+                  style={{ width: '100%', height: 'auto', display: 'block' }}
+                />
+                <div
+                  style={{
+                    padding: '1rem 1.35rem',
+                    backgroundColor: 'rgba(22, 34, 59, 0.96)',
+                    borderTop: '1px solid rgba(197, 160, 89, 0.28)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    flexWrap: 'wrap',
+                    gap: '0.75rem',
+                    fontSize: '0.88rem',
+                    color: '#CBD5E1',
+                  }}
+                >
+                  <span>
+                    Uitgelicht project: <strong style={{ color: '#F5EFE4' }}>OnPoint Koeriers</strong>
+                  </span>
+                  <span
+                    style={{
+                      color: '#C5A059',
+                      fontWeight: 600,
+                      whiteSpace: 'nowrap',
+                      flexShrink: 0,
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '0.35rem',
+                    }}
+                  >
+                    <span>Bekijk portfolio</span>
+                    <ArrowRight size={15} />
+                  </span>
+                </div>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 2. RECENTE PROJECTEN SECTIE (Ruime 2x2 Grid + Achtergrondafbeelding) */}
+      <section
+        style={{
+          backgroundImage: `linear-gradient(180deg, rgba(17, 26, 46, 0.90) 0%, rgba(9, 14, 23, 0.84) 50%, rgba(17, 26, 46, 0.92) 100%), url('/assets/hero_portfolio.jpg?v=2')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          color: '#F5EFE4',
+          padding: 'clamp(3.5rem, 7vw, 6rem) 0',
+          borderBottom: '1px solid rgba(197, 160, 89, 0.25)',
+        }}
+      >
+        <div className="container">
+          <div style={{ textAlign: 'center', maxWidth: '760px', margin: '0 auto 3.25rem auto' }}>
+            <div className="badge-tag" style={{ marginBottom: '1rem' }}>
+              <span>Gerealiseerd Werk</span>
+            </div>
+            <h2 style={{ color: '#F5EFE4', marginBottom: '0.75rem' }}>
+              Recente projecten uit ons portfolio
+            </h2>
+            <p style={{ color: '#CBD5E1', fontSize: '1.05rem', lineHeight: 1.65 }}>
+              Van zakelijk spoedtransport en afbouw tot internationale reisplatforms en luxe webshops. Elk project is 100% op maat ontworpen voor laptop, telefoon én tablet.
+            </p>
+          </div>
+
+          <div
+            className="portfolio-grid-2col"
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 440px), 1fr))',
+              gap: '2.25rem',
+            }}
+          >
+            {PORTFOLIO_PROJECTS.map((project) => (
+              <Link
+                key={project.id}
+                to="/portfolio"
+                className="portfolio-card"
+                style={{
+                  backgroundColor: 'rgba(17, 26, 46, 0.92)',
+                  backdropFilter: 'blur(8px)',
+                  border: '1px solid rgba(197, 160, 89, 0.32)',
+                  borderRadius: '10px',
+                  overflow: 'hidden',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  textDecoration: 'none',
+                  boxShadow: '0 14px 36px rgba(0, 0, 0, 0.45)',
+                }}
+              >
+                <div style={{ aspectRatio: '3 / 2', overflow: 'hidden', backgroundColor: '#090E17' }}>
+                  <img
+                    src={project.image}
+                    alt={`${project.title} website op laptop, telefoon en tablet`}
+                    loading="lazy"
+                    width="1200"
+                    height="800"
+                    style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                  />
+                </div>
+                <div style={{ padding: 'clamp(1.25rem, 3vw, 1.85rem)', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                  <div>
+                    <div style={{ fontSize: '0.75rem', color: '#C5A059', fontWeight: 600, letterSpacing: '0.04em', textTransform: 'uppercase', marginBottom: '0.4rem' }}>
+                      {project.category}
+                    </div>
+                    <h3 style={{ fontSize: 'clamp(1.35rem, 2vw, 1.7rem)', color: '#F5EFE4', marginBottom: '0.5rem' }}>
+                      {project.title}
+                    </h3>
+                    <p style={{ fontSize: '0.95rem', color: '#CBD5E1', lineHeight: 1.6, marginBottom: '1.35rem' }}>
+                      {project.summary}
+                    </p>
+                  </div>
+                  <div
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'space-between',
+                      gap: '1rem',
+                      paddingTop: '1rem',
+                      borderTop: '1px solid rgba(148, 163, 184, 0.18)',
+                      fontSize: '0.88rem',
+                    }}
+                  >
+                    <span style={{ color: '#94A3B8', fontWeight: 500, fontSize: '0.84rem' }}>
+                      Laptop · Telefoon · Tablet
+                    </span>
+                    <span
+                      style={{
+                        color: '#C5A059',
+                        fontWeight: 600,
+                        whiteSpace: 'nowrap',
+                        flexShrink: 0,
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '0.35rem',
+                      }}
+                    >
+                      <span>Case bekijken</span>
+                      <ArrowRight size={15} />
+                    </span>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          <div style={{ textAlign: 'center', marginTop: '3rem' }}>
+            <Link to="/portfolio" className="btn-secondary">
+              <span>Alle Case Studies &amp; Details Bekijken</span>
+              <ArrowRight size={16} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* 3. WAAROM GEEN WORDPRESS / PHP TEMPLATES SECTIE (Donkere Luxe Stijl, Geen Wit, Geen AI-Icoontjes) */}
+      <section
+        style={{
+          backgroundImage: `linear-gradient(180deg, rgba(9, 14, 23, 0.88) 0%, rgba(17, 26, 46, 0.84) 50%, rgba(9, 14, 23, 0.92) 100%), url('/assets/office_detail.jpg?v=2')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          color: '#F5EFE4',
+          padding: 'clamp(3.5rem, 7vw, 6rem) 0',
+          borderBottom: '1px solid rgba(197, 160, 89, 0.25)',
+        }}
+      >
+        <div className="container">
+          <div style={{ textAlign: 'center', maxWidth: '780px', margin: '0 auto 3.5rem auto' }}>
+            <div className="badge-tag" style={{ marginBottom: '1rem' }}>
+              <span>Het Verschil in Kwaliteit</span>
+            </div>
+            <h2 style={{ color: '#F5EFE4', marginBottom: '1rem' }}>
+              Waarom wij niet met standaard templates of verouderde PHP-systemen werken
+            </h2>
+            <p style={{ color: '#CBD5E1', fontSize: '1.05rem', lineHeight: 1.7 }}>
+              Veel aanbieders zetten binnen een middag een kant-en-klaar WordPress-thema online met twintig losse plug-ins. Dat lijkt goedkoop, totdat de site traag wordt, op mobiel verspringt of gehackt wordt door een verouderde PHP-plug-in. Wij pakken het fundamenteel anders aan.
+            </p>
+          </div>
+
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))',
+              gap: '2rem',
+            }}
+          >
+            {[
+              {
+                label: 'Vormgeving op Maat',
+                title: 'Echt Maatwerk Ontwerp',
+                text: 'Elke website wordt vanaf een leeg canvas opgebouwd rond uw bedrijf, foto’s en klanten. Geen standaard indeling die u bij tientallen concurrenten terugziet.',
+              },
+              {
+                label: 'Moderne Webarchitectuur',
+                title: '100% Veilig (Geen PHP)',
+                text: 'Omdat wij bouwen met moderne React en Next.js websoftware zonder kwetsbare PHP-databases of lekke plug-ins, loopt uw website geen risico op bekende CMS-hacks.',
+              },
+              {
+                label: 'Prestaties & Vindbaarheid',
+                title: 'Directe Snelheid in Google',
+                text: 'Schone code zorgt voor minimale laadtijden op mobiel en desktop. Dat levert direct een hogere Google PageSpeed-score én meer aanvragen van bezoekers op.',
+              },
+            ].map((item, idx) => (
+              <div
+                key={idx}
+                style={{
+                  backgroundColor: 'rgba(22, 34, 59, 0.92)',
+                  backdropFilter: 'blur(10px)',
+                  border: '1px solid rgba(197, 160, 89, 0.3)',
+                  borderTop: '3px solid #C5A059',
+                  borderRadius: '10px',
+                  padding: 'clamp(1.6rem, 3vw, 2.25rem)',
+                  boxShadow: '0 16px 36px rgba(0, 0, 0, 0.4)',
+                }}
+              >
+                <div style={{ marginBottom: '0.85rem', paddingBottom: '0.7rem', borderBottom: '1px solid rgba(148, 163, 184, 0.16)' }}>
+                  <span style={{ fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', color: '#C5A059' }}>
+                    {item.label}
+                  </span>
+                </div>
+                <h3 style={{ color: '#F5EFE4', fontSize: '1.45rem', marginBottom: '0.65rem' }}>
+                  {item.title}
+                </h3>
+                <p style={{ color: '#CBD5E1', fontSize: '0.95rem', lineHeight: 1.65 }}>
+                  {item.text}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 4. VEELGESTELDE VRAGEN (FAQ) */}
+      <FAQSection />
+    </div>
+  );
+}

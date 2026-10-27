@@ -1,0 +1,15 @@
+{
+  "name": "Webvastgoed.nl - Digitaal Vastgoed & Webarchitectuur",
+  "short_name": "Webvastgoed",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#16223B",
+  "theme_color": "#090E17",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

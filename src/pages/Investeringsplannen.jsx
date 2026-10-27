@@ -1,0 +1,378 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Check, ArrowRight } from 'lucide-react';
+import SEO from '../components/SEO';
+
+export default function Investeringsplannen() {
+  const plansSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    'itemListElement': [
+      {
+        '@type': 'ListItem',
+        'position': 1,
+        'item': {
+          '@type': 'Product',
+          'name': 'Starter Website (Portfolio Actie)',
+          'description': 'Maatwerk website tot maximaal 3 pagina’s, volledig responsive, inclusief contactformulier en basis SEO.',
+          'offers': {
+            '@type': 'Offer',
+            'price': '250.00',
+            'priceCurrency': 'EUR'
+          }
+        }
+      },
+      {
+        '@type': 'ListItem',
+        'position': 2,
+        'item': {
+          '@type': 'Product',
+          'name': 'Bedrijfswebsite Compleet',
+          'description': 'Uitgebreide maatwerk website tot 5-10 pagina’s, inclusief hosting, SSL, onderhoud en beheer.',
+          'offers': {
+            '@type': 'Offer',
+            'price': '59.00',
+            'priceCurrency': 'EUR',
+            'eligibleQuantity': { '@type': 'QuantitativeValue', 'unitCode': 'MON' }
+          }
+        }
+      },
+      {
+        '@type': 'ListItem',
+        'position': 3,
+        'item': {
+          '@type': 'Product',
+          'name': 'Maatwerk Webshop',
+          'description': 'Compleet ontworpen webshop tot 50 producten, iDEAL & betaalmethoden, voorraadbeheer.',
+          'offers': {
+            '@type': 'Offer',
+            'price': '99.00',
+            'priceCurrency': 'EUR',
+            'eligibleQuantity': { '@type': 'QuantitativeValue', 'unitCode': 'MON' }
+          }
+        }
+      }
+    ]
+  };
+
+  return (
+    <div
+      className="bg-luxury-cover"
+      style={{
+        backgroundImage: `linear-gradient(180deg, rgba(9, 14, 23, 0.88) 0%, rgba(17, 26, 46, 0.82) 50%, rgba(9, 14, 23, 0.92) 100%), url('/assets/hero_investeringsplannen.jpg?v=2')`,
+        color: '#F5EFE4',
+        minHeight: '85vh',
+        paddingTop: 'clamp(3rem, 6vw, 5rem)',
+        paddingBottom: 'clamp(4rem, 7vw, 6.5rem)',
+      }}
+    >
+      <SEO
+        title="Tarieven & Pakketten - Eenmalig of Per Maand"
+        description="Transparante tarieven voor maatwerk websites en webshops. Tijdelijke Portfolio Actie: complete website (tot 3 pagina's) voor €250,- eenmalig, of volledig ontzorgd vanaf €59,- p/m."
+        keywords="website laten maken kosten, website 250 euro, maatwerk website tarieven, webshop laten bouwen prijs"
+        schema={plansSchema}
+      />
+
+      <div className="container">
+        {/* Centered Header */}
+        <div style={{ textAlign: 'center', maxWidth: '780px', margin: '0 auto 3.5rem auto' }}>
+          <div className="badge-tag" style={{ marginBottom: '1rem' }}>
+            <span>Heldere Tarieven · Geen Verborgen Kosten</span>
+          </div>
+
+          <h1 style={{ color: '#F5EFE4', marginBottom: '1rem' }}>
+            Kies het pakket dat past bij uw bedrijf
+          </h1>
+          <p style={{ fontSize: '1.1rem', color: '#CBD5E1', lineHeight: 1.65 }}>
+            Of u nu kiest voor onze eenmalige portfolio-actie van € 250,- of een volledig ontzorgd maandpakket inclusief hosting en doorlopend beheer: u krijgt altijd 100% maatwerk zonder standaard templates of verouderde PHP-systemen.
+          </p>
+        </div>
+
+        {/* Highlight Banner: Portfolio Actie € 250,- */}
+        <div
+          style={{
+            backgroundColor: 'rgba(22, 34, 59, 0.94)',
+            backdropFilter: 'blur(12px)',
+            border: '2px solid #C5A059',
+            borderRadius: '10px',
+            padding: '2.25rem 2.5rem',
+            marginBottom: '3rem',
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+            gap: '2rem',
+            alignItems: 'center',
+            boxShadow: '0 20px 48px rgba(0, 0, 0, 0.5)',
+          }}
+        >
+          <div>
+            <div style={{ display: 'inline-block', backgroundColor: '#C5A059', color: '#090E17', fontWeight: 700, fontSize: '0.75rem', padding: '0.3rem 0.75rem', borderRadius: '4px', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.85rem' }}>
+              Tijdelijke Portfolio Actie
+            </div>
+            <h2 style={{ fontSize: '2rem', color: '#F5EFE4', marginBottom: '0.6rem' }}>
+              Starter Website (max. 3 pagina&apos;s)
+            </h2>
+            <p style={{ color: '#CBD5E1', fontSize: '0.98rem', lineHeight: 1.65, marginBottom: '1.1rem' }}>
+              Omdat wij ons portfolio met onze nieuwste websoftware verder uitbreiden, bouwen wij tijdelijk een complete, professionele bedrijfswebsite tot maximaal 3 pagina&apos;s (bijv. <em>Home, Diensten &amp; Contact</em>) voor een eenmalige actieprijs. Meer pagina&apos;s of extra modules zijn altijd mogelijk tegen een eerlijke meerprijs.
+            </p>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1.25rem', fontSize: '0.9rem', color: '#E2E8F0' }}>
+              <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}><Check size={16} color="#C5A059" /> 100% Maatwerk Design</span>
+              <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}><Check size={16} color="#C5A059" /> Mobiel, Tablet &amp; Desktop</span>
+              <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}><Check size={16} color="#C5A059" /> Geen PHP / Veilige Code</span>
+              <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}><Check size={16} color="#C5A059" /> Contactformulier &amp; Basis SEO</span>
+            </div>
+          </div>
+
+          <div
+            style={{
+              backgroundColor: 'rgba(9, 14, 23, 0.85)',
+              border: '1px solid rgba(197, 160, 89, 0.4)',
+              borderRadius: '8px',
+              padding: '1.75rem',
+              textAlign: 'center',
+            }}
+          >
+            <div style={{ fontSize: '0.82rem', color: '#94A3B8', textTransform: 'uppercase', letterSpacing: '0.06em', fontWeight: 600 }}>
+              Eenmalige investering
+            </div>
+            <div className="font-serif" style={{ fontSize: '3.2rem', fontWeight: 700, color: '#C5A059', lineHeight: 1.1, margin: '0.35rem 0' }}>
+              € 250,-
+            </div>
+            <div style={{ fontSize: '0.85rem', color: '#CBD5E1', marginBottom: '1.25rem' }}>
+              Excl. btw · Optioneel hosting &amp; beheer vanaf € 20,- p/m
+            </div>
+            <Link to="/contact" className="btn-primary" style={{ width: '100%' }}>
+              <span>Actie Aanvragen</span>
+              <ArrowRight size={16} />
+            </Link>
+          </div>
+        </div>
+
+        {/* 3 Standard Packages Grid (Donkere Luxe Stijl, Geen Wit) */}
+        <div
+          style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 290px), 1fr))',
+            gap: '2rem',
+            alignItems: 'stretch',
+          }}
+        >
+          {/* CARD 1: BEDRIJFSWEBSITE */}
+          <div
+            style={{
+              backgroundColor: 'rgba(22, 34, 59, 0.92)',
+              backdropFilter: 'blur(12px)',
+              color: '#F5EFE4',
+              borderRadius: '10px',
+              padding: '2.5rem 2rem',
+              border: '1px solid rgba(197, 160, 89, 0.3)',
+              borderTop: '3px solid #C5A059',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+              boxShadow: '0 16px 40px rgba(0, 0, 0, 0.45)',
+            }}
+          >
+            <div>
+              <div style={{ marginBottom: '0.85rem', paddingBottom: '0.75rem', borderBottom: '1px solid rgba(148, 163, 184, 0.16)' }}>
+                <span style={{ fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#C5A059' }}>
+                  Compleet Ontzorgd
+                </span>
+              </div>
+
+              <h2 style={{ fontSize: '2rem', color: '#F5EFE4', marginBottom: '0.75rem' }}>
+                Bedrijfswebsite
+              </h2>
+
+              <div style={{ marginBottom: '1.5rem' }}>
+                <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.35rem' }}>
+                  <span style={{ fontSize: '0.9rem', color: '#94A3B8' }}>vanaf</span>
+                  <span className="font-serif" style={{ fontSize: '3rem', fontWeight: 700, color: '#C5A059', lineHeight: 1 }}>
+                    € 59,-
+                  </span>
+                  <span style={{ fontSize: '0.9rem', color: '#94A3B8' }}>p/m</span>
+                </div>
+                <div style={{ fontSize: '0.88rem', color: '#CBD5E1', marginTop: '0.4rem', fontWeight: 500 }}>
+                  Setup vanaf € 299,- (of eenmalige afkoop mogelijk)
+                </div>
+              </div>
+
+              <div style={{ height: '1px', backgroundColor: 'rgba(148, 163, 184, 0.16)', marginBottom: '1.5rem' }} />
+
+              <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.85rem', marginBottom: '2rem' }}>
+                {[
+                  'Volledig maatwerk ontwerp (tot 8 pagina’s)',
+                  'Razendsnelle React & Next.js techniek',
+                  'Inclusief snelle hosting, SSL & dagelijkse back-ups',
+                  'Doorlopend technisch onderhoud & tekstwijzigingen',
+                  'Technische Google SEO & Schema.org opzet',
+                ].map((feat, idx) => (
+                  <li key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.7rem', fontSize: '0.94rem', color: '#E2E8F0' }}>
+                    <Check size={17} color="#C5A059" style={{ flexShrink: 0, marginTop: '3px' }} />
+                    <span>{feat}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <Link
+              to="/contact"
+              className="btn-secondary"
+              style={{ width: '100%' }}
+            >
+              <span>Bedrijfswebsite Bespreken</span>
+              <ArrowRight size={16} color="#C5A059" />
+            </Link>
+          </div>
+
+          {/* CARD 2: WEBSHOP */}
+          <div
+            style={{
+              backgroundColor: 'rgba(17, 26, 46, 0.96)',
+              backdropFilter: 'blur(12px)',
+              color: '#F5EFE4',
+              borderRadius: '10px',
+              padding: '2.5rem 2rem',
+              border: '2px solid #C5A059',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+              boxShadow: '0 20px 48px rgba(0, 0, 0, 0.55)',
+            }}
+          >
+            <div>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem', paddingBottom: '0.75rem', borderBottom: '1px solid rgba(197, 160, 89, 0.3)' }}>
+                <span style={{ fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#C5A059' }}>
+                  E-Commerce &amp; Verkoop
+                </span>
+                <span
+                  style={{
+                    backgroundColor: '#C5A059',
+                    color: '#090E17',
+                    padding: '0.25rem 0.65rem',
+                    borderRadius: '4px',
+                    fontSize: '0.72rem',
+                    fontWeight: 700,
+                    letterSpacing: '0.06em',
+                    textTransform: 'uppercase',
+                  }}
+                >
+                  Populair
+                </span>
+              </div>
+
+              <h2 style={{ fontSize: '2.1rem', color: '#F5EFE4', marginBottom: '0.75rem' }}>
+                Maatwerk Webshop
+              </h2>
+
+              <div style={{ marginBottom: '1.5rem' }}>
+                <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.35rem' }}>
+                  <span style={{ fontSize: '0.9rem', color: '#94A3B8' }}>vanaf</span>
+                  <span className="font-serif" style={{ fontSize: '3rem', fontWeight: 700, color: '#C5A059', lineHeight: 1 }}>
+                    € 99,-
+                  </span>
+                  <span style={{ fontSize: '0.9rem', color: '#94A3B8' }}>p/m</span>
+                </div>
+                <div style={{ fontSize: '0.88rem', color: '#CBD5E1', marginTop: '0.4rem', fontWeight: 500 }}>
+                  Setup vanaf € 499,- (of eenmalige afkoop mogelijk)
+                </div>
+              </div>
+
+              <div style={{ height: '1px', backgroundColor: 'rgba(197, 160, 89, 0.3)', marginBottom: '1.5rem' }} />
+
+              <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.85rem', marginBottom: '2rem' }}>
+                {[
+                  'Luxe webshop-ontwerp op maat (zoals Pastry Company)',
+                  'Tot 50 producten overzichtelijk ingericht',
+                  'Directe koppeling met iDEAL, Bancontact & creditcard',
+                  'Geoptimaliseerd voor mobiel bestellen & conversie',
+                  'Inclusief hosting, beveiliging & technisch beheer',
+                ].map((feat, idx) => (
+                  <li key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.7rem', fontSize: '0.94rem', color: '#E2E8F0' }}>
+                    <Check size={17} color="#C5A059" style={{ flexShrink: 0, marginTop: '3px' }} />
+                    <span>{feat}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <Link
+              to="/contact"
+              className="btn-primary"
+              style={{ width: '100%' }}
+            >
+              <span>Webshop Bespreken</span>
+              <ArrowRight size={16} />
+            </Link>
+          </div>
+
+          {/* CARD 3: MAATWERK & WEBAPPLICATIES */}
+          <div
+            style={{
+              backgroundColor: 'rgba(22, 34, 59, 0.92)',
+              backdropFilter: 'blur(12px)',
+              color: '#F5EFE4',
+              borderRadius: '10px',
+              padding: '2.5rem 2rem',
+              border: '1px solid rgba(197, 160, 89, 0.3)',
+              borderTop: '3px solid #C5A059',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+              boxShadow: '0 16px 40px rgba(0, 0, 0, 0.45)',
+            }}
+          >
+            <div>
+              <div style={{ marginBottom: '0.85rem', paddingBottom: '0.75rem', borderBottom: '1px solid rgba(148, 163, 184, 0.16)' }}>
+                <span style={{ fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#C5A059' }}>
+                  Specifieke Modules
+                </span>
+              </div>
+
+              <h2 style={{ fontSize: '2rem', color: '#F5EFE4', marginBottom: '0.75rem' }}>
+                Maatwerk &amp; Platforms
+              </h2>
+
+              <div style={{ marginBottom: '1.5rem' }}>
+                <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.35rem' }}>
+                  <span style={{ fontSize: '0.9rem', color: '#94A3B8' }}>prijs</span>
+                  <span className="font-serif" style={{ fontSize: '2.6rem', fontWeight: 700, color: '#C5A059', lineHeight: 1.1 }}>
+                    Op aanvraag
+                  </span>
+                </div>
+                <div style={{ fontSize: '0.88rem', color: '#CBD5E1', marginTop: '0.4rem', fontWeight: 500 }}>
+                  Vooraf vaste, transparante offerte op maat
+                </div>
+              </div>
+
+              <div style={{ height: '1px', backgroundColor: 'rgba(148, 163, 184, 0.16)', marginBottom: '1.5rem' }} />
+
+              <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.85rem', marginBottom: '2rem' }}>
+                {[
+                  'Interactieve route- of prijsberekenaars (zoals Smart Stops)',
+                  'Voor/Na-projectsliders & interactieve keuzehulpen',
+                  'Meertalige websites en internationale platforms',
+                  'Koppelingen met externe API’s, CRM of boekingssystemen',
+                  'Volledige begeleiding van ontwerp tot livegang',
+                ].map((feat, idx) => (
+                  <li key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.7rem', fontSize: '0.94rem', color: '#E2E8F0' }}>
+                    <Check size={17} color="#C5A059" style={{ flexShrink: 0, marginTop: '3px' }} />
+                    <span>{feat}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <Link
+              to="/contact"
+              className="btn-secondary"
+              style={{ width: '100%' }}
+            >
+              <span>Vrijblijvende Offerte</span>
+              <ArrowRight size={16} color="#C5A059" />
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
