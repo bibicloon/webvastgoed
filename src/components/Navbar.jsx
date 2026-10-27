@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import { Menu, X, ArrowUpRight } from 'lucide-react';
+import { Building2, Menu, X, ArrowUpRight } from 'lucide-react';
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -49,14 +49,9 @@ export default function Navbar() {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              fontFamily: 'var(--font-serif)',
-              fontWeight: 700,
-              fontSize: '0.95rem',
-              letterSpacing: '0.04em',
-              color: '#C5A059',
             }}
           >
-            WV
+            <Building2 size={21} color="#C5A059" />
           </div>
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             <span

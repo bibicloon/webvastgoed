@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Building2 } from 'lucide-react';
 import { WHATSAPP_URL, WHATSAPP_DISPLAY } from './WhatsAppButton';
 
 export default function Footer() {
@@ -35,14 +36,9 @@ export default function Footer() {
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  fontFamily: 'var(--font-serif)',
-                  fontWeight: 700,
-                  fontSize: '0.9rem',
-                  letterSpacing: '0.04em',
-                  color: '#C5A059',
                 }}
               >
-                WV
+                <Building2 size={20} color="#C5A059" />
               </div>
               <span
                 style={{
