@@ -39,7 +39,7 @@ export default function OverOns() {
             Echt vakmanschap in plaats van standaard templates
           </h1>
           <p style={{ fontSize: '1.1rem', color: '#CBD5E1', lineHeight: 1.65 }}>
-            Waarom wij bewust zijn overgestapt op de nieuwste generatie websoftware en nooit werken met trage WordPress-thema&apos;s of kwetsbare PHP-plug-ins.
+            Waarom wij bewust zijn overgestapt op de nieuwste generatie websoftware en nooit werken met trage WordPress thema&apos;s of kwetsbare PHP plugins.
           </p>
         </div>
 
@@ -80,7 +80,7 @@ export default function OverOns() {
                   lineHeight: 1.75,
                 }}
               >
-                Veel ondernemers betalen óf duizenden euro&apos;s bij een traditioneel bureau, óf krijgen voor weinig geld een traag standaard WordPress-template dat na een paar maanden problemen geeft. Met onze nieuwste React en Next.js ontwikkelsoftware bewijzen wij dat echt maatwerk, maximale veiligheid zonder PHP en betaalbaarheid wél samen kunnen gaan. Elk project bouwen wij met dezelfde precisie en aandacht alsof het ons eigen bedrijf is.
+                Veel ondernemers betalen óf duizenden euro&apos;s bij een traditioneel bureau, óf krijgen voor weinig geld een traag standaard WordPress template dat na een paar maanden problemen geeft. Met onze nieuwste React en Next.js ontwikkelsoftware bewijzen wij dat echt maatwerk, maximale veiligheid zonder PHP en betaalbaarheid wél samen kunnen gaan. Elk project bouwen wij met dezelfde precisie en aandacht alsof het ons eigen bedrijf is.
               </p>
             </blockquote>
 
@@ -125,14 +125,14 @@ export default function OverOns() {
             <div
               style={{
                 display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(170px, 1fr))',
                 gap: '1rem',
               }}
             >
               {[
-                { label: '100% Maatwerk', desc: 'Geen standaard kant-en-klare thema’s' },
-                { label: '0% PHP / Plug-ins', desc: 'Geen kwetsbare CMS-koppelingen' },
-                { label: 'Alle Schermen', desc: 'Perfect op mobiel, tablet & desktop' },
+                { label: '100% Maatwerk', desc: 'Geen standaard thema’s' },
+                { label: '100% Veilig', desc: 'Volledig vrij van PHP' },
+                { label: 'Alle Schermen', desc: 'Mobiel, tablet & desktop' },
               ].map((stat, idx) => (
                 <div
                   key={idx}
@@ -141,14 +141,14 @@ export default function OverOns() {
                     backdropFilter: 'blur(8px)',
                     border: '1px solid rgba(197, 160, 89, 0.25)',
                     borderRadius: '8px',
-                    padding: '1.1rem 1.25rem',
+                    padding: '1.15rem 1.2rem',
                   }}
                 >
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem', color: '#C5A059', fontWeight: 700, fontSize: '0.95rem', marginBottom: '0.25rem' }}>
-                    <CheckCircle2 size={16} />
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem', color: '#C5A059', fontWeight: 700, fontSize: '0.94rem', marginBottom: '0.3rem', whiteSpace: 'nowrap' }}>
+                    <CheckCircle2 size={16} style={{ flexShrink: 0 }} />
                     <span>{stat.label}</span>
                   </div>
-                  <div style={{ fontSize: '0.84rem', color: '#CBD5E1' }}>{stat.desc}</div>
+                  <div style={{ fontSize: '0.86rem', color: '#CBD5E1', lineHeight: 1.45 }}>{stat.desc}</div>
                 </div>
               ))}
             </div>

@@ -84,7 +84,7 @@ export default function Investeringsplannen() {
             Kies het pakket dat past bij uw bedrijf
           </h1>
           <p style={{ fontSize: '1.1rem', color: '#CBD5E1', lineHeight: 1.65 }}>
-            Of u nu kiest voor onze eenmalige portfolio-actie van € 250,- of een volledig ontzorgd maandpakket inclusief hosting en doorlopend beheer: u krijgt altijd 100% maatwerk zonder standaard templates of verouderde PHP-systemen.
+            Of u nu kiest voor onze eenmalige portfolio actie van € 250,- of een volledig ontzorgd maandpakket inclusief hosting en doorlopend beheer: u krijgt altijd 100% maatwerk zonder standaard templates of verouderde PHP systemen.
           </p>
         </div>
 
@@ -202,7 +202,7 @@ export default function Investeringsplannen() {
                 {[
                   'Volledig maatwerk ontwerp (tot 8 pagina’s)',
                   'Razendsnelle React & Next.js techniek',
-                  'Inclusief snelle hosting, SSL & dagelijkse back-ups',
+                  'Inclusief snelle hosting, SSL & dagelijkse backups',
                   'Doorlopend technisch onderhoud & tekstwijzigingen',
                   'Technische Google SEO & Schema.org opzet',
                 ].map((feat, idx) => (
@@ -281,7 +281,7 @@ export default function Investeringsplannen() {
 
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.85rem', marginBottom: '2rem' }}>
                 {[
-                  'Luxe webshop-ontwerp op maat (zoals Pastry Company)',
+                  'Luxe webshop ontwerp op maat (zoals Pastry Company)',
                   'Tot 50 producten overzichtelijk ingericht',
                   'Directe koppeling met iDEAL, Bancontact & creditcard',
                   'Geoptimaliseerd voor mobiel bestellen & conversie',
@@ -348,8 +348,8 @@ export default function Investeringsplannen() {
 
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.85rem', marginBottom: '2rem' }}>
                 {[
-                  'Interactieve route- of prijsberekenaars (zoals Smart Stops)',
-                  'Voor/Na-projectsliders & interactieve keuzehulpen',
+                  'Interactieve route of prijsberekenaars (zoals Smart Stops)',
+                  'Voor/Na projectsliders & interactieve keuzehulpen',
                   'Meertalige websites en internationale platforms',
                   'Koppelingen met externe API’s, CRM of boekingssystemen',
                   'Volledige begeleiding van ontwerp tot livegang',

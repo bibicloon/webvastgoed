@@ -4,8 +4,8 @@ import { ChevronDown } from 'lucide-react';
 export default function FAQSection() {
   const faqs = [
     {
-      question: 'Waarom werken jullie niet met WordPress of PHP-templates?',
-      answer: 'Traditionele WordPress- en PHP-websites zijn afhankelijk van tientallen losse plug-ins die regelmatig verouderen, de site vertragen of kwetsbaar maken voor aanvallen. Wij bouwen elke website met moderne React en Next.js websoftware. Daardoor laadt uw website direct, scoort deze hoger in Google en loopt u geen risico op lekke plug-ins.',
+      question: 'Waarom werken jullie niet met WordPress of PHP templates?',
+      answer: 'Traditionele WordPress en PHP websites zijn afhankelijk van tientallen losse plugins die regelmatig verouderen, de site vertragen of kwetsbaar maken voor aanvallen. Wij bouwen elke website met moderne React en Next.js websoftware. Daardoor laadt uw website direct, scoort deze hoger in Google en loopt u geen risico op lekke plugins.',
     },
     {
       question: 'Wat houdt de tijdelijke Portfolio Actie van € 250,- precies in?',
@@ -13,7 +13,7 @@ export default function FAQSection() {
     },
     {
       question: 'Kan ik kiezen tussen eenmalig betalen of een vast bedrag per maand?',
-      answer: 'Ja. U kunt uw website eenmalig aanschaffen (eventueel met optioneel hosting- en onderhoudspakket vanaf € 20,- p/m), of kiezen voor ons volledig ontzorgde maandpakket vanaf € 59,- per maand waarbij ontwerp, hosting, SSL, beveiliging en aanpassingen zijn inbegrepen.',
+      answer: 'Ja. U kunt uw website eenmalig aanschaffen (eventueel met optioneel hosting en onderhoudspakket vanaf € 20,- p/m), of kiezen voor ons volledig ontzorgde maandpakket vanaf € 59,- per maand waarbij ontwerp, hosting, SSL, beveiliging en aanpassingen zijn inbegrepen.',
     },
     {
       question: 'Hoe snel staat mijn nieuwe website online?',

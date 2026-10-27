@@ -85,7 +85,7 @@ export default function DigitaleGroei() {
             SEO &amp; Organische Groei
           </h1>
           <p style={{ fontSize: '1.1rem', color: '#CBD5E1', lineHeight: 1.65 }}>
-            Een snelle website is de eerste stap. Met structurele zoekmachine-optimalisatie zorgen wij ervoor dat klanten die in Google zoeken naar uw diensten direct bij uw bedrijf uitkomen.
+            Een snelle website is de eerste stap. Met structurele zoekmachine optimalisatie zorgen wij ervoor dat klanten die in Google zoeken naar uw diensten direct bij uw bedrijf uitkomen.
           </p>
         </div>
 
@@ -126,7 +126,7 @@ export default function DigitaleGroei() {
               </h2>
 
               <p style={{ fontSize: '0.94rem', color: '#CBD5E1', lineHeight: 1.5, marginBottom: '1.5rem' }}>
-                Voor bedrijven die hun technische en lokale SEO-basis goed op orde willen hebben.
+                Voor bedrijven die hun technische en lokale SEO basis goed op orde willen hebben.
               </p>
 
               <div style={{ marginBottom: '1.5rem' }}>
@@ -145,7 +145,7 @@ export default function DigitaleGroei() {
 
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.8rem', marginBottom: '2rem' }}>
                 {[
-                  'Technische SEO-check & optimalisatie',
+                  'Technische SEO check & optimalisatie',
                   'Zoekwoordenonderzoek voor uw branche',
                   'Metadata & paginatitels optimalisatie',
                   'Logische H1/H2 koppenstructuur',
@@ -237,7 +237,7 @@ export default function DigitaleGroei() {
                 {[
                   'Maandelijkse zoekwoordanalyse & kansen',
                   'Doorlopende contentoptimalisatie',
-                  'Nieuwe gerichte SEO-landingspagina’s',
+                  'Nieuwe gerichte SEO landingspagina’s',
                   'Uitgebreide interne linkbuilding',
                   'Concurrentieanalyse in uw regio/branche',
                   'Doorlopende technische optimalisaties',
@@ -312,13 +312,13 @@ export default function DigitaleGroei() {
 
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.8rem', marginBottom: '2rem' }}>
                 {[
-                  'Uitgebreide content- & autoriteitsstrategie',
-                  'Meerdere nieuwe SEO-landingspagina’s per maand',
-                  'Diepgaande concurrentie- & zoekintentie-analyse',
+                  'Uitgebreide content & autoriteitsstrategie',
+                  'Meerdere nieuwe SEO landingspagina’s per maand',
+                  'Diepgaande concurrentie & zoekintentie analyse',
                   'Actieve kwalitatieve linkbuilding',
-                  'Conversie-optimalisatie van bestaande pagina’s',
-                  'Maandelijkse persoonlijke SEO-strategiesessie',
-                  'Uitgebreide resultaat- & ROI-rapportage',
+                  'Conversie optimalisatie van bestaande pagina’s',
+                  'Maandelijkse persoonlijke SEO strategiesessie',
+                  'Uitgebreide resultaat & ROI rapportage',
                 ].map((feat, idx) => (
                   <li key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.7rem', fontSize: '0.94rem', color: '#E2E8F0' }}>
                     <Check size={17} color="#C5A059" style={{ flexShrink: 0, marginTop: '3px' }} />

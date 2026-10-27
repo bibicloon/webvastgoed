@@ -71,6 +71,8 @@ body {
   line-height: 1.6;
   text-align: start;
   overflow-wrap: break-word;
+  hyphens: none;
+  -webkit-hyphens: none;
 }
 
 /* Typography Hierarchy (typography & improve-text-layout-and-legibility) */

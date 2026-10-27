@@ -13,9 +13,9 @@ export const PORTFOLIO_PROJECTS = [
     challenge: 'OnPoint Koeriers zocht een krachtige, zakelijke website die direct vertrouwen wekt bij bedrijven met urgente zendingen (medisch spoedtransport, juridische documenten en kritieke automotive-onderdelen) zonder de traagheid van een standaard template.',
     solution: 'Wij ontwierpen en bouwden een razendsnelle Next.js website op maat met een strakke donkere huisstijl, directe bel- en aanvraagknoppen, heldere dienstpagina’s per sector en een vlekkeloze mobiele weergave voor klanten die onderweg direct moeten schakelen.',
     results: [
-      'Directe conversiegerichtheid met prominente "Bel Direct" en transport-planningsmodules.',
-      'Supersnelle laadtijden op zowel desktop, tablet als smartphone zonder kwetsbare PHP-plug-ins.',
-      'Heldere positionering voor gespecialiseerde B2B-logistiek in Nederland en Europa.',
+      'Directe conversiegerichtheid met prominente "Bel Direct" en transportmodules.',
+      'Supersnelle laadtijden op zowel desktop, tablet als smartphone zonder kwetsbare PHP plugins.',
+      'Heldere positionering voor gespecialiseerde B2B logistiek in Nederland en Europa.',
     ],
     techSpecs: ['Next.js & React', '100% Maatwerk UI', 'Geen PHP / Geen Templates', 'Technische B2B SEO'],
     location: 'Nederland & Europa',
@@ -61,9 +61,9 @@ export const PORTFOLIO_PROJECTS = [
     challenge: 'Brökling Afbouw & Montage (actief sinds 2007 in regio Eindhoven) wilde hun vakmanschap in systeemwanden, akoestische plafonds en timmerwerk helder presenteren met echte projectfoto’s van de bouwplaats tot de oplevering.',
     solution: 'Wij bouwden een strakke, betrouwbare website met duidelijke expertise-overzichten, een interactieve Voor/Na-vergelijkingsslider (zoals bij Kindcentrum Het Octaaf in Nijmegen) en laagdrempelige offerte-aanvraagmogelijkheden.',
     results: [
-      'Interactieve Voor/Na-slider waarmee potentiële klanten direct het verschil in afwerking zien.',
+      'Interactieve Voor/Na slider waarmee potentiële klanten direct het verschil in afwerking zien.',
       'Heldere presentatie van gerealiseerde projecten voor zowel zakelijke als particuliere klanten.',
-      'Snelle, veilige maatwerkcode zonder onderhoudsgevoelige WordPress/PHP-plug-ins.',
+      'Snelle, veilige maatwerkcode zonder onderhoudsgevoelige WordPress of PHP plugins.',
     ],
     techSpecs: ['Interactieve Voor/Na Slider', 'Projectgalerij op Maat', 'Lokale SEO (Regio Eindhoven)', 'Veilige Webarchitectuur'],
     location: 'Regio Eindhoven & Zuidoost-Nederland',
@@ -168,7 +168,7 @@ export default function Portfolio() {
             Recente projecten uit ons portfolio
           </h1>
           <p style={{ fontSize: '1.06rem', color: '#CBD5E1', lineHeight: 1.65 }}>
-            Geen dertien-in-een-dozijn templates, maar 100% echt maatwerk afgestemd op de branche en doelgroep van de ondernemer. Klik op een project om de volledige case te bekijken.
+            Geen standaard templates, maar 100% echt maatwerk afgestemd op de branche en doelgroep van de ondernemer. Klik op een project om de volledige case te bekijken.
           </p>
         </div>
 

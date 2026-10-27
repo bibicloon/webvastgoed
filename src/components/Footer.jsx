@@ -52,7 +52,7 @@ export default function Footer() {
               </span>
             </Link>
             <p style={{ fontSize: '0.92rem', color: '#94A3B8', lineHeight: 1.65, marginBottom: '1rem' }}>
-              Razendsnelle maatwerk websites en webshops gebouwd met moderne React &amp; Next.js techniek. Geen standaard templates en geen kwetsbare PHP-plug-ins.
+              Razendsnelle maatwerk websites en webshops gebouwd met moderne React &amp; Next.js techniek. Geen standaard templates en geen kwetsbare PHP plugins.
             </p>
             <div style={{ fontSize: '0.78rem', color: '#C5A059', fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase' }}>
               100% Maatwerk · Veilige Webarchitectuur

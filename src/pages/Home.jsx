@@ -80,15 +80,15 @@ export default function Home() {
                   marginBottom: '1.6rem',
                 }}
               >
-                Waar de meeste webbureaus werken met trage WordPress-templates en kwetsbare PHP-plug-ins, bouwen wij uw website volledig op maat met moderne React &amp; Next.js software. Haarscherp op laptop, telefoon én tablet.
+                Waar de meeste webbureaus werken met trage WordPress templates en kwetsbare PHP plugins, bouwen wij uw website volledig op maat met moderne React &amp; Next.js software. Haarscherp op laptop, telefoon én tablet.
               </p>
 
               {/* Key USPs */}
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.75rem', marginBottom: '2.25rem' }}>
                 {[
-                  'Tijdelijke Portfolio Actie: complete starter-website (tot 3 pagina’s) voor € 250,- eenmalig',
+                  'Tijdelijke Portfolio Actie: complete starter website (tot 3 pagina’s) voor € 250,- eenmalig',
                   'Uitgebreide bedrijfswebsites & webshops: eenmalig afrekenen óf vast bedrag per maand',
-                  'Maximale veiligheid: géén verouderde PHP-systemen die gehackt kunnen worden',
+                  'Maximale veiligheid: géén verouderde PHP systemen die gehackt kunnen worden',
                 ].map((item, idx) => (
                   <li key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.7rem', fontSize: '0.96rem', color: '#F8FAFC', fontWeight: 500 }}>
                     <CheckCircle2 size={18} color="#C5A059" style={{ flexShrink: 0, marginTop: '3px' }} />
@@ -301,10 +301,10 @@ export default function Home() {
               <span>Het Verschil in Kwaliteit</span>
             </div>
             <h2 style={{ color: '#F5EFE4', marginBottom: '1rem' }}>
-              Waarom wij niet met standaard templates of verouderde PHP-systemen werken
+              Waarom wij niet met standaard templates of verouderde PHP systemen werken
             </h2>
             <p style={{ color: '#CBD5E1', fontSize: '1.05rem', lineHeight: 1.7 }}>
-              Veel aanbieders zetten binnen een middag een kant-en-klaar WordPress-thema online met twintig losse plug-ins. Dat lijkt goedkoop, totdat de site traag wordt, op mobiel verspringt of gehackt wordt door een verouderde PHP-plug-in. Wij pakken het fundamenteel anders aan.
+              Veel aanbieders zetten binnen een middag een standaard WordPress thema online met twintig losse plugins. Dat lijkt goedkoop, totdat de site traag wordt, op mobiel verspringt of gehackt wordt door een verouderde PHP plugin. Wij pakken het fundamenteel anders aan.
             </p>
           </div>
 
@@ -324,12 +324,12 @@ export default function Home() {
               {
                 label: 'Moderne Webarchitectuur',
                 title: '100% Veilig (Geen PHP)',
-                text: 'Omdat wij bouwen met moderne React en Next.js websoftware zonder kwetsbare PHP-databases of lekke plug-ins, loopt uw website geen risico op bekende CMS-hacks.',
+                text: 'Omdat wij bouwen met moderne React en Next.js websoftware zonder kwetsbare PHP databases of lekke plugins, loopt uw website geen risico op bekende CMS aanvallen.',
               },
               {
                 label: 'Prestaties & Vindbaarheid',
                 title: 'Directe Snelheid in Google',
-                text: 'Schone code zorgt voor minimale laadtijden op mobiel en desktop. Dat levert direct een hogere Google PageSpeed-score én meer aanvragen van bezoekers op.',
+                text: 'Schone code zorgt voor minimale laadtijden op mobiel en desktop. Dat levert direct een hogere Google PageSpeed score én meer aanvragen van bezoekers op.',
               },
             ].map((item, idx) => (
               <div

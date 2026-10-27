@@ -7,8 +7,8 @@ import { WHATSAPP_URL } from '../components/WhatsAppButton';
 export default function FAQPage() {
   const faqData = [
     {
-      question: 'Waarom werken jullie niet met WordPress of PHP-templates?',
-      answer: 'De meeste goedkope aanbieders gebruiken standaard WordPress-thema’s met tientallen PHP-plug-ins. Als één plug-in veroudert, wordt uw site traag of kwetsbaar voor hackers. Wij bouwen al onze websites vanaf de basis op met moderne React en Next.js software. Dat betekent: géén kwetsbare PHP-databases, directe laadtijden en een 100% uniek ontwerp.',
+      question: 'Waarom werken jullie niet met WordPress of PHP templates?',
+      answer: 'De meeste goedkope aanbieders gebruiken standaard WordPress thema’s met tientallen PHP plugins. Als één plugin veroudert, wordt uw site traag of kwetsbaar voor hackers. Wij bouwen al onze websites vanaf de basis op met moderne React en Next.js software. Dat betekent: géén kwetsbare PHP databases, directe laadtijden en een 100% uniek ontwerp.',
     },
     {
       question: 'Wat houdt de tijdelijke Portfolio Actie van € 250,- in?',
@@ -16,11 +16,11 @@ export default function FAQPage() {
     },
     {
       question: 'Kan ik bij de € 250,- actie ook extra pagina’s of specifieke functies laten toevoegen?',
-      answer: 'Jazeker. Heeft u bijvoorbeeld 5 of 8 pagina’s nodig, een interactieve Voor/Na-slider (zoals bij Brökling Afbouw), een route-/prijsmodule (zoals bij Smart Stops Europe) of een webshop? Dan bespreken we vooraf een heldere, eerlijke meerprijs zodat u precies weet waar u aan toe bent.',
+      answer: 'Jazeker. Heeft u bijvoorbeeld 5 of 8 pagina’s nodig, een interactieve Voor/Na slider (zoals bij Brökling Afbouw), een route en prijsmodule (zoals bij Smart Stops Europe) of een webshop? Dan bespreken we vooraf een heldere, eerlijke meerprijs zodat u precies weet waar u aan toe bent.',
     },
     {
       question: 'Wat is het verschil tussen eenmalig afrekenen en het maandpakket?',
-      answer: 'Bij eenmalige afrekening betaalt u één vast bedrag voor de bouw van de website (en eventueel optioneel € 20,- p/m voor snelle hosting, SSL en technisch onderhoud). Bij het maandpakket vanaf € 59,- p/m spreidt u de investering en zijn alle hosting, updates en tekst-/foto-aanpassingen doorlopend inbegrepen.',
+      answer: 'Bij eenmalige afrekening betaalt u één vast bedrag voor de bouw van de website (en eventueel optioneel € 20,- p/m voor snelle hosting, SSL en technisch onderhoud). Bij het maandpakket vanaf € 59,- p/m spreidt u de investering en zijn alle hosting, updates en aanpassingen doorlopend inbegrepen.',
     },
     {
       question: 'Hoe snel staat mijn nieuwe website of webshop live?',
