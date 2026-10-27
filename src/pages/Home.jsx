@@ -80,7 +80,7 @@ export default function Home() {
                   marginBottom: '1.6rem',
                 }}
               >
-                Waar de meeste webbureaus werken met trage WordPress templates en kwetsbare PHP plugins, bouwen wij uw website volledig op maat met moderne React &amp; Next.js software. Haarscherp op laptop, telefoon en tablet.
+                Uw website is meer dan een online visitekaartje: het is uw <strong style={{ color: '#C5A059', fontWeight: 600 }}>digitaal vastgoed</strong> en het fundament van uw bedrijf. Waar veel webbureaus werken met trage WordPress templates en kwetsbare PHP plugins, bouwen wij een oersterke fundering op maat met moderne React &amp; Next.js software. Haarscherp op laptop, telefoon en tablet.
               </p>
 
               {/* Key USPs */}
@@ -298,13 +298,13 @@ export default function Home() {
         <div className="container">
           <div style={{ textAlign: 'center', maxWidth: '780px', margin: '0 auto 3.5rem auto' }}>
             <div className="badge-tag" style={{ marginBottom: '1rem' }}>
-              <span>Het Verschil in Kwaliteit</span>
+              <span>De Filosofie van Webvastgoed</span>
             </div>
             <h2 style={{ color: '#F5EFE4', marginBottom: '1rem' }}>
-              Waarom wij niet met standaard templates of verouderde PHP systemen werken
+              Meer dan een website: het online fundament van uw bedrijf
             </h2>
             <p style={{ color: '#CBD5E1', fontSize: '1.05rem', lineHeight: 1.7 }}>
-              Veel aanbieders zetten binnen een middag een standaard WordPress thema online met twintig losse plugins. Dat lijkt goedkoop, totdat de site traag wordt, op mobiel verspringt of gehackt wordt door een verouderde PHP plugin. Wij pakken het fundamenteel anders aan.
+              Net als bij een echt bedrijfspand bepaalt de fundering de waarde en levensduur. Veel aanbieders zetten binnen een middag een standaard WordPress thema online met twintig losse plugins. Dat lijkt goedkoop, totdat de site traag wordt, op mobiel verspringt of kwetsbaar blijkt. Bij Webvastgoed bouwen wij een duurzame digitale fundering waar uw onderneming jarenlang op kan groeien.
             </p>
           </div>
 
@@ -317,19 +317,19 @@ export default function Home() {
           >
             {[
               {
-                label: 'Vormgeving op Maat',
-                title: 'Echt Maatwerk Ontwerp',
-                text: 'Elke website wordt vanaf een leeg canvas opgebouwd rond uw bedrijf, foto’s en klanten. Geen standaard indeling die u bij tientallen concurrenten terugziet.',
+                label: 'Digitaal Bedrijfspand',
+                title: 'Een Sterke Fundering op Maat',
+                text: 'Uw website is vaak het eerste contactmoment met een nieuwe klant. Wij ontwerpen elk project vanaf een leeg canvas rond uw merk, zodat uw bedrijf direct vertrouwen en autoriteit uitstraalt.',
               },
               {
                 label: 'Moderne Webarchitectuur',
                 title: '100% Veilig (Geen PHP)',
-                text: 'Omdat wij bouwen met moderne React en Next.js websoftware zonder kwetsbare PHP databases of lekke plugins, loopt uw website geen risico op bekende CMS aanvallen.',
+                text: 'Omdat wij bouwen met moderne React en Next.js websoftware zonder kwetsbare PHP databases of lekke plugins, staat het fundament van uw website als een huis.',
               },
               {
-                label: 'Prestaties & Vindbaarheid',
-                title: 'Directe Snelheid in Google',
-                text: 'Schone code zorgt voor minimale laadtijden op mobiel en desktop. Dat levert direct een hogere Google PageSpeed score en meer aanvragen van bezoekers op.',
+                label: 'Waarde & Vindbaarheid',
+                title: 'Gebouwd voor Blijvend Rendement',
+                text: 'Schone code en een doordachte structuur zorgen voor minimale laadtijden op mobiel en desktop. Dat levert een hogere positie in Google en structureel meer aanvragen op.',
               },
             ].map((item, idx) => (
               <div

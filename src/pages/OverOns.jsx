@@ -36,10 +36,10 @@ export default function OverOns() {
           </div>
 
           <h1 style={{ color: '#F5EFE4', marginBottom: '1rem' }}>
-            Echt vakmanschap in plaats van standaard templates
+            Meer dan een website: het digitale fundament van uw bedrijf
           </h1>
           <p style={{ fontSize: '1.1rem', color: '#CBD5E1', lineHeight: 1.65 }}>
-            Waarom wij bewust zijn overgestapt op de nieuwste generatie websoftware en nooit werken met trage WordPress thema&apos;s of kwetsbare PHP plugins.
+            De naam <strong style={{ color: '#C5A059', fontWeight: 600 }}>Webvastgoed</strong> staat voor onze overtuiging: een goede website is geen wegwerpproduct, maar uw online bedrijfspand en de fundering waarop uw onderneming groeit.
           </p>
         </div>
 
@@ -67,20 +67,30 @@ export default function OverOns() {
           >
             <div style={{ marginBottom: '1rem', paddingBottom: '0.75rem', borderBottom: '1px solid rgba(148, 163, 184, 0.16)' }}>
               <span style={{ fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', color: '#C5A059' }}>
-                Waarom Webvastgoed.nl
+                Waarom Webvastgoed.nl · De Fundering van Uw Bedrijf
               </span>
             </div>
 
-            <blockquote style={{ position: 'relative', marginBottom: '1.75rem' }}>
+            <blockquote style={{ position: 'relative', marginBottom: '1.75rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               <p
                 style={{
-                  fontSize: 'clamp(1.06rem, 1.25vw, 1.18rem)',
+                  fontSize: 'clamp(1.04rem, 1.2vw, 1.14rem)',
                   fontWeight: 400,
                   color: '#F5EFE4',
                   lineHeight: 1.75,
                 }}
               >
-                Veel ondernemers betalen of duizenden euro&apos;s bij een traditioneel bureau, of krijgen voor weinig geld een traag standaard WordPress template dat na een paar maanden problemen geeft. Met onze nieuwste React en Next.js ontwikkelsoftware bewijzen wij dat echt maatwerk, maximale veiligheid zonder PHP en betaalbaarheid wel samen kunnen gaan. Elk project bouwen wij met dezelfde precisie en aandacht alsof het ons eigen bedrijf is.
+                Een website is voor vrijwel elke klant de allereerste kennismaking met uw bedrijf. Net zoals u een bedrijfspand niet op een zwakke ondergrond bouwt, hoort uw online aanwezigheid ook op een rotsvast fundament te staan.
+              </p>
+              <p
+                style={{
+                  fontSize: 'clamp(1.04rem, 1.2vw, 1.14rem)',
+                  fontWeight: 400,
+                  color: '#CBD5E1',
+                  lineHeight: 1.75,
+                }}
+              >
+                Veel ondernemers betalen of duizenden euro&apos;s bij een traditioneel bureau, of krijgen voor weinig geld een traag standaard WordPress template dat na een paar maanden problemen geeft. Met onze moderne React en Next.js webarchitectuur bewijzen wij dat echt maatwerk, maximale veiligheid zonder PHP en betaalbaarheid wel samen kunnen gaan. Zo bouwen wij aan digitaal vastgoed dat dag en nacht voor uw bedrijf werkt.
               </p>
             </blockquote>
 
