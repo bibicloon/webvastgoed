@@ -7,13 +7,20 @@ import { WHATSAPP_URL, WHATSAPP_DISPLAY } from '../components/WhatsAppButton';
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
   const formRef = useRef(null);
+  const formLoadTimeRef = useRef(Date.now());
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     company: '',
     packageType: 'Starter Website € 250,- (tot 3 pagina’s)',
     message: '',
+    honeypot: '',
   });
+
+  const sanitizeInput = (val) =>
+    String(val)
+      .replace(/[<>]/g, '')
+      .replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F]/g, '');
 
   const contactSchema = {
     '@context': 'https://schema.org',
@@ -53,6 +60,10 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // Anti-bot honeypot & rapid-submit protection
+    if (formData.honeypot || Date.now() - formLoadTimeRef.current < 1200) {
+      return;
+    }
     if (formRef.current) {
       formRef.current.querySelectorAll('input[required], textarea[required]').forEach(syncAriaInvalid);
       if (!formRef.current.checkValidity()) return;
@@ -139,13 +150,14 @@ export default function Contact() {
                       id="contact-name"
                       name="name"
                       required
+                      maxLength={100}
                       type="text"
                       autoComplete="name"
                       placeholder="Bijv. Jan de Vries"
                       aria-errormessage="name-error"
                       className="form-field-input"
                       value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      onChange={(e) => setFormData({ ...formData, name: sanitizeInput(e.target.value) })}
                     />
                     <div id="name-error" className="field-error-msg">
                       <AlertCircle size={14} aria-hidden="true" />
@@ -160,14 +172,29 @@ export default function Contact() {
                     <input
                       id="contact-company"
                       name="company"
+                      maxLength={120}
                       type="text"
                       autoComplete="organization"
                       placeholder="Uw bedrijfsnaam"
                       className="form-field-input"
                       value={formData.company}
-                      onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                      onChange={(e) => setFormData({ ...formData, company: sanitizeInput(e.target.value) })}
                     />
                   </div>
+                </div>
+
+                {/* Anti-bot Honeypot Field (hidden from real users) */}
+                <div aria-hidden="true" style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px', overflow: 'hidden' }}>
+                  <label htmlFor="contact-website-url">Laat dit veld leeg</label>
+                  <input
+                    id="contact-website-url"
+                    name="website_url"
+                    type="text"
+                    tabIndex={-1}
+                    autoComplete="off"
+                    value={formData.honeypot}
+                    onChange={(e) => setFormData({ ...formData, honeypot: e.target.value })}
+                  />
                 </div>
 
                 <div>
@@ -178,14 +205,19 @@ export default function Contact() {
                     id="contact-email"
                     name="email"
                     required
+                    maxLength={140}
                     type="email"
                     autoComplete="email"
                     placeholder="uw@bedrijf.nl"
+                    aria-describedby="email-privacy-note"
                     aria-errormessage="email-error"
                     className="form-field-input"
                     value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                    onChange={(e) => setFormData({ ...formData, email: sanitizeInput(e.target.value) })}
                   />
+                  <div id="email-privacy-note" style={{ fontSize: '0.76rem', color: '#94A3B8', marginTop: '0.35rem' }}>
+                    Wij gebruiken uw e-mailadres uitsluitend om op uw aanvraag te reageren (geen nieuwsbrieven of spam).
+                  </div>
                   <div id="email-error" className="field-error-msg">
                     <AlertCircle size={14} aria-hidden="true" />
                     <span>Vul een geldig e-mailadres in.</span>
@@ -229,12 +261,13 @@ export default function Contact() {
                     id="contact-message"
                     name="message"
                     required
+                    maxLength={2000}
                     rows={4}
                     placeholder="Vertel kort wat uw bedrijf doet en wat u graag op de website terugziet..."
                     aria-errormessage="message-error"
                     className="form-field-input"
                     value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                    onChange={(e) => setFormData({ ...formData, message: sanitizeInput(e.target.value) })}
                   />
                   <div id="message-error" className="field-error-msg">
                     <AlertCircle size={14} aria-hidden="true" />
