@@ -268,7 +268,7 @@ export default function Kennisbank() {
       <div
         className="bg-luxury-cover"
         style={{
-          backgroundImage: `linear-gradient(180deg, rgba(9, 14, 23, 0.90) 0%, rgba(17, 26, 46, 0.86) 50%, rgba(9, 14, 23, 0.95) 100%), url('/assets/hero_digitale_groei.jpg?v=2')`,
+          backgroundImage: `linear-gradient(180deg, rgba(9, 14, 23, 0.90) 0%, rgba(17, 26, 46, 0.86) 50%, rgba(9, 14, 23, 0.95) 100%), url('/assets/hero_kennisbank.jpg?v=1')`,
           color: '#F5EFE4',
           minHeight: '85vh',
           paddingTop: 'clamp(2.5rem, 5vw, 4.5rem)',
@@ -486,7 +486,7 @@ export default function Kennisbank() {
     <div
       className="bg-luxury-cover"
       style={{
-        backgroundImage: `linear-gradient(180deg, rgba(9, 14, 23, 0.88) 0%, rgba(17, 26, 46, 0.82) 50%, rgba(9, 14, 23, 0.94) 100%), url('/assets/hero_digitale_groei.jpg?v=2')`,
+        backgroundImage: `linear-gradient(180deg, rgba(9, 14, 23, 0.88) 0%, rgba(17, 26, 46, 0.82) 50%, rgba(9, 14, 23, 0.94) 100%), url('/assets/hero_kennisbank.jpg?v=1')`,
         color: '#F5EFE4',
         minHeight: '85vh',
         paddingTop: 'clamp(3rem, 6vw, 5rem)',
