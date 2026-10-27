@@ -112,8 +112,8 @@ export default function AlgemeneVoorwaarden() {
               Webvastgoed.nl ontwikkelt maatwerk websites en webshops op basis van moderne React en Next.js webarchitectuur.
             </p>
             <ul style={{ paddingLeft: '1.35rem', color: '#CBD5E1', lineHeight: 1.8, display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
-              <li>Bij de eenmalige starter-actie (€ 250,- excl. btw) levert Webvastgoed.nl een complete maatwerk bedrijfswebsite op tot maximaal 3 pagina&apos;s, inclusief mobielvriendelijke weergave en contactformulier.</li>
-              <li>Voor oplevering ontvangt de opdrachtgever een live proefomgeving ter beoordeling. Eventuele tekstuele of visuele correcties worden in overleg verwerkt vóór livegang.</li>
+              <li>Bij de eenmalige starter actie (€ 250,- excl. btw) levert Webvastgoed.nl een complete maatwerk bedrijfswebsite op tot maximaal 3 pagina&apos;s, inclusief mobielvriendelijke weergave en contactformulier.</li>
+              <li>Voor oplevering ontvangt de opdrachtgever een live proefomgeving ter beoordeling. Eventuele tekstuele of visuele correcties worden in overleg verwerkt voor livegang.</li>
               <li>Opdrachtgever draagt zorg voor tijdige aanlevering van benodigde teksten, bedrijfsgegevens of beeldmateriaal, tenzij is overeengekomen dat Webvastgoed.nl dit verzorgt.</li>
             </ul>
           </section>
@@ -134,7 +134,7 @@ export default function AlgemeneVoorwaarden() {
               Artikel 5. Maandpakketten, Hosting &amp; Onderhoud
             </h2>
             <p style={{ color: '#CBD5E1', lineHeight: 1.7 }}>
-              Indien opdrachtgever kiest voor een maandelijks all-in pakket of een hosting- &amp; onderhoudspakket, zorgt Webvastgoed.nl voor snelle cloud-hosting, SSL-beveiliging, technische updates en tekstuele/visuele aanpassingen conform het gekozen pakket. Na de overeengekomen initiële looptijd zijn maandpakketten maandelijks opzegbaar met een opzegtermijn van één kalendermaand.
+              Indien opdrachtgever kiest voor een maandelijks pakket of een hosting en onderhoudspakket, zorgt Webvastgoed.nl voor snelle cloud hosting, SSL beveiliging, technische updates en tekstuele of visuele aanpassingen conform het gekozen pakket. Na de overeengekomen eerste looptijd zijn maandpakketten maandelijks opzegbaar met een opzegtermijn van een kalendermaand.
             </p>
           </section>
 

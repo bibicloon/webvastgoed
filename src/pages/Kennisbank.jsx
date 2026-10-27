@@ -13,7 +13,7 @@ export const KENNISBANK_ARTICLES = [
     metaTitle: 'Professionele Website Laten Maken voor € 250,- (Maatwerk Zonder Templates)',
     metaDesc: 'Wilt u een professionele website laten maken voor € 250,- eenmalig? Ontdek wat er inbegrepen zit in onze tijdelijke Portfolio Actie tot 3 pagina’s zonder WordPress.',
     keywords: 'website laten maken 250 euro, goedkope professionele website laten maken, zzp website laten bouwen, starter website mkb',
-    excerpt: 'Veel startende en groeiende ondernemers zoeken een betaalbare website die wél direct een hoogwaardige, zakelijke indruk maakt. Ontdek hoe onze tijdelijke Portfolio Actie van € 250,- werkt.',
+    excerpt: 'Veel startende en groeiende ondernemers zoeken een betaalbare website die wel direct een hoogwaardige, zakelijke indruk maakt. Ontdek hoe onze tijdelijke Portfolio Actie van € 250,- werkt.',
     intro: 'Wanneer u als ondernemer zoekt op het laten maken van een betaalbare website, komt u al snel uit bij partijen die een traag standaardthema gebruiken of verborgen kosten rekenen. Met onze tijdelijke Portfolio Actie bewijzen wij dat een razendsnelle maatwerk website tot 3 pagina’s ook voor een eenmalige instapprijs van € 250,- excl. btw haalbaar is.',
     sections: [
       {
@@ -60,14 +60,14 @@ export const KENNISBANK_ARTICLES = [
       {
         heading: 'Het probleem met standaard templates en losse PHP plugins',
         paragraphs: [
-          'Een gemiddelde WordPress website gebruikt tussen de 15 en 30 losse plugins van verschillende makers: één voor het contactformulier, één voor SEO, één voor een slider en één voor beveiliging. Elke keer dat een bezoeker uw pagina opent, moet de server tientallen losse scripts en databaseverzoeken uitvoeren.',
-          'Wanneer één van die plugins veroudert of niet tijdig wordt bijgewerkt, ontstaat er direct een beveiligingsrisico of verspringt de opmaak van de website.',
+          'Een gemiddelde WordPress website gebruikt tussen de 15 en 30 losse plugins van verschillende makers: voor het contactformulier, voor SEO, voor een slider en voor beveiliging. Elke keer dat een bezoeker uw pagina opent, moet de server tientallen losse scripts en databaseverzoeken uitvoeren.',
+          'Wanneer een van die plugins veroudert of niet tijdig wordt bijgewerkt, ontstaat er direct een beveiligingsrisico of verspringt de opmaak van de website.',
         ],
       },
       {
         heading: 'Waarom React & Next.js fundamenteel sneller en veiliger zijn',
         paragraphs: [
-          'Webvastgoed.nl bouwt uitsluitend met React en Next.js: dezelfde moderne webtechnologie die grote internationale platforms gebruiken. Uw website wordt vóór plaatsing gecompileerd tot razendsnelle, kant en klare code.',
+          'Webvastgoed.nl bouwt uitsluitend met React en Next.js: dezelfde moderne webtechnologie die grote internationale platforms gebruiken. Uw website wordt voor plaatsing gecompileerd tot razendsnelle, kant en klare code.',
         ],
         bullets: [
           'Directe laadtijden op mobiel en desktop (cruciaal voor Google Core Web Vitals)',
@@ -94,13 +94,13 @@ export const KENNISBANK_ARTICLES = [
     metaTitle: 'Wat Kost een Professionele Bedrijfswebsite Laten Maken? | Tarieven Overzicht',
     metaDesc: 'Wat kost een zakelijke website of webshop laten bouwen? Vergelijk eenmalige aanschaf (vanaf € 250,-) met een volledig ontzorgd maandpakket (vanaf € 59,- p/m).',
     keywords: 'wat kost een website laten maken, zakelijke website kosten, website per maand of eenmalig, prijzen webdesign mkb',
-    excerpt: 'Kiest u voor een eenmalige investering of een vast bedrag per maand inclusief hosting en onderhoud? Bekijk wat een professionele bedrijfswebsite écht hoort te kosten.',
+    excerpt: 'Kiest u voor een eenmalige investering of een vast bedrag per maand inclusief hosting en onderhoud? Bekijk wat een professionele bedrijfswebsite echt hoort te kosten.',
     intro: 'Voor veel ondernemers zijn de prijzen in de webdesignwereld ondoorzichtig. Bij een traditioneel reclamebureau betaalt u al snel € 3.500,- tot € 7.500,- vooraf, terwijl goedkope budgetpartijen achteraf hoge uurtarieven rekenen voor elke kleine aanpassing. Bij Webvastgoed.nl werken we daarom met twee transparante keuzes.',
     sections: [
       {
         heading: 'Optie 1: Eenmalig afrekenen (Direct 100% afgekocht)',
         paragraphs: [
-          'Wilt u geen doorlopend abonnement en uw website liever in één keer afrekenen? Dan betaalt u een vast bedrag vooraf afgesproken voor het ontwerp en de bouw. Voor een compacte website tot 3 pagina’s kan dit tijdelijk al voor € 250,- excl. btw via onze Portfolio Actie.',
+          'Wilt u geen doorlopend abonnement en uw website liever in een keer afrekenen? Dan betaalt u een vast bedrag vooraf afgesproken voor het ontwerp en de bouw. Voor een compacte website tot 3 pagina’s kan dit tijdelijk al voor € 250,- excl. btw via onze Portfolio Actie.',
           'Voor uitgebreidere bedrijfswebsites met meerdere dienstpagina’s, projectoverzichten of maatwerkmodules ontvangt u vooraf een vaste prijsopgave. Optioneel kunnen wij de snelle hosting, het SSL certificaat en de technische updates verzorgen vanaf € 20,- per maand.',
         ],
       },
@@ -168,7 +168,7 @@ export const KENNISBANK_ARTICLES = [
     metaDesc: 'Professionele website laten maken voor uw koeriersbedrijf of transportonderneming? Bekijk hoe wij voor OnPoint Koeriers een conversiegerichte Next.js website bouwden.',
     keywords: 'website laten maken koeriersbedrijf, website transportbedrijf laten bouwen, webdesign logistiek en transport, spoedtransport website',
     excerpt: 'In het spoedtransport en de B2B logistiek moet een opdrachtgever binnen 5 seconden zien dat u betrouwbaar en direct inzetbaar bent. Bekijk onze aanpak aan de hand van OnPoint Koeriers.',
-    intro: 'Wanneer een bedrijf met spoed een koerier of transporteur zoekt voor medische zendingen, vertrouwelijke documenten of kritieke onderdelen, is er geen tijd voor een onduidelijke website. De bezoeker wil direct weten: rijdt u vandaag nog, met welk voertuig en hoe neem ik binnen één klik contact op?',
+    intro: 'Wanneer een bedrijf met spoed een koerier of transporteur zoekt voor medische zendingen, vertrouwelijke documenten of kritieke onderdelen, is er geen tijd voor een onduidelijke website. De bezoeker wil direct weten: rijdt u vandaag nog, met welk voertuig en hoe neem ik direct contact op?',
     sections: [
       {
         heading: 'Wat een transportwebsite direct moet uitstralen',
@@ -206,7 +206,7 @@ export const KENNISBANK_ARTICLES = [
       {
         heading: 'Laat uw vakmanschap voor zich spreken',
         paragraphs: [
-          'Zakelijke en particuliere opdrachtgevers kiezen een bouwpartner op basis van vertrouwen en aantoonbaar resultaat. Wij richten uw website zo in dat bezoekers in één oogopslag uw expertises en afgeronde projecten kunnen bekijken.',
+          'Zakelijke en particuliere opdrachtgevers kiezen een bouwpartner op basis van vertrouwen en aantoonbaar resultaat. Wij richten uw website zo in dat bezoekers direct uw expertises en afgeronde projecten kunnen bekijken.',
         ],
         bullets: [
           'Interactieve Voor/Na vergelijkingsslider om het verschil tussen ruwbouw en oplevering te tonen',
@@ -511,7 +511,7 @@ export default function Kennisbank() {
             Advies over maatwerk websites, kosten &amp; online groei
           </h1>
           <p style={{ fontSize: '1.08rem', color: '#CBD5E1', lineHeight: 1.65 }}>
-            Heldere antwoorden en praktijkvoorbeelden voor ondernemers die een snelle, veilige website of webshop willen laten bouwen die écht klanten oplevert.
+            Heldere antwoorden en praktijkvoorbeelden voor ondernemers die een snelle, veilige website of webshop willen laten bouwen die echt klanten oplevert.
           </p>
         </div>
 

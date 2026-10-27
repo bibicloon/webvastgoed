@@ -9,7 +9,7 @@ export default function FAQPage() {
   const faqData = [
     {
       question: 'Waarom werken jullie niet met WordPress of PHP templates?',
-      answer: 'De meeste goedkope aanbieders gebruiken standaard WordPress thema’s met tientallen PHP plugins. Als één plugin veroudert, wordt uw site traag of kwetsbaar voor hackers. Wij bouwen al onze websites vanaf de basis op met moderne React en Next.js software. Dat betekent: géén kwetsbare PHP databases, directe laadtijden en een 100% uniek ontwerp.',
+      answer: 'De meeste goedkope aanbieders gebruiken standaard WordPress thema’s met tientallen PHP plugins. Als een plugin veroudert, wordt uw site traag of kwetsbaar voor hackers. Wij bouwen al onze websites vanaf de basis op met moderne React en Next.js software. Dat betekent: geen kwetsbare PHP databases, directe laadtijden en een 100% uniek ontwerp.',
     },
     {
       question: 'Wat houdt de tijdelijke Portfolio Actie van € 250,- in?',
@@ -21,7 +21,7 @@ export default function FAQPage() {
     },
     {
       question: 'Wat is het verschil tussen eenmalig afrekenen en het maandpakket?',
-      answer: 'Bij eenmalige afrekening betaalt u één vast bedrag voor de bouw van de website (en eventueel optioneel € 20,- p/m voor snelle hosting, SSL en technisch onderhoud). Bij het maandpakket vanaf € 59,- p/m spreidt u de investering en zijn alle hosting, updates en aanpassingen doorlopend inbegrepen.',
+      answer: 'Bij eenmalige afrekening betaalt u een vast bedrag voor de bouw van de website (en eventueel optioneel € 20,- p/m voor snelle hosting, SSL en technisch onderhoud). Bij het maandpakket vanaf € 59,- p/m spreidt u de investering en zijn alle hosting, updates en aanpassingen doorlopend inbegrepen.',
     },
     {
       question: 'Kunnen jullie ook een maatwerk webshop met iDEAL bouwen?',
@@ -45,7 +45,7 @@ export default function FAQPage() {
     },
     {
       question: 'Werkt mijn website goed op zowel telefoon, tablet als laptop?',
-      answer: 'Ja, 100%. Meer dan 70% van uw bezoekers bekijkt uw website op een smartphone. Wij ontwerpen en testen elke pagina specifiek voor mobiel, tablet én grote desktopschermen.',
+      answer: 'Ja, 100%. Meer dan 70% van uw bezoekers bekijkt uw website op een smartphone. Wij ontwerpen en testen elke pagina specifiek voor mobiel, tablet en grote desktopschermen.',
     },
     {
       question: 'Wie is eigenaar van de domeinnaam en de inhoud?',

@@ -80,7 +80,7 @@ export default function OverOns() {
                   lineHeight: 1.75,
                 }}
               >
-                Veel ondernemers betalen óf duizenden euro&apos;s bij een traditioneel bureau, óf krijgen voor weinig geld een traag standaard WordPress template dat na een paar maanden problemen geeft. Met onze nieuwste React en Next.js ontwikkelsoftware bewijzen wij dat echt maatwerk, maximale veiligheid zonder PHP en betaalbaarheid wél samen kunnen gaan. Elk project bouwen wij met dezelfde precisie en aandacht alsof het ons eigen bedrijf is.
+                Veel ondernemers betalen of duizenden euro&apos;s bij een traditioneel bureau, of krijgen voor weinig geld een traag standaard WordPress template dat na een paar maanden problemen geeft. Met onze nieuwste React en Next.js ontwikkelsoftware bewijzen wij dat echt maatwerk, maximale veiligheid zonder PHP en betaalbaarheid wel samen kunnen gaan. Elk project bouwen wij met dezelfde precisie en aandacht alsof het ons eigen bedrijf is.
               </p>
             </blockquote>
 

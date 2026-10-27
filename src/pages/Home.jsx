@@ -80,15 +80,15 @@ export default function Home() {
                   marginBottom: '1.6rem',
                 }}
               >
-                Waar de meeste webbureaus werken met trage WordPress templates en kwetsbare PHP plugins, bouwen wij uw website volledig op maat met moderne React &amp; Next.js software. Haarscherp op laptop, telefoon én tablet.
+                Waar de meeste webbureaus werken met trage WordPress templates en kwetsbare PHP plugins, bouwen wij uw website volledig op maat met moderne React &amp; Next.js software. Haarscherp op laptop, telefoon en tablet.
               </p>
 
               {/* Key USPs */}
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.75rem', marginBottom: '2.25rem' }}>
                 {[
                   'Tijdelijke Portfolio Actie: complete starter website (tot 3 pagina’s) voor € 250,- eenmalig',
-                  'Uitgebreide bedrijfswebsites & webshops: eenmalig afrekenen óf vast bedrag per maand',
-                  'Maximale veiligheid: géén verouderde PHP systemen die gehackt kunnen worden',
+                  'Uitgebreide bedrijfswebsites & webshops: eenmalig afrekenen of vast bedrag per maand',
+                  'Maximale veiligheid: geen verouderde PHP systemen die gehackt kunnen worden',
                 ].map((item, idx) => (
                   <li key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.7rem', fontSize: '0.96rem', color: '#F8FAFC', fontWeight: 500 }}>
                     <CheckCircle2 size={18} color="#C5A059" style={{ flexShrink: 0, marginTop: '3px' }} />
@@ -190,7 +190,7 @@ export default function Home() {
               Recente projecten uit ons portfolio
             </h2>
             <p style={{ color: '#CBD5E1', fontSize: '1.05rem', lineHeight: 1.65 }}>
-              Van zakelijk spoedtransport en afbouw tot internationale reisplatforms en luxe webshops. Elk project is 100% op maat ontworpen voor laptop, telefoon én tablet.
+              Van zakelijk spoedtransport en afbouw tot internationale reisplatforms en luxe webshops. Elk project is 100% op maat ontworpen voor laptop, telefoon en tablet.
             </p>
           </div>
 
@@ -329,7 +329,7 @@ export default function Home() {
               {
                 label: 'Prestaties & Vindbaarheid',
                 title: 'Directe Snelheid in Google',
-                text: 'Schone code zorgt voor minimale laadtijden op mobiel en desktop. Dat levert direct een hogere Google PageSpeed score én meer aanvragen van bezoekers op.',
+                text: 'Schone code zorgt voor minimale laadtijden op mobiel en desktop. Dat levert direct een hogere Google PageSpeed score en meer aanvragen van bezoekers op.',
               },
             ].map((item, idx) => (
               <div
