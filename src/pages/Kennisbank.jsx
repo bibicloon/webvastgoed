@@ -282,7 +282,9 @@ export default function Kennisbank() {
         name: 'Webvastgoed.nl',
         logo: {
           '@type': 'ImageObject',
-          url: 'https://webvastgoed.nl/favicon.svg',
+          url: 'https://webvastgoed.nl/favicon-512x512.png',
+          width: 512,
+          height: 512,
         },
       },
       mainEntityOfPage: {
