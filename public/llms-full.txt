@@ -1,0 +1,100 @@
+# Webvastgoed.nl — Volledige Documentatie & Kennisbank (llms-full.txt)
+
+> Maatwerk zakelijke websites, webshops en SEO in React & Next.js zonder standaard templates of kwetsbare PHP plugins. Tijdelijke Portfolio Actie vanaf € 250,- eenmalig of vanaf € 59,- per maand.
+
+---
+
+## 1. De Filosofie van Webvastgoed.nl: Meer dan een Website
+
+Bij Webvastgoed.nl zien wij een website niet als een simpel online visitekaartje, maar als het **digitale bedrijfspand en fundament van uw onderneming**. Net zoals bij fysiek vastgoed bepaalt de kwaliteit van de fundering of een pand tientallen jaren waardevast blijft of al snel scheuren vertoont.
+
+Veel traditionele webbureaus en budgetbouwers zetten snel een standaard WordPress template in elkaar met 15 tot 30 losse PHP plugins van derden. Dat lijkt in eerste instantie goedkoop, maar zorgt in de praktijk voor trage mobiele laadtijden, verspringende schermen en terugkerende beveiligingsrisico's.
+
+Webvastgoed.nl bouwt uitsluitend vanaf een leeg canvas met moderne **React en Next.js webarchitectuur**:
+- **100% Maatwerk Design**: Afgestemd op de identiteit, branche en doelgroep van het bedrijf.
+- **Maximale Veiligheid (Geen PHP)**: Geen kwetsbare SQL databases of publieke `wp-admin` inlogschermen waar bots op inbreken.
+- **Topprestaties in Google**: Schone gecompileerde code zorgt voor directe laadtijden op smartphone, tablet en desktop (optimale Core Web Vitals) en standaard ingebouwde Schema.org gestructureerde data.
+- **100% Eigendom**: De ondernemer blijft altijd volledig eigenaar van de eigen domeinnaam, inhoud en rechten.
+
+---
+
+## 2. Overzicht van Pakketten & Tarieven (Excl. BTW)
+
+### A. Tijdelijke Portfolio Actie — Starter Website (€ 250,- eenmalig)
+- **Doelgroep**: Startende ondernemers, ZZP'ers en MKB-bedrijven die een krachtige, representatieve website nodig hebben zonder hoge aanloopkosten.
+- **Omvang**: Compleet op maat ontworpen website tot maximaal 3 pagina's (bijv. *Home, Diensten & Contact*).
+- **Inbegrepen**:
+  - 100% uniek maatwerk ontwerp (geen template)
+  - Volledig responsive voor mobiel, tablet en desktop
+  - Werkend contactformulier en directe WhatsApp integratie
+  - Technische Google SEO basis en Schema.org opzet
+  - Veilige React & Next.js code zonder PHP
+- **Hosting & Beheer**: Optioneel via Webvastgoed.nl vanaf € 20,- per maand (incl. SSL, snelle Europese hosting en technische updates) of op eigen hosting.
+- **Uitbreidbaar**: Later altijd eenvoudig uit te breiden met extra pagina's of modules tegen een vooraf afgesproken meerprijs.
+
+### B. Bedrijfswebsite Compleet (Vanaf € 59,- p/m of eenmalige afkoop)
+- **Setup**: Vanaf € 299,- eenmalig (of volledige eenmalige afkoop op aanvraag).
+- **Inbegrepen**:
+  - Volledig maatwerk ontwerp tot 8 pagina's
+  - Razendsnelle React & Next.js techniek
+  - Inclusief snelle cloud hosting, SSL certificaat en dagelijkse backups
+  - Inclusief doorlopend technisch onderhoud en tekst- of fotowijzigingen
+  - Uitgebreide technische Google SEO en Schema.org opzet
+
+### C. Maatwerk Webshop (Vanaf € 99,- p/m of eenmalige afkoop)
+- **Setup**: Vanaf € 499,- eenmalig (of volledige eenmalige afkoop op aanvraag).
+- **Inbegrepen**:
+  - Luxe webshop ontwerp op maat (zoals gerealiseerd voor Pastry Company)
+  - Tot 50 producten overzichtelijk ingericht
+  - Directe koppeling met iDEAL, Bancontact, creditcard en Apple Pay
+  - Geoptimaliseerd voor mobiel bestellen en conversie
+  - Inclusief hosting, beveiliging en technisch beheer
+
+### D. Maatwerk Platforms & Specifieke Webapplicaties (Prijs op aanvraag)
+- Voor interactieve route- of prijsberekenaars (zoals Smart Stops Europe), Voor/Na projectsliders, meertalige Europese platforms en API/CRM-koppelingen. Altijd vooraf een vaste, transparante offerte.
+
+---
+
+## 3. SEO & Organische Groei Pakketten (`/digitale-groei`)
+
+1. **SEO Start (€ 149,- p/m · eenmalige setup € 299,-)**:
+   - Technische SEO check, zoekwoordenonderzoek, metadata & paginatitels, H1/H2 structuur, interne linkstructuur, Google Search Console & Analytics inrichting en maandelijkse rapportage.
+2. **SEO Grow (€ 299,- p/m · eenmalige setup € 499,- — Meest Gekozen)**:
+   - Alles uit SEO Start + maandelijkse zoekwoordanalyse, doorlopende contentoptimalisatie, nieuwe gerichte SEO landingspagina's, interne linkbuilding en concurrentieanalyse.
+3. **SEO Dominate (€ 549,- p/m · setup volledig inbegrepen)**:
+   - Alles uit SEO Grow + uitgebreide content- en autoriteitsstrategie, meerdere nieuwe SEO landingspagina's per maand, actieve kwalitatieve linkbuilding, conversie-optimalisatie en maandelijkse strategiesessie.
+
+---
+
+## 4. Gerealiseerde Referentieprojecten (`/portfolio`)
+
+1. **OnPoint Koeriers** (*Zakelijk Spoedtransport & B2B Logistiek — Nederland & Europa*):
+   - Maatwerk Next.js platform voor direct spoedtransport (medisch, juridisch, automotive) met personenauto en compacte bestelwagen. Voorzien van directe bel- en transportaanvraagmodules.
+2. **Smart Stops Europe** (*Interactieve Europese Reis- & Routeplanner*):
+   - Next.js webapplicatie waarmee automobilisten, camper- en caravanreizigers hun ideale tussenstops, overnachtingshotels langs de snelweg en verplichte tolvignetten/milieustickers berekenen.
+3. **Pastry Company** (*Luxe Chocolade & Patisserie Webshop — Landelijke Bezorging*):
+   - Stijlvolle online boutique en webshop voor ambachtelijke bonbons, pindarotsjes, de originele Dubai Reep en zakelijke geschenkdozen (B2B gifting).
+4. **Brökling Afbouw & Montage** (*Bouw, Systeemwanden, Plafonds & Timmerwerk — Regio Eindhoven & Zuidoost-Nederland*):
+   - Vakmanschap website met interactieve Voor/Na vergelijkingsslider en overzichtelijke projectgalerij voor zakelijke en particuliere opdrachtgevers.
+
+---
+
+## 5. Werkwijze in 3 Heldere Stappen
+
+1. **Kennismaking & Blauwdruk (Dezelfde dag reactie)**:
+   - Korte inventarisatie van uw bedrijf, doelgroep en wensen. U weet direct of uw website binnen de € 250,- Portfolio Actie valt of welk pakket het beste past.
+2. **Maatwerk Ontwerp & Bouw (5 tot 10 werkdagen)**:
+   - Wij ontwerpen en programmeren uw website in React en Next.js en delen een werkende live proefversie die u op uw eigen telefoon en laptop kunt bekijken.
+3. **Oplevering, Google Indexatie & Volledig Eigendom**:
+   - Na uw goedkeuring zetten wij de website veilig live op uw domeinnaam (wij regelen indien gewenst ook de verhuistoken/verhuizing) en melden we de sitemap aan bij Google.
+
+---
+
+## 6. Contact & Bedrijfsgegevens
+
+- **Website**: https://webvastgoed.nl
+- **Contactpagina**: https://webvastgoed.nl/contact
+- **E-mail**: info@webvastgoed.nl
+- **Telefoon & WhatsApp**: +31 6 30037257 (https://wa.me/31630037257)
+- **KvK-nummer**: 42077914
+- **BTW-nummer**: NL005478178B19

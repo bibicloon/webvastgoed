@@ -1,74 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { ArrowRight, X, CheckCircle2, MapPin } from 'lucide-react';
+import { ArrowRight, X, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
+import { PORTFOLIO_PROJECTS } from '../data/portfolioProjects';
 
-export const PORTFOLIO_PROJECTS = [
-  {
-    id: 'onpoint',
-    title: 'OnPoint Koeriers',
-    category: 'Zakelijk Spoedtransport & B2B Logistiek',
-    image: '/assets/marktplaats_1_onpoint_koeriers.png',
-    summary: 'Moderne Next.js webarchitectuur voor direct en toegewijd spoedtransport met personenauto en compacte bestelwagen door heel Nederland en Europa.',
-    challenge: 'OnPoint Koeriers zocht een krachtige, zakelijke website die direct vertrouwen wekt bij bedrijven met urgente zendingen (medisch spoedtransport, juridische documenten en kritieke automotive-onderdelen) zonder de traagheid van een standaard template.',
-    solution: 'Wij ontwierpen en bouwden een razendsnelle Next.js website op maat met een strakke donkere huisstijl, directe bel- en aanvraagknoppen, heldere dienstpagina’s per sector en een vlekkeloze mobiele weergave voor klanten die onderweg direct moeten schakelen.',
-    results: [
-      'Directe conversiegerichtheid met prominente "Bel Direct" en transportmodules.',
-      'Supersnelle laadtijden op zowel desktop, tablet als smartphone zonder kwetsbare PHP plugins.',
-      'Heldere positionering voor gespecialiseerde B2B logistiek in Nederland en Europa.',
-    ],
-    techSpecs: ['Next.js & React', '100% Maatwerk UI', 'Geen PHP / Geen Templates', 'Technische B2B SEO'],
-    location: 'Nederland & Europa',
-  },
-  {
-    id: 'smartstops',
-    title: 'Smart Stops Europe',
-    category: 'Interactieve Europese Reis- & Routeplanner',
-    image: '/assets/marktplaats_2_smartstops_europe.png',
-    summary: 'Compleet reisplatform waarmee Europese automobilisten, camper- en caravanreizigers hun ideale tussenstops, overnachtingshotels en verplichte tolvignetten berekenen.',
-    challenge: 'Reizigers die met de auto, camper of caravan door Europa rijden, moesten voorheen op allerlei losse websites zoeken naar veilige overnachtingshotels langs de snelweg, hondvriendelijke tussenstops en officiële tolvignetten of milieustickers.',
-    solution: 'Wij ontwikkelden een gebruiksvriendelijke Next.js webapplicatie met een interactieve routeplanner en tolvignetten-check direct in de hero. Bezoekers kiezen hun voertuigtype, vertrek- en bestemmingspunt en maximale rijtijd per dag, waarna ze direct passende tussenstops en reisgidsen zien.',
-    results: [
-      'Geïntegreerde routeplanner en tolvignetten-checker voor auto, camper, caravan en elektrisch rijden.',
-      'Overzichtelijke populaire routes (zoals Route du Soleil, Brennerpas, Toscane en Costa Brava).',
-      'Volledig responsive ontwerp zodat reizigers ook onderweg op hun telefoon hun route kunnen plannen.',
-    ],
-    techSpecs: ['Next.js App Router', 'Interactieve Routeplanner', 'Tolvignetten & Milieuzone Check', 'Mobiel-Eerst Ontwerp'],
-    location: 'Europese Autoroutes',
-  },
-  {
-    id: 'pastrycompany',
-    title: 'Pastry Company',
-    category: 'Luxe Chocolade & Patisserie Webshop',
-    image: '/assets/marktplaats_3_pastry_company.png',
-    summary: 'Stijlvolle online boutique en webshop voor ambachtelijke handgemaakte bonbons, luxe pindarotsjes, de originele Dubai Reep en zakelijke geschenkdozen.',
-    challenge: 'Voor een ambachtelijk chocolade-atelier moet een webshop dezelfde verfijning, warmte en luxe uitstralen als het product zelf, terwijl bezoekers op hun telefoon of laptop binnen enkele klikken een bestelling of zakelijk relatiegeschenk kunnen plaatsen.',
-    solution: 'We realiseerden een smaakvolle maatwerk webshop in diep chocoladebruin, warm crème en geborsteld goud. De productpresentatie ("Vers uit het Atelier") zet de echte productfotografie centraal met een snelle, overzichtelijke winkelwagen- en bestelervaring.',
-    results: [
-      'Luxe merkbeleving die direct aansluit bij ambachtelijke patisserie en zakelijke gifting (B2B).',
-      'Duidelijke productkaarten en directe bestelflow op zowel smartphone, tablet als desktop.',
-      'Razendsnelle pagina-opbouw zonder zware, vertragende standaard webshop-templates.',
-    ],
-    techSpecs: ['Maatwerk E-Commerce UI', 'Luxe Merkidentiteit', 'B2B Gifting Integratie', 'Geoptimaliseerde Mobiele Checkout'],
-    location: 'Nederland (Landelijke Bezorging)',
-  },
-  {
-    id: 'brokling',
-    title: 'Brökling Afbouw & Montage',
-    category: 'Bouw, Systeemwanden, Plafonds & Timmerwerk',
-    image: '/assets/marktplaats_4_brokling_afbouw.png',
-    summary: 'Overzichtelijke vakmanschap-website met interactieve Voor/Na-slider en uitgebreid projectoverzicht voor zakelijke en particuliere opdrachtgevers.',
-    challenge: 'Brökling Afbouw & Montage (actief sinds 2007 in regio Eindhoven) wilde hun vakmanschap in systeemwanden, akoestische plafonds en timmerwerk helder presenteren met echte projectfoto’s van de bouwplaats tot de oplevering.',
-    solution: 'Wij bouwden een strakke, betrouwbare website met duidelijke expertise-overzichten, een interactieve Voor/Na-vergelijkingsslider (zoals bij Kindcentrum Het Octaaf in Nijmegen) en laagdrempelige offerte-aanvraagmogelijkheden.',
-    results: [
-      'Interactieve Voor/Na slider waarmee potentiële klanten direct het verschil in afwerking zien.',
-      'Heldere presentatie van gerealiseerde projecten voor zowel zakelijke als particuliere klanten.',
-      'Snelle, veilige maatwerkcode zonder onderhoudsgevoelige WordPress of PHP plugins.',
-    ],
-    techSpecs: ['Interactieve Voor/Na Slider', 'Projectgalerij op Maat', 'Lokale SEO (Regio Eindhoven)', 'Veilige Webarchitectuur'],
-    location: 'Regio Eindhoven & Zuidoost-Nederland',
-  },
-];
+export { PORTFOLIO_PROJECTS };
 
 export default function Portfolio() {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -292,7 +228,11 @@ export default function Portfolio() {
               Ook zo&apos;n razendsnelle maatwerk website voor uw bedrijf?
             </h2>
             <p style={{ color: '#CBD5E1', fontSize: '1rem' }}>
-              Vraag vrijblijvend een voorstel aan. Wij bouwen 100% op maat en volledig vrij van verouderde PHP-systemen.
+              Bekijk onze{' '}
+              <Link to="/investeringsplannen" style={{ color: '#C5A059', textDecoration: 'underline', fontWeight: 600 }}>
+                transparante tarieven en de € 250,- Portfolio Actie
+              </Link>{' '}
+              of vraag direct vrijblijvend een voorstel aan.
             </p>
           </div>
           <Link to="/contact" className="btn-primary">
@@ -396,7 +336,7 @@ export default function Portfolio() {
                 borderRadius: '8px',
                 padding: '1.6rem 1.8rem',
                 border: '1px solid rgba(197, 160, 89, 0.25)',
-                marginBottom: '2rem',
+                marginBottom: '1.5rem',
               }}
             >
               <h3 style={{ fontSize: '1.25rem', color: '#C5A059', marginBottom: '0.9rem' }}>
@@ -411,6 +351,35 @@ export default function Portfolio() {
                 ))}
               </ul>
             </div>
+
+            {/* Contextual Link to Industry Kennisbank Guide */}
+            {selectedProject.guideSlug && (
+              <div
+                style={{
+                  backgroundColor: 'rgba(9, 14, 23, 0.7)',
+                  border: '1px solid rgba(197, 160, 89, 0.28)',
+                  borderRadius: '8px',
+                  padding: '1rem 1.35rem',
+                  marginBottom: '1.75rem',
+                  fontSize: '0.92rem',
+                  color: '#CBD5E1',
+                  display: 'flex',
+                  flexWrap: 'wrap',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  gap: '0.75rem',
+                }}
+              >
+                <span>Verdieping in deze branche:</span>
+                <Link
+                  to={selectedProject.guideSlug}
+                  onClick={closeModal}
+                  style={{ color: '#C5A059', fontWeight: 600, textDecoration: 'underline' }}
+                >
+                  {selectedProject.guideLabel}
+                </Link>
+              </div>
+            )}
 
             {/* Tech Specs Badges */}
             <div style={{ marginBottom: '2rem' }}>
@@ -450,7 +419,7 @@ export default function Portfolio() {
               </form>
 
               <Link
-                to="/contact"
+                to={selectedProject.id === 'pastrycompany' ? '/contact?pakket=webshop' : '/contact?pakket=bedrijfswebsite'}
                 className="btn-primary"
                 onClick={closeModal}
                 style={{ padding: '0.8rem 1.5rem', fontSize: '0.86rem' }}

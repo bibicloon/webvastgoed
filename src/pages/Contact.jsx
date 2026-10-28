@@ -1,21 +1,47 @@
-import React, { useState, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useRef, useEffect } from 'react';
+import { Link, useSearchParams } from 'react-router-dom';
 import { Send, CheckCircle2, AlertCircle, ArrowUpRight } from 'lucide-react';
 import SEO from '../components/SEO';
 import { WHATSAPP_URL, WHATSAPP_DISPLAY } from '../components/WhatsAppButton';
 
+const PACKAGE_MAP = {
+  actie: 'Starter Website € 250,- (tot 3 pagina’s)',
+  starter: 'Starter Website € 250,- (tot 3 pagina’s)',
+  bedrijfswebsite: 'Uitgebreide Bedrijfswebsite',
+  webshop: 'Maatwerk Webshop',
+  maatwerk: 'Maatwerk Platform / Specifieke Modules',
+  'seo-start': 'SEO Start (€ 149,- p/m)',
+  'seo-grow': 'SEO Grow (€ 299,- p/m)',
+  'seo-dominate': 'SEO Dominate (€ 549,- p/m)',
+  seo: 'SEO & Vindbaarheid',
+};
+
 export default function Contact() {
+  const [searchParams] = useSearchParams();
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const formRef = useRef(null);
   const formLoadTimeRef = useRef(Date.now());
+
+  const initialPackageKey = (searchParams.get('pakket') || '').toLowerCase();
+  const initialPackage = PACKAGE_MAP[initialPackageKey] || 'Starter Website € 250,- (tot 3 pagina’s)';
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone: '',
     company: '',
-    packageType: 'Starter Website € 250,- (tot 3 pagina’s)',
+    packageType: initialPackage,
     message: '',
     honeypot: '',
   });
+
+  useEffect(() => {
+    const paramKey = (searchParams.get('pakket') || '').toLowerCase();
+    if (PACKAGE_MAP[paramKey]) {
+      setFormData((prev) => ({ ...prev, packageType: PACKAGE_MAP[paramKey] }));
+    }
+  }, [searchParams]);
 
   const sanitizeInput = (val) =>
     String(val)
@@ -58,7 +84,7 @@ export default function Contact() {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     // Anti-bot honeypot & rapid-submit protection
     if (formData.honeypot || Date.now() - formLoadTimeRef.current < 1200) {
@@ -68,8 +94,47 @@ export default function Contact() {
       formRef.current.querySelectorAll('input[required], textarea[required]').forEach(syncAriaInvalid);
       if (!formRef.current.checkValidity()) return;
     }
-    setSubmitted(true);
+
+    setIsSubmitting(true);
+    try {
+      await fetch('https://formsubmit.co/ajax/info@webvastgoed.nl', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          _subject: `Nieuwe aanvraag via Webvastgoed.nl: ${formData.packageType}`,
+          Naam: formData.name,
+          Bedrijfsnaam: formData.company || '-',
+          Email: formData.email,
+          Telefoon_of_WhatsApp: formData.phone || '-',
+          Pakket: formData.packageType,
+          Bericht: formData.message,
+          _template: 'table',
+        }),
+      });
+    } catch {
+      // Graceful fallback: confirmation screen also provides direct 1-click WhatsApp & email forwarding
+    } finally {
+      setIsSubmitting(false);
+      setSubmitted(true);
+    }
   };
+
+  const prefilledWhatsAppUrl = `https://wa.me/31630037257?text=${encodeURIComponent(
+    `Hallo Webvastgoed.nl, ik heb zojuist een aanvraag ingevuld op de website.\n\n` +
+      `Pakket: ${formData.packageType}\n` +
+      `Naam: ${formData.name}${formData.company ? ` (${formData.company})` : ''}\n` +
+      `E-mail: ${formData.email}${formData.phone ? `\nTel: ${formData.phone}` : ''}\n\n` +
+      `Wensen: ${formData.message}`
+  )}`;
+
+  const prefilledMailtoUrl = `mailto:info@webvastgoed.nl?subject=${encodeURIComponent(
+    `Aanvraag Webvastgoed.nl - ${formData.packageType}`
+  )}&body=${encodeURIComponent(
+    `Naam: ${formData.name}\nBedrijfsnaam: ${formData.company || '-'}\nE-mail: ${formData.email}\nTelefoon: ${formData.phone || '-'}\nPakket: ${formData.packageType}\n\nWensen:\n${formData.message}`
+  )}`;
 
   return (
     <div
@@ -84,7 +149,7 @@ export default function Contact() {
     >
       <SEO
         title="Contact & Project Bespreken"
-        description="Neem vrijblijvend contact op met Webvastgoed.nl voor de €250,- portfolio-actie, een maatwerk bedrijfswebsite of een webshop."
+        description="Neem vrijblijvend contact op met Webvastgoed.nl voor de € 250,- portfolio actie, een maatwerk bedrijfswebsite of een webshop."
         keywords="contact webvastgoed, website aanvragen, offerte maatwerk website, webdesign contact"
         schema={contactSchema}
       />
@@ -197,31 +262,52 @@ export default function Contact() {
                   />
                 </div>
 
-                <div>
-                  <label htmlFor="contact-email" style={{ fontSize: '0.82rem', fontWeight: 600, color: '#C5A059', textTransform: 'uppercase', letterSpacing: '0.06em', display: 'block', marginBottom: '0.45rem' }}>
-                    E-mailadres *
-                  </label>
-                  <input
-                    id="contact-email"
-                    name="email"
-                    required
-                    maxLength={140}
-                    type="email"
-                    autoComplete="email"
-                    placeholder="uw@bedrijf.nl"
-                    aria-describedby="email-privacy-note"
-                    aria-errormessage="email-error"
-                    className="form-field-input"
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: sanitizeInput(e.target.value) })}
-                  />
-                  <div id="email-privacy-note" style={{ fontSize: '0.76rem', color: '#94A3B8', marginTop: '0.35rem' }}>
-                    Wij gebruiken uw e-mailadres uitsluitend om op uw aanvraag te reageren (geen nieuwsbrieven of spam).
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1.15rem' }}>
+                  <div>
+                    <label htmlFor="contact-email" style={{ fontSize: '0.82rem', fontWeight: 600, color: '#C5A059', textTransform: 'uppercase', letterSpacing: '0.06em', display: 'block', marginBottom: '0.45rem' }}>
+                      E-mailadres *
+                    </label>
+                    <input
+                      id="contact-email"
+                      name="email"
+                      required
+                      maxLength={140}
+                      type="email"
+                      autoComplete="email"
+                      placeholder="uw@bedrijf.nl"
+                      aria-describedby="email-privacy-note"
+                      aria-errormessage="email-error"
+                      className="form-field-input"
+                      value={formData.email}
+                      onChange={(e) => setFormData({ ...formData, email: sanitizeInput(e.target.value) })}
+                    />
+                    <div id="email-error" className="field-error-msg">
+                      <AlertCircle size={14} aria-hidden="true" />
+                      <span>Vul een geldig e-mailadres in.</span>
+                    </div>
                   </div>
-                  <div id="email-error" className="field-error-msg">
-                    <AlertCircle size={14} aria-hidden="true" />
-                    <span>Vul een geldig e-mailadres in.</span>
+
+                  <div>
+                    <label htmlFor="contact-phone" style={{ fontSize: '0.82rem', fontWeight: 600, color: '#C5A059', textTransform: 'uppercase', letterSpacing: '0.06em', display: 'block', marginBottom: '0.45rem' }}>
+                      Telefoon / WhatsApp (optioneel)
+                    </label>
+                    <input
+                      id="contact-phone"
+                      name="phone"
+                      maxLength={30}
+                      type="tel"
+                      inputMode="tel"
+                      autoComplete="tel"
+                      placeholder="Bijv. 06 12345678"
+                      className="form-field-input"
+                      value={formData.phone}
+                      onChange={(e) => setFormData({ ...formData, phone: sanitizeInput(e.target.value) })}
+                    />
                   </div>
+                </div>
+
+                <div id="email-privacy-note" style={{ fontSize: '0.76rem', color: '#94A3B8', marginTop: '-0.85rem' }}>
+                  Wij gebruiken uw gegevens uitsluitend om op uw aanvraag te reageren (geen nieuwsbrieven of spam).
                 </div>
 
                 <div>
@@ -244,8 +330,20 @@ export default function Contact() {
                     <option value="Maatwerk Webshop" style={{ backgroundColor: '#090E17', color: '#F5EFE4' }}>
                       Maatwerk Webshop (vanaf € 99,- p/m of eenmalig)
                     </option>
+                    <option value="Maatwerk Platform / Specifieke Modules" style={{ backgroundColor: '#090E17', color: '#F5EFE4' }}>
+                      Maatwerk Platform / Specifieke Modules (op aanvraag)
+                    </option>
+                    <option value="SEO Start (€ 149,- p/m)" style={{ backgroundColor: '#090E17', color: '#F5EFE4' }}>
+                      SEO Start — Basis Vindbaarheid (€ 149,- p/m)
+                    </option>
+                    <option value="SEO Grow (€ 299,- p/m)" style={{ backgroundColor: '#090E17', color: '#F5EFE4' }}>
+                      SEO Grow — Structurele Groei (€ 299,- p/m)
+                    </option>
+                    <option value="SEO Dominate (€ 549,- p/m)" style={{ backgroundColor: '#090E17', color: '#F5EFE4' }}>
+                      SEO Dominate — Maximale Autoriteit (€ 549,- p/m)
+                    </option>
                     <option value="SEO & Vindbaarheid" style={{ backgroundColor: '#090E17', color: '#F5EFE4' }}>
-                      SEO &amp; Hogere Vindbaarheid in Google
+                      SEO &amp; Hogere Vindbaarheid in Google (Algemeen)
                     </option>
                     <option value="Anders / Vrijblijvend advies" style={{ backgroundColor: '#090E17', color: '#F5EFE4' }}>
                       Anders / Vrijblijvend advies
@@ -277,14 +375,16 @@ export default function Contact() {
 
                 <button
                   type="submit"
+                  disabled={isSubmitting}
                   className="btn-primary"
                   style={{
                     width: '100%',
                     justifyContent: 'center',
                     marginTop: '0.4rem',
+                    opacity: isSubmitting ? 0.75 : 1,
                   }}
                 >
-                  <span>Aanvraag Versturen</span>
+                  <span>{isSubmitting ? 'Aanvraag wordt verstuurd...' : 'Ontvang Vrijblijvend Voorstel'}</span>
                   <Send size={16} />
                 </button>
 
@@ -301,14 +401,66 @@ export default function Contact() {
                 </p>
               </form>
             ) : (
-              <div style={{ textAlign: 'center', padding: '2.5rem 1rem' }}>
+              <div style={{ textAlign: 'center', padding: '2rem 1rem' }}>
                 <CheckCircle2 size={48} color="#C5A059" style={{ margin: '0 auto 1rem auto' }} />
-                <h3 style={{ fontSize: '1.85rem', color: '#F5EFE4', marginBottom: '0.5rem' }}>
-                  Bericht ontvangen
+                <h3 style={{ fontSize: '1.85rem', color: '#F5EFE4', marginBottom: '0.6rem' }}>
+                  Aanvraag geregistreerd
                 </h3>
-                <p style={{ fontSize: '0.98rem', color: '#CBD5E1', lineHeight: 1.65 }}>
-                  Bedankt {formData.name}, we hebben uw aanvraag voor <strong style={{ color: '#C5A059' }}>{formData.packageType}</strong> ontvangen en nemen vandaag nog contact met u op.
+                <p style={{ fontSize: '0.98rem', color: '#CBD5E1', lineHeight: 1.65, marginBottom: '1.6rem' }}>
+                  Bedankt {formData.name}, we hebben uw aanvraag voor <strong style={{ color: '#C5A059' }}>{formData.packageType}</strong> geregistreerd en nemen vandaag nog contact met u op.
                 </p>
+
+                <div
+                  style={{
+                    backgroundColor: 'rgba(9, 14, 23, 0.75)',
+                    border: '1px solid rgba(197, 160, 89, 0.35)',
+                    borderRadius: '8px',
+                    padding: '1.35rem',
+                    marginBottom: '1.25rem',
+                    textAlign: 'left',
+                  }}
+                >
+                  <div style={{ fontSize: '0.8rem', fontWeight: 700, color: '#C5A059', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '0.45rem' }}>
+                    Snelste reactie (Binnen 30 minuten)
+                  </div>
+                  <p style={{ fontSize: '0.9rem', color: '#CBD5E1', lineHeight: 1.6, marginBottom: '1rem' }}>
+                    Wilt u direct met ons schakelen? Stuur uw ingevulde aanvraag met 1 klik ook direct door via WhatsApp of uw e-mailprogramma:
+                  </p>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem' }}>
+                    <a
+                      href={prefilledWhatsAppUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-primary"
+                      style={{ flex: '1 1 220px' }}
+                    >
+                      <span>Direct via WhatsApp Sturen</span>
+                      <ArrowUpRight size={16} />
+                    </a>
+                    <a
+                      href={prefilledMailtoUrl}
+                      className="btn-secondary"
+                      style={{ flex: '1 1 180px' }}
+                    >
+                      <span>Open in E-mail</span>
+                    </a>
+                  </div>
+                </div>
+
+                <button
+                  type="button"
+                  onClick={() => setSubmitted(false)}
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    color: '#94A3B8',
+                    fontSize: '0.85rem',
+                    textDecoration: 'underline',
+                    cursor: 'pointer',
+                  }}
+                >
+                  Aanvraag aanpassen of nog een bericht sturen
+                </button>
               </div>
             )}
           </div>

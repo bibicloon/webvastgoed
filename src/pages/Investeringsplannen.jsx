@@ -68,7 +68,7 @@ export default function Investeringsplannen() {
     >
       <SEO
         title="Tarieven & Pakketten - Eenmalig of Per Maand"
-        description="Transparante tarieven voor maatwerk websites en webshops. Tijdelijke Portfolio Actie: complete website (tot 3 pagina's) voor €250,- eenmalig, of volledig ontzorgd vanaf €59,- p/m."
+        description="Transparante tarieven voor maatwerk websites en webshops. Tijdelijke Portfolio Actie: complete website (tot 3 pagina's) voor € 250,- eenmalig, of volledig ontzorgd vanaf € 59,- p/m."
         keywords="website laten maken kosten, website 250 euro, maatwerk website tarieven, webshop laten bouwen prijs"
         schema={plansSchema}
       />
@@ -140,7 +140,7 @@ export default function Investeringsplannen() {
             <div style={{ fontSize: '0.85rem', color: '#CBD5E1', marginBottom: '1.25rem' }}>
               Excl. btw · Optioneel hosting &amp; beheer vanaf € 20,- p/m
             </div>
-            <Link to="/contact" className="btn-primary" style={{ width: '100%' }}>
+            <Link to="/contact?pakket=actie" className="btn-primary" style={{ width: '100%' }}>
               <span>Actie Aanvragen</span>
               <ArrowRight size={16} />
             </Link>
@@ -215,7 +215,7 @@ export default function Investeringsplannen() {
             </div>
 
             <Link
-              to="/contact"
+              to="/contact?pakket=bedrijfswebsite"
               className="btn-secondary"
               style={{ width: '100%' }}
             >
@@ -296,7 +296,7 @@ export default function Investeringsplannen() {
             </div>
 
             <Link
-              to="/contact"
+              to="/contact?pakket=webshop"
               className="btn-primary"
               style={{ width: '100%' }}
             >
@@ -363,12 +363,154 @@ export default function Investeringsplannen() {
             </div>
 
             <Link
-              to="/contact"
+              to="/contact?pakket=maatwerk"
               className="btn-secondary"
               style={{ width: '100%' }}
             >
               <span>Vrijblijvende Offerte</span>
               <ArrowRight size={16} color="#C5A059" />
+            </Link>
+          </div>
+        </div>
+
+        {/* EERLIJKE PRIJSVERGELIJKING & WAARDEVERANKERING */}
+        <div
+          style={{
+            marginTop: '4.5rem',
+            backgroundColor: 'rgba(22, 34, 59, 0.94)',
+            backdropFilter: 'blur(12px)',
+            border: '1px solid rgba(197, 160, 89, 0.35)',
+            borderTop: '3px solid #C5A059',
+            borderRadius: '10px',
+            padding: 'clamp(1.85rem, 4vw, 3rem)',
+            boxShadow: '0 20px 48px rgba(0, 0, 0, 0.45)',
+          }}
+        >
+          <div style={{ textAlign: 'center', maxWidth: '760px', margin: '0 auto 2.5rem auto' }}>
+            <div className="badge-tag" style={{ marginBottom: '0.85rem' }}>
+              <span>Eerlijke Vergelijking</span>
+            </div>
+            <h2 style={{ fontSize: 'clamp(1.55rem, 2.2vw, 2.2rem)', color: '#F5EFE4', marginBottom: '0.75rem' }}>
+              Waarom kunnen wij maatwerk aanbieden voor dit tarief?
+            </h2>
+            <p style={{ color: '#CBD5E1', fontSize: '0.98rem', lineHeight: 1.7 }}>
+              Veel ondernemers vragen zich af hoe het verschil tussen een traditioneel webbureau van duizenden euro&apos;s en onze tarieven ontstaat. Door onze moderne React en Next.js ontwikkelstraat zonder logge kantooroverhead betaalt u bij ons puur voor het digitale vakwerk.
+            </p>
+          </div>
+
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
+              gap: '1.5rem',
+            }}
+          >
+            {/* Optie A: Traditioneel Webbureau */}
+            <div
+              style={{
+                backgroundColor: 'rgba(9, 14, 23, 0.65)',
+                border: '1px solid rgba(148, 163, 184, 0.2)',
+                borderRadius: '8px',
+                padding: '1.75rem',
+              }}
+            >
+              <div style={{ fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.07em', color: '#94A3B8', marginBottom: '0.4rem' }}>
+                Traditioneel Webbureau
+              </div>
+              <div className="font-serif" style={{ fontSize: '1.65rem', color: '#F5EFE4', fontWeight: 700, marginBottom: '1rem' }}>
+                € 3.500,- tot € 7.500,-
+              </div>
+              <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.65rem', fontSize: '0.9rem', color: '#CBD5E1', lineHeight: 1.55 }}>
+                <li>• Hoge aanloopkosten door kantoorpanden, accountmanagers en vergaderingen</li>
+                <li>• Doorlooptijd van gemiddeld 8 tot 14 weken</li>
+                <li>• Vaak alsnog gebouwd op een zwaar WordPress of PHP systeem</li>
+                <li>• Achteraf uurtarief van € 95,- tot € 135,- voor elke tekstaanpassing</li>
+              </ul>
+            </div>
+
+            {/* Optie B: Standaard Template / Zelfbouw */}
+            <div
+              style={{
+                backgroundColor: 'rgba(9, 14, 23, 0.65)',
+                border: '1px solid rgba(148, 163, 184, 0.2)',
+                borderRadius: '8px',
+                padding: '1.75rem',
+              }}
+            >
+              <div style={{ fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.07em', color: '#94A3B8', marginBottom: '0.4rem' }}>
+                Standaard Template Bouwer
+              </div>
+              <div className="font-serif" style={{ fontSize: '1.65rem', color: '#F5EFE4', fontWeight: 700, marginBottom: '1rem' }}>
+                € 500,- tot € 1.500,-
+              </div>
+              <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.65rem', fontSize: '0.9rem', color: '#CBD5E1', lineHeight: 1.55 }}>
+                <li>• Standaard thema dat al door duizenden andere bedrijven wordt gebruikt</li>
+                <li>• Trage mobiele laadtijd door 20+ losse plugins van derden</li>
+                <li>• Kwetsbaar voor verouderde plugins en geautomatiseerde inbraakpogingen</li>
+                <li>• Beperkte Google vindbaarheid door vervuilde broncode</li>
+              </ul>
+            </div>
+
+            {/* Optie C: Webvastgoed.nl */}
+            <div
+              style={{
+                backgroundColor: 'rgba(17, 26, 46, 0.98)',
+                border: '2px solid #C5A059',
+                borderRadius: '8px',
+                padding: '1.75rem',
+              }}
+            >
+              <div style={{ fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.07em', color: '#C5A059', marginBottom: '0.4rem' }}>
+                Webvastgoed.nl Maatwerk
+              </div>
+              <div className="font-serif" style={{ fontSize: '1.65rem', color: '#C5A059', fontWeight: 700, marginBottom: '1rem' }}>
+                € 250,- eenmalig of v.a. € 59,- p/m
+              </div>
+              <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.65rem', fontSize: '0.9rem', color: '#F1F5F9', lineHeight: 1.55 }}>
+                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.55rem' }}>
+                  <Check size={16} color="#C5A059" style={{ flexShrink: 0, marginTop: '3px' }} />
+                  <span>100% op maat ontworpen in React &amp; Next.js zonder standaard templates</span>
+                </li>
+                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.55rem' }}>
+                  <Check size={16} color="#C5A059" style={{ flexShrink: 0, marginTop: '3px' }} />
+                  <span>Binnen 5 tot 10 werkdagen compleet opgeleverd</span>
+                </li>
+                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.55rem' }}>
+                  <Check size={16} color="#C5A059" style={{ flexShrink: 0, marginTop: '3px' }} />
+                  <span>Geen kwetsbare PHP databases of trage plugins</span>
+                </li>
+                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.55rem' }}>
+                  <Check size={16} color="#C5A059" style={{ flexShrink: 0, marginTop: '3px' }} />
+                  <span>100% eigendom van uw eigen domeinnaam en content</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Contextual Internal Links */}
+          <div
+            style={{
+              marginTop: '2rem',
+              paddingTop: '1.5rem',
+              borderTop: '1px solid rgba(148, 163, 184, 0.18)',
+              display: 'flex',
+              flexWrap: 'wrap',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              gap: '1rem',
+              fontSize: '0.9rem',
+              color: '#CBD5E1',
+            }}
+          >
+            <span>
+              Meer weten over de afweging tussen eenmalig afrekenen en een maandpakket? Lees onze gids:{' '}
+              <Link to="/kennisbank/wat-kost-een-bedrijfswebsite" style={{ color: '#C5A059', textDecoration: 'underline', fontWeight: 600 }}>
+                Wat kost een professionele bedrijfswebsite laten maken?
+              </Link>
+            </span>
+            <Link to="/portfolio" style={{ color: '#C5A059', fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}>
+              <span>Bekijk opgeleverde voorbeelden</span>
+              <ArrowRight size={15} />
             </Link>
           </div>
         </div>

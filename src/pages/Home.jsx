@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
 import SEO from '../components/SEO';
 import FAQSection from '../components/FAQSection';
-import { PORTFOLIO_PROJECTS } from './Portfolio';
+import { PORTFOLIO_PROJECTS } from '../data/portfolioProjects';
 
 export default function Home() {
   const homeSchema = {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
     'name': 'Webvastgoed.nl',
-    'description': 'Maatwerk websites en webshops gebouwd met React en Next.js. Geen standaard templates of kwetsbare PHP-plug-ins. Maandelijks ontzorgd of eenmalig afrekenen.',
+    'description': 'Maatwerk websites en webshops gebouwd met React en Next.js. Geen standaard templates of kwetsbare PHP plugins. Maandelijks ontzorgd of eenmalig afrekenen.',
     'url': 'https://webvastgoed.nl',
     'telephone': '+31630037257',
     'email': 'info@webvastgoed.nl',
@@ -28,12 +28,12 @@ export default function Home() {
     <div>
       <SEO
         title="Maatwerk Websites & Webshops zonder Standaard Templates"
-        description="Razendsnelle maatwerk websites en webshops op React & Next.js architectuur. Geen kwetsbare PHP-plug-ins of standaard templates. Tijdelijke portfolio-actie vanaf €250,- of volledig ontzorgd per maand."
+        description="Razendsnelle maatwerk websites en webshops op React & Next.js architectuur. Geen kwetsbare PHP plugins of standaard templates. Tijdelijke portfolio actie vanaf € 250,- of volledig ontzorgd per maand."
         keywords="maatwerk website laten maken, website zonder wordpress, react webdesign, zakelijke website laten bouwen, webvastgoed"
         schema={homeSchema}
       />
 
-      {/* 1. HERO SECTIE MET DONKERE LUXE OVERLAY VOor MAXIMAAL CONTRAST */}
+      {/* 1. HERO SECTIE MET DONKERE LUXE OVERLAY VOOR MAXIMAAL CONTRAST */}
       <section
         className="bg-luxury-cover"
         style={{
@@ -284,7 +284,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 3. WAAROM GEEN WORDPRESS / PHP TEMPLATES SECTIE (Donkere Luxe Stijl, Geen Wit, Geen AI-Icoontjes) */}
+      {/* 3. DE FILOSOFIE VAN WEBVASTGOED SECTIE (Donkere Luxe Stijl, Geen Wit, Geen AI-Icoontjes) */}
       <section
         style={{
           backgroundImage: `linear-gradient(180deg, rgba(9, 14, 23, 0.88) 0%, rgba(17, 26, 46, 0.84) 50%, rgba(9, 14, 23, 0.92) 100%), url('/assets/office_detail.jpg?v=2')`,
@@ -361,7 +361,119 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4. VEELGESTELDE VRAGEN (FAQ) */}
+      {/* 4. HOE HET WERKT IN 3 STAPPEN + ZEKERHEDEN (CRO SECTIE) */}
+      <section
+        style={{
+          backgroundColor: '#090E17',
+          color: '#F5EFE4',
+          padding: 'clamp(3.5rem, 7vw, 5.5rem) 0',
+          borderBottom: '1px solid rgba(197, 160, 89, 0.25)',
+        }}
+      >
+        <div className="container">
+          <div style={{ textAlign: 'center', maxWidth: '780px', margin: '0 auto 3.25rem auto' }}>
+            <div className="badge-tag" style={{ marginBottom: '1rem' }}>
+              <span>Heldere Werkwijze</span>
+            </div>
+            <h2 style={{ color: '#F5EFE4', marginBottom: '0.85rem' }}>
+              Van eerste idee tot livegang in drie heldere stappen
+            </h2>
+            <p style={{ color: '#CBD5E1', fontSize: '1.05rem', lineHeight: 1.68 }}>
+              Wij houden niet van eindeloze vergaderingen of onduidelijke offertes. Binnen gemiddeld 5 tot 10 werkdagen staat uw nieuwe website veilig en razendsnel online.
+            </p>
+          </div>
+
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))',
+              gap: '2rem',
+              marginBottom: '2.75rem',
+            }}
+          >
+            {[
+              {
+                phase: 'Stap 1 · Dezelfde dag reactie',
+                title: 'Kennismaking & Blauwdruk',
+                text: 'U laat ons kort weten wat uw bedrijf doet en waar u naar op zoek bent. Wij denken vrijblijvend mee en geven direct aan of uw project binnen de € 250,- Portfolio Actie valt of welk pakket het beste past.',
+              },
+              {
+                phase: 'Stap 2 · Binnen 5 tot 10 werkdagen',
+                title: 'Maatwerk Ontwerp & Bouw',
+                text: 'Wij ontwerpen en bouwen uw website op maat in React en Next.js. U ontvangt een werkende live proefversie die u rustig op uw eigen telefoon, tablet en laptop kunt bekijken en bijsturen.',
+              },
+              {
+                phase: 'Stap 3 · Zorgeloos Online',
+                title: 'Oplevering & Volledig Eigendom',
+                text: 'Na uw volledige goedkeuring koppelen wij uw domeinnaam, verzorgen we indien gewenst de verhuizing van uw huidige adres en melden we uw website direct technisch aan bij Google.',
+              },
+            ].map((step, idx) => (
+              <div
+                key={idx}
+                style={{
+                  backgroundColor: 'rgba(17, 26, 46, 0.94)',
+                  border: '1px solid rgba(197, 160, 89, 0.3)',
+                  borderTop: '3px solid #C5A059',
+                  borderRadius: '10px',
+                  padding: 'clamp(1.6rem, 3vw, 2.2rem)',
+                  boxShadow: '0 16px 36px rgba(0, 0, 0, 0.4)',
+                }}
+              >
+                <div style={{ marginBottom: '0.8rem', paddingBottom: '0.65rem', borderBottom: '1px solid rgba(148, 163, 184, 0.16)' }}>
+                  <span style={{ fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', color: '#C5A059' }}>
+                    {step.phase}
+                  </span>
+                </div>
+                <h3 style={{ color: '#F5EFE4', fontSize: '1.45rem', marginBottom: '0.65rem' }}>
+                  {step.title}
+                </h3>
+                <p style={{ color: '#CBD5E1', fontSize: '0.95rem', lineHeight: 1.65 }}>
+                  {step.text}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* Compacte Zekerheden & CTA Balk */}
+          <div
+            style={{
+              backgroundColor: 'rgba(22, 34, 59, 0.94)',
+              border: '1px solid rgba(197, 160, 89, 0.38)',
+              borderRadius: '10px',
+              padding: '1.85rem 2.25rem',
+              display: 'flex',
+              flexWrap: 'wrap',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              gap: '1.5rem',
+            }}
+          >
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1.35rem', fontSize: '0.92rem', color: '#F1F5F9', fontWeight: 500 }}>
+              <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.45rem' }}>
+                <CheckCircle2 size={17} color="#C5A059" /> Vooraf vaste prijsafspraak
+              </span>
+              <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.45rem' }}>
+                <CheckCircle2 size={17} color="#C5A059" /> 100% eigenaar van uw domein &amp; content
+              </span>
+              <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.45rem' }}>
+                <CheckCircle2 size={17} color="#C5A059" /> Inclusief technische Google SEO basis
+              </span>
+            </div>
+
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.85rem' }}>
+              <Link to="/contact?pakket=actie" className="btn-primary">
+                <span>Start voor € 250,-</span>
+                <ArrowRight size={16} />
+              </Link>
+              <Link to="/kennisbank" className="btn-secondary">
+                <span>Lees Onze Kennisbank</span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 5. VEELGESTELDE VRAGEN (FAQ) */}
       <FAQSection />
     </div>
   );

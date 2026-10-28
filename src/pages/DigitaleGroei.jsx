@@ -14,7 +14,7 @@ export default function DigitaleGroei() {
         'item': {
           '@type': 'Product',
           'name': 'SEO Start',
-          'description': 'Voor kleine bedrijven die hun basis goed willen hebben. Technische SEO-check, zoekwoordenonderzoek, metadata, H1/H2 structuur, Analytics.',
+          'description': 'Voor kleine bedrijven die hun basis goed willen hebben. Technische SEO check, zoekwoordenonderzoek, metadata, H1/H2 structuur, Analytics.',
           'offers': {
             '@type': 'Offer',
             'price': '149.00',
@@ -44,7 +44,7 @@ export default function DigitaleGroei() {
         'item': {
           '@type': 'Product',
           'name': 'SEO Dominate',
-          'description': 'Voor bedrijven die serieus organisch marktaandeel willen opbouwen. Uitgebreide contentstrategie, conversie-optimalisatie, strategiesessies.',
+          'description': 'Voor bedrijven die serieus organisch marktaandeel willen opbouwen. Uitgebreide contentstrategie, conversie optimalisatie, strategiesessies.',
           'offers': {
             '@type': 'Offer',
             'price': '549.00',
@@ -69,7 +69,7 @@ export default function DigitaleGroei() {
     >
       <SEO
         title="SEO & Vindbaarheid in Google - Pakketten"
-        description="Structurele zoekmachine-optimalisatie (SEO) voor hogere posities in Google. Bekijk onze heldere SEO Start, Grow en Dominate pakketten."
+        description="Structurele zoekmachine optimalisatie (SEO) voor hogere posities in Google. Bekijk onze heldere SEO Start, Grow en Dominate pakketten."
         keywords="SEO pakketten, hoger in google komen, zoekmachine optimalisatie mkb, lokale seo uitbesteden"
         schema={seoPlansSchema}
       />
@@ -162,7 +162,7 @@ export default function DigitaleGroei() {
             </div>
 
             <Link
-              to="/contact"
+              to="/contact?pakket=seo-start"
               className="btn-secondary"
               style={{ width: '100%' }}
             >
@@ -252,7 +252,7 @@ export default function DigitaleGroei() {
             </div>
 
             <Link
-              to="/contact"
+              to="/contact?pakket=seo-grow"
               className="btn-primary"
               style={{ width: '100%' }}
             >
@@ -329,7 +329,7 @@ export default function DigitaleGroei() {
             </div>
 
             <Link
-              to="/contact"
+              to="/contact?pakket=seo-dominate"
               className="btn-secondary"
               style={{ width: '100%' }}
             >
@@ -337,6 +337,44 @@ export default function DigitaleGroei() {
               <ArrowRight size={16} color="#C5A059" />
             </Link>
           </div>
+        </div>
+
+        {/* Contextual Link Bar to Website Packages & Kennisbank */}
+        <div
+          style={{
+            marginTop: '3.5rem',
+            backgroundColor: 'rgba(22, 34, 59, 0.92)',
+            backdropFilter: 'blur(10px)',
+            border: '1px solid rgba(197, 160, 89, 0.35)',
+            borderRadius: '10px',
+            padding: '2rem 2.25rem',
+            display: 'flex',
+            flexWrap: 'wrap',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            gap: '1.5rem',
+          }}
+        >
+          <div style={{ maxWidth: '640px' }}>
+            <h2 style={{ fontSize: '1.55rem', color: '#F5EFE4', marginBottom: '0.4rem' }}>
+              Heeft uw bedrijf eerst een snellere website nodig als technisch fundament?
+            </h2>
+            <p style={{ fontSize: '0.95rem', color: '#CBD5E1', lineHeight: 1.65 }}>
+              Zoekmachine optimalisatie werkt het krachtigst op een schone, snelle broncode. Bekijk waarom een{' '}
+              <Link to="/kennisbank/maatwerk-website-vs-wordpress" style={{ color: '#C5A059', textDecoration: 'underline', fontWeight: 600 }}>
+                maatwerk React &amp; Next.js website beter presteert in Google dan WordPress
+              </Link>{' '}
+              of bekijk onze{' '}
+              <Link to="/investeringsplannen" style={{ color: '#C5A059', textDecoration: 'underline', fontWeight: 600 }}>
+                website pakketten vanaf € 250,-
+              </Link>
+              .
+            </p>
+          </div>
+          <Link to="/investeringsplannen" className="btn-secondary">
+            <span>Bekijk Website Pakketten</span>
+            <ArrowRight size={16} color="#C5A059" />
+          </Link>
         </div>
       </div>
     </div>

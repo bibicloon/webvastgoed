@@ -1,18 +1,19 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
 import Home from './pages/Home';
-import Investeringsplannen from './pages/Investeringsplannen';
-import DigitaleGroei from './pages/DigitaleGroei';
-import Portfolio from './pages/Portfolio';
-import OverOns from './pages/OverOns';
-import FAQPage from './pages/FAQPage';
-import Kennisbank from './pages/Kennisbank';
-import Contact from './pages/Contact';
-import Privacybeleid from './pages/Privacybeleid';
-import AlgemeneVoorwaarden from './pages/AlgemeneVoorwaarden';
+
+const Investeringsplannen = lazy(() => import('./pages/Investeringsplannen'));
+const DigitaleGroei = lazy(() => import('./pages/DigitaleGroei'));
+const Portfolio = lazy(() => import('./pages/Portfolio'));
+const OverOns = lazy(() => import('./pages/OverOns'));
+const FAQPage = lazy(() => import('./pages/FAQPage'));
+const Kennisbank = lazy(() => import('./pages/Kennisbank'));
+const Contact = lazy(() => import('./pages/Contact'));
+const Privacybeleid = lazy(() => import('./pages/Privacybeleid'));
+const AlgemeneVoorwaarden = lazy(() => import('./pages/AlgemeneVoorwaarden'));
 
 // Scroll to top on navigation helper
 function ScrollToTop() {
@@ -35,19 +36,21 @@ export default function App() {
 
         {/* Multi-Page Route Content */}
         <main style={{ flex: 1 }}>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/investeringsplannen" element={<Investeringsplannen />} />
-            <Route path="/digitale-groei" element={<DigitaleGroei />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/over-ons" element={<OverOns />} />
-            <Route path="/faq" element={<FAQPage />} />
-            <Route path="/kennisbank" element={<Kennisbank />} />
-            <Route path="/kennisbank/:slug" element={<Kennisbank />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/privacybeleid" element={<Privacybeleid />} />
-            <Route path="/algemene-voorwaarden" element={<AlgemeneVoorwaarden />} />
-          </Routes>
+          <Suspense fallback={<div style={{ minHeight: '75vh', backgroundColor: '#090E17' }} />}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/investeringsplannen" element={<Investeringsplannen />} />
+              <Route path="/digitale-groei" element={<DigitaleGroei />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/over-ons" element={<OverOns />} />
+              <Route path="/faq" element={<FAQPage />} />
+              <Route path="/kennisbank" element={<Kennisbank />} />
+              <Route path="/kennisbank/:slug" element={<Kennisbank />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/privacybeleid" element={<Privacybeleid />} />
+              <Route path="/algemene-voorwaarden" element={<AlgemeneVoorwaarden />} />
+            </Routes>
+          </Suspense>
         </main>
 
         {/* Footer Framing */}

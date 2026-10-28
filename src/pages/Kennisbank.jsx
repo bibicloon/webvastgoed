@@ -43,6 +43,11 @@ export const KENNISBANK_ARTICLES = [
         ],
       },
     ],
+    relatedLinks: [
+      { to: '/investeringsplannen', label: 'Bekijk alle specificaties van de € 250,- Portfolio Actie en onze maandpakketten' },
+      { to: '/portfolio', label: 'Bekijk gerealiseerde maatwerk websites in ons portfolio' },
+    ],
+    ctaPackage: 'actie',
     ctaTitle: 'Direct gebruikmaken van de € 250,- Portfolio Actie?',
     ctaText: 'Laat ons kort weten wat uw bedrijf doet. Wij reageren dezelfde dag nog met een helder voorstel.',
   },
@@ -83,6 +88,11 @@ export const KENNISBANK_ARTICLES = [
         ],
       },
     ],
+    relatedLinks: [
+      { to: '/digitale-groei', label: 'Ontdek hoe technische snelheid en onze SEO pakketten zorgen voor hogere Google posities' },
+      { to: '/over-ons', label: 'Lees meer over onze filosofie achter digitaal vastgoed als bedrijfsfundament' },
+    ],
+    ctaPackage: 'bedrijfswebsite',
     ctaTitle: 'Overstappen van een trage template naar echt maatwerk?',
     ctaText: 'Wij bouwen uw nieuwe website snel, veilig en volledig vrij van verouderde PHP systemen.',
   },
@@ -123,6 +133,11 @@ export const KENNISBANK_ARTICLES = [
         ],
       },
     ],
+    relatedLinks: [
+      { to: '/investeringsplannen', label: 'Vergelijk al onze eenmalige en maandelijkse investeringsplannen naast elkaar' },
+      { to: '/faq', label: 'Bekijk de veelgestelde vragen over hosting, domeinverhuizing en eigendom' },
+    ],
+    ctaPackage: 'bedrijfswebsite',
     ctaTitle: 'Benieuwd welk pakket het beste bij uw wensen past?',
     ctaText: 'Bekijk onze tarievenpagina of vraag direct een vrijblijvend voorstel op maat aan.',
   },
@@ -156,6 +171,11 @@ export const KENNISBANK_ARTICLES = [
         ],
       },
     ],
+    relatedLinks: [
+      { to: '/portfolio', label: 'Bekijk de volledige Pastry Company webshop case in ons portfolio' },
+      { to: '/investeringsplannen', label: 'Bekijk de specificaties en prijs van het Maatwerk Webshop pakket' },
+    ],
+    ctaPackage: 'webshop',
     ctaTitle: 'Uw producten verkopen via een luxe maatwerk webshop?',
     ctaText: 'Bespreek uw webshop wensen vrijblijvend met ons voor een passend voorstel.',
   },
@@ -189,6 +209,11 @@ export const KENNISBANK_ARTICLES = [
         ],
       },
     ],
+    relatedLinks: [
+      { to: '/portfolio', label: 'Bekijk de volledige OnPoint Koeriers case study in ons portfolio' },
+      { to: '/digitale-groei', label: 'Ontdek hoe uw transportbedrijf hoger in Google komt op regionale en landelijke zoektermen' },
+    ],
+    ctaPackage: 'bedrijfswebsite',
     ctaTitle: 'Actief in transport of logistiek en toe aan een sterke website?',
     ctaText: 'Van een strakke starter website (€ 250,-) tot een compleet logistiek platform op maat.',
   },
@@ -222,6 +247,11 @@ export const KENNISBANK_ARTICLES = [
         ],
       },
     ],
+    relatedLinks: [
+      { to: '/portfolio', label: 'Bekijk de Brökling Afbouw & Montage case met Voor/Na slider in ons portfolio' },
+      { to: '/investeringsplannen', label: 'Bekijk onze tarieven voor een starter website (€ 250,-) of uitgebreide projectwebsite' },
+    ],
+    ctaPackage: 'bedrijfswebsite',
     ctaTitle: 'Uw vakwerk professioneel presenteren op een eigen website?',
     ctaText: 'Neem vrijblijvend contact op voor de € 250,- starter actie of een uitgebreide projectwebsite.',
   },
@@ -377,10 +407,50 @@ export default function Kennisbank() {
               ))}
             </div>
 
+            {/* Contextual Pillar Links (SEO Internal Linking) */}
+            {article.relatedLinks && article.relatedLinks.length > 0 && (
+              <div
+                style={{
+                  marginTop: '2.5rem',
+                  padding: '1.35rem 1.5rem',
+                  backgroundColor: 'rgba(9, 14, 23, 0.7)',
+                  border: '1px solid rgba(197, 160, 89, 0.28)',
+                  borderRadius: '8px',
+                  maxWidth: '75ch',
+                }}
+              >
+                <div style={{ fontSize: '0.76rem', fontWeight: 700, color: '#C5A059', textTransform: 'uppercase', letterSpacing: '0.07em', marginBottom: '0.65rem' }}>
+                  Relevante vervolgstappen
+                </div>
+                <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.55rem' }}>
+                  {article.relatedLinks.map((lnk, lIdx) => (
+                    <li key={lIdx}>
+                      <Link
+                        to={lnk.to}
+                        style={{
+                          color: '#F5EFE4',
+                          fontSize: '0.95rem',
+                          fontWeight: 500,
+                          textDecoration: 'underline',
+                          textDecorationColor: '#C5A059',
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '0.4rem',
+                        }}
+                      >
+                        <ArrowRight size={15} color="#C5A059" style={{ flexShrink: 0 }} />
+                        <span>{lnk.label}</span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
             {/* Article Bottom CTA Box */}
             <div
               style={{
-                marginTop: '3rem',
+                marginTop: '2.5rem',
                 paddingTop: '2.25rem',
                 borderTop: '1px solid rgba(197, 160, 89, 0.28)',
                 display: 'flex',
@@ -407,7 +477,7 @@ export default function Kennisbank() {
                 >
                   <span>WhatsApp Ons</span>
                 </a>
-                <Link to="/contact" className="btn-primary">
+                <Link to={article.ctaPackage ? `/contact?pakket=${article.ctaPackage}` : '/contact'} className="btn-primary">
                   <span>Vrijblijvend Aanvragen</span>
                   <ArrowRight size={16} />
                 </Link>
@@ -452,7 +522,7 @@ export default function Kennisbank() {
                     </h3>
                   </div>
                   <span style={{ color: '#C5A059', fontSize: '0.86rem', fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '0.35rem', marginTop: '0.75rem' }}>
-                    <span>Lees artikel</span>
+                    <span>Artikel bekijken</span>
                     <ArrowRight size={14} />
                   </span>
                 </Link>
