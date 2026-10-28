@@ -148,8 +148,9 @@ export default function Portfolio() {
                   alt={`${project.title} - Maatwerk website op laptop, telefoon en tablet`}
                   fetchPriority={index === 0 ? 'high' : undefined}
                   loading={index === 0 ? undefined : 'lazy'}
-                  width="1200"
-                  height="800"
+                  decoding={index === 0 ? undefined : 'async'}
+                  width="1280"
+                  height="853"
                   style={{
                     width: '100%',
                     height: '100%',

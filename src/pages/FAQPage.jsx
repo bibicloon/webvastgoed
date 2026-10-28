@@ -3,7 +3,7 @@ import { ChevronDown, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 import { WHATSAPP_URL } from '../components/WhatsAppButton';
-import { KENNISBANK_ARTICLES } from './Kennisbank';
+import { KENNISBANK_ARTICLES } from '../data/kennisbankArticles';
 
 export default function FAQPage() {
   const faqData = [

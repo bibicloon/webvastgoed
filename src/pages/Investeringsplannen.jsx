@@ -81,7 +81,7 @@ export default function Investeringsplannen() {
           </div>
 
           <h1 style={{ color: '#F5EFE4', marginBottom: '1rem' }}>
-            Kies het pakket dat past bij uw bedrijf
+            Website of webshop laten maken: tarieven &amp; pakketten
           </h1>
           <p style={{ fontSize: '1.1rem', color: '#CBD5E1', lineHeight: 1.65 }}>
             Of u nu kiest voor onze eenmalige portfolio actie van € 250,- of een volledig ontzorgd maandpakket inclusief hosting en doorlopend beheer: u krijgt altijd 100% maatwerk zonder standaard templates of verouderde PHP systemen.

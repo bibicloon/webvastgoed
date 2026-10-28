@@ -31,7 +31,7 @@ export default function SEO({ title, description, keywords, schema }) {
       : 'Maatwerk Websites & Webshops zonder Standaard Templates | Webvastgoed.nl';
     const fullDesc =
       description ||
-      'Razendsnelle maatwerk websites en webshops op React & Next.js architectuur. Geen kwetsbare PHP-plug-ins of standaard templates. Tijdelijke portfolio-actie vanaf € 250,- of volledig ontzorgd per maand.';
+      'Razendsnelle maatwerk websites en webshops op React & Next.js architectuur. Geen kwetsbare PHP plugins of standaard templates. Tijdelijke portfolio actie vanaf € 250,- of volledig ontzorgd per maand.';
 
     document.title = fullTitle;
 
@@ -54,16 +54,16 @@ export default function SEO({ title, description, keywords, schema }) {
     // Open Graph Meta Tags
     updateMeta('property', 'og:title', fullTitle);
     updateMeta('property', 'og:description', fullDesc);
-    updateMeta('property', 'og:type', 'website');
+    updateMeta('property', 'og:type', cleanPath.startsWith('/kennisbank/') ? 'article' : 'website');
     updateMeta('property', 'og:url', canonicalUrl);
-    updateMeta('property', 'og:image', `${baseUrl}/assets/marktplaats_1_onpoint_koeriers.png`);
+    updateMeta('property', 'og:image', `${baseUrl}/assets/marktplaats_1_onpoint_koeriers.jpg`);
     updateMeta('property', 'og:locale', 'nl_NL');
 
     // Twitter Cards
     updateMeta('name', 'twitter:card', 'summary_large_image');
     updateMeta('name', 'twitter:title', fullTitle);
     updateMeta('name', 'twitter:description', fullDesc);
-    updateMeta('name', 'twitter:image', `${baseUrl}/assets/marktplaats_1_onpoint_koeriers.png`);
+    updateMeta('name', 'twitter:image', `${baseUrl}/assets/marktplaats_1_onpoint_koeriers.jpg`);
 
     // Canonical URL
     let canonicalLink = document.querySelector('link[rel="canonical"]');
@@ -84,7 +84,20 @@ export default function SEO({ title, description, keywords, schema }) {
       },
     ];
 
-    if (cleanPath !== '/' && BREADCRUMB_NAMES[cleanPath]) {
+    if (cleanPath.startsWith('/kennisbank/') && BREADCRUMB_NAMES[cleanPath]) {
+      breadcrumbItems.push({
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Kennisbank & Advies',
+        item: `${baseUrl}/kennisbank`,
+      });
+      breadcrumbItems.push({
+        '@type': 'ListItem',
+        position: 3,
+        name: BREADCRUMB_NAMES[cleanPath],
+        item: canonicalUrl,
+      });
+    } else if (cleanPath !== '/' && BREADCRUMB_NAMES[cleanPath]) {
       breadcrumbItems.push({
         '@type': 'ListItem',
         position: 2,

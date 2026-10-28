@@ -3,259 +3,9 @@ import { Link, useParams, Navigate } from 'react-router-dom';
 import { ArrowRight, ArrowLeft, CheckCircle2 } from 'lucide-react';
 import SEO from '../components/SEO';
 import { WHATSAPP_URL } from '../components/WhatsAppButton';
+import { KENNISBANK_ARTICLES } from '../data/kennisbankArticles';
 
-export const KENNISBANK_ARTICLES = [
-  {
-    slug: 'website-laten-maken-250-euro',
-    category: 'Starter Actie & ZZP / MKB',
-    readTime: '3 min leestijd',
-    title: 'Professionele website laten maken voor € 250,-: wat krijgt u precies?',
-    metaTitle: 'Professionele Website Laten Maken voor € 250,- (Maatwerk Zonder Templates)',
-    metaDesc: 'Wilt u een professionele website laten maken voor € 250,- eenmalig? Ontdek wat er inbegrepen zit in onze tijdelijke Portfolio Actie tot 3 pagina’s zonder WordPress.',
-    keywords: 'website laten maken 250 euro, goedkope professionele website laten maken, zzp website laten bouwen, starter website mkb',
-    excerpt: 'Veel startende en groeiende ondernemers zoeken een betaalbare website die wel direct een hoogwaardige, zakelijke indruk maakt. Ontdek hoe onze tijdelijke Portfolio Actie van € 250,- werkt.',
-    intro: 'Wanneer u als ondernemer zoekt op het laten maken van een betaalbare website, komt u al snel uit bij partijen die een traag standaardthema gebruiken of verborgen kosten rekenen. Met onze tijdelijke Portfolio Actie bewijzen wij dat een razendsnelle maatwerk website tot 3 pagina’s ook voor een eenmalige instapprijs van € 250,- excl. btw haalbaar is.',
-    sections: [
-      {
-        heading: 'Waarom bieden wij tijdelijk een complete website aan voor € 250,-?',
-        paragraphs: [
-          'Wij werken met de nieuwste generatie React en Next.js ontwikkelsoftware. Hiermee bouwen wij sneller, schoner en veiliger dan traditionele webbureaus die nog met verouderde PHP systemen werken. Om ons portfolio in uiteenlopende branches verder uit te breiden, bouwen wij tijdelijk complete starter websites tot maximaal 3 pagina’s voor € 250,- eenmalig.',
-          'U krijgt hiervoor geen standaard template, maar een uniek ontwerp dat volledig is afgestemd op uw bedrijfsnaam, kleuren en doelgroep.',
-        ],
-      },
-      {
-        heading: 'Wat zit er standaard in het € 250,- pakket?',
-        paragraphs: [
-          'Het starter pakket is ontworpen voor ondernemers die snel, veilig en representatief online willen staan met alles wat nodig is om aanvragen te ontvangen:',
-        ],
-        bullets: [
-          'Uniek maatwerk ontwerp tot maximaal 3 pagina’s (bijvoorbeeld Home, Diensten en Contact)',
-          'Haarscherpe weergave op zowel smartphone, tablet als desktop',
-          'Direct werkend contactformulier en optionele WhatsApp knop',
-          'Technische Google SEO basis (snelle laadtijd, juiste koppenstructuur en metadata)',
-          '100% veilige React & Next.js architectuur zonder kwetsbare PHP plugins',
-        ],
-      },
-      {
-        heading: 'Kan ik later uitbreiden naar meer pagina’s of extra modules?',
-        paragraphs: [
-          'Ja, dat is het grote voordeel van onze modulaire webarchitectuur. Heeft u direct of op een later moment behoefte aan extra dienstpagina’s, een projectgalerij, een interactieve Voor/Na slider of een webshop? Dan breiden wij uw bestaande website eenvoudig uit tegen een vooraf afgesproken meerprijs.',
-        ],
-      },
-    ],
-    relatedLinks: [
-      { to: '/investeringsplannen', label: 'Bekijk alle specificaties van de € 250,- Portfolio Actie en onze maandpakketten' },
-      { to: '/portfolio', label: 'Bekijk gerealiseerde maatwerk websites in ons portfolio' },
-    ],
-    ctaPackage: 'actie',
-    ctaTitle: 'Direct gebruikmaken van de € 250,- Portfolio Actie?',
-    ctaText: 'Laat ons kort weten wat uw bedrijf doet. Wij reageren dezelfde dag nog met een helder voorstel.',
-  },
-  {
-    slug: 'maatwerk-website-vs-wordpress',
-    category: 'Techniek & Veiligheid',
-    readTime: '4 min leestijd',
-    title: 'Maatwerk React & Next.js website vs. WordPress: het verschil in snelheid en veiligheid',
-    metaTitle: 'Maatwerk React & Next.js Website vs. WordPress | Snelheid & Veiligheid',
-    metaDesc: 'Waarom kiezen steeds meer bedrijven voor een maatwerk React & Next.js website in plaats van WordPress en PHP? Vergelijk laadtijd, Google SEO en beveiliging.',
-    keywords: 'maatwerk website vs wordpress, website zonder wordpress, react nextjs website voordelen, veilige website zonder php',
-    excerpt: 'Waarom lopen zoveel WordPress websites na verloop van tijd vast op trage laadtijden en beveiligingslekken? Een heldere vergelijking tussen PHP templates en moderne React architectuur.',
-    intro: 'Meer dan de helft van de traditionele websites draait nog op WordPress, een systeem dat oorspronkelijk is ontworpen als eenvoudig blogsysteem op basis van PHP. Hoewel het jarenlang de standaard was, merken steeds meer ondernemers de nadelen van zware thema’s en kwetsbare plugins.',
-    sections: [
-      {
-        heading: 'Het probleem met standaard templates en losse PHP plugins',
-        paragraphs: [
-          'Een gemiddelde WordPress website gebruikt tussen de 15 en 30 losse plugins van verschillende makers: voor het contactformulier, voor SEO, voor een slider en voor beveiliging. Elke keer dat een bezoeker uw pagina opent, moet de server tientallen losse scripts en databaseverzoeken uitvoeren.',
-          'Wanneer een van die plugins veroudert of niet tijdig wordt bijgewerkt, ontstaat er direct een beveiligingsrisico of verspringt de opmaak van de website.',
-        ],
-      },
-      {
-        heading: 'Waarom React & Next.js fundamenteel sneller en veiliger zijn',
-        paragraphs: [
-          'Webvastgoed.nl bouwt uitsluitend met React en Next.js: dezelfde moderne webtechnologie die grote internationale platforms gebruiken. Uw website wordt voor plaatsing gecompileerd tot razendsnelle, kant en klare code.',
-        ],
-        bullets: [
-          'Directe laadtijden op mobiel en desktop (cruciaal voor Google Core Web Vitals)',
-          'Geen publieke wp-admin inlogpagina waar geautomatiseerde bots op kunnen inbreken',
-          'Geen kwetsbare SQL database of verouderde PHP plugins die lekken veroorzaken',
-          'Vrijheid in vormgeving: elk onderdeel wordt exact op maat voor uw merk gebouwd',
-        ],
-      },
-      {
-        heading: 'Hoger rendement in Google door schone code',
-        paragraphs: [
-          'Google meet bij elke website hoe snel de belangrijkste inhoud zichtbaar is op een smartphone. Doordat onze maatwerk websites geen overbodige ballast meeladen, behalen ze structureel hogere prestatiescores en converteren bezoekers sneller naar klant.',
-        ],
-      },
-    ],
-    relatedLinks: [
-      { to: '/digitale-groei', label: 'Ontdek hoe technische snelheid en onze SEO pakketten zorgen voor hogere Google posities' },
-      { to: '/over-ons', label: 'Lees meer over onze filosofie achter digitaal vastgoed als bedrijfsfundament' },
-    ],
-    ctaPackage: 'bedrijfswebsite',
-    ctaTitle: 'Overstappen van een trage template naar echt maatwerk?',
-    ctaText: 'Wij bouwen uw nieuwe website snel, veilig en volledig vrij van verouderde PHP systemen.',
-  },
-  {
-    slug: 'wat-kost-een-bedrijfswebsite',
-    category: 'Tarieven & Advies',
-    readTime: '4 min leestijd',
-    title: 'Wat kost een professionele bedrijfswebsite laten maken? (Eenmalig vs. Per maand)',
-    metaTitle: 'Wat Kost een Professionele Bedrijfswebsite Laten Maken? | Tarieven Overzicht',
-    metaDesc: 'Wat kost een zakelijke website of webshop laten bouwen? Vergelijk eenmalige aanschaf (vanaf € 250,-) met een volledig ontzorgd maandpakket (vanaf € 59,- p/m).',
-    keywords: 'wat kost een website laten maken, zakelijke website kosten, website per maand of eenmalig, prijzen webdesign mkb',
-    excerpt: 'Kiest u voor een eenmalige investering of een vast bedrag per maand inclusief hosting en onderhoud? Bekijk wat een professionele bedrijfswebsite echt hoort te kosten.',
-    intro: 'Voor veel ondernemers zijn de prijzen in de webdesignwereld ondoorzichtig. Bij een traditioneel reclamebureau betaalt u al snel € 3.500,- tot € 7.500,- vooraf, terwijl goedkope budgetpartijen achteraf hoge uurtarieven rekenen voor elke kleine aanpassing. Bij Webvastgoed.nl werken we daarom met twee transparante keuzes.',
-    sections: [
-      {
-        heading: 'Optie 1: Eenmalig afrekenen (Direct 100% afgekocht)',
-        paragraphs: [
-          'Wilt u geen doorlopend abonnement en uw website liever in een keer afrekenen? Dan betaalt u een vast bedrag vooraf afgesproken voor het ontwerp en de bouw. Voor een compacte website tot 3 pagina’s kan dit tijdelijk al voor € 250,- excl. btw via onze Portfolio Actie.',
-          'Voor uitgebreidere bedrijfswebsites met meerdere dienstpagina’s, projectoverzichten of maatwerkmodules ontvangt u vooraf een vaste prijsopgave. Optioneel kunnen wij de snelle hosting, het SSL certificaat en de technische updates verzorgen vanaf € 20,- per maand.',
-        ],
-      },
-      {
-        heading: 'Optie 2: Volledig ontzorgd per maand (Vanaf € 59,- p/m)',
-        paragraphs: [
-          'Veel MKB ondernemers kiezen voor gemak en voorspelbaarheid. Met ons maandpakket spreidt u de investering en hoeft u zelf nooit naar de techniek om te kijken:',
-        ],
-        bullets: [
-          'Bedrijfswebsite Compleet vanaf € 59,- p/m (setup vanaf € 299,-)',
-          'Maatwerk Webshop vanaf € 99,- p/m (setup vanaf € 499,-)',
-          'Inclusief razendsnelle Europese cloud hosting, SSL beveiliging en backups',
-          'Inclusief doorlopende tekstwijzigingen, nieuwe foto’s plaatsen en technisch beheer',
-        ],
-      },
-      {
-        heading: 'Welke keuze past het beste bij uw onderneming?',
-        paragraphs: [
-          'Heeft u een overzichtelijke website nodig die na oplevering weinig verandert? Dan is eenmalig afrekenen zeer voordelig. Wilt u regelmatig projecten toevoegen, teksten aanscherpen en volledig ontzorgd worden? Dan is het maandpakket de meest gekozen oplossing.',
-        ],
-      },
-    ],
-    relatedLinks: [
-      { to: '/investeringsplannen', label: 'Vergelijk al onze eenmalige en maandelijkse investeringsplannen naast elkaar' },
-      { to: '/faq', label: 'Bekijk de veelgestelde vragen over hosting, domeinverhuizing en eigendom' },
-    ],
-    ctaPackage: 'bedrijfswebsite',
-    ctaTitle: 'Benieuwd welk pakket het beste bij uw wensen past?',
-    ctaText: 'Bekijk onze tarievenpagina of vraag direct een vrijblijvend voorstel op maat aan.',
-  },
-  {
-    slug: 'maatwerk-webshop-laten-maken',
-    category: 'E-Commerce & Conversie',
-    readTime: '3 min leestijd',
-    title: 'Maatwerk webshop laten bouwen met iDEAL en optimale mobiele conversie',
-    metaTitle: 'Maatwerk Webshop Laten Maken met iDEAL | Razendsnel & Mobielvriendelijk',
-    metaDesc: 'Een luxe maatwerk webshop laten bouwen die direct verkoopt op mobiel, tablet en desktop? Ontdek onze webshop architectuur met iDEAL en Bancontact.',
-    keywords: 'maatwerk webshop laten maken, webshop laten bouwen kosten, professionele webwinkel laten maken, luxe webshop design',
-    excerpt: 'In een webshop telt elke seconde laadtijd. Ontdek hoe wij luxe, overzichtelijke webshops bouwen waarin bezoekers op hun smartphone binnen enkele klikken via iDEAL afrekenen.',
-    intro: 'Meer dan 75% van alle online bestellingen in Nederland en België vindt inmiddels plaats op een smartphone. Een webshop moet daarom niet alleen een luxe uitstraling hebben die vertrouwen wekt, maar ook op elk schermformaat direct en soepel werken.',
-    sections: [
-      {
-        heading: 'Waarom standaard webshop thema’s omzet kosten',
-        paragraphs: [
-          'Standaard webwinkels zitten vaak vol met onnodige scripts, waardoor productpagina’s traag laden en de winkelwagen op mobiele schermen onoverzichtelijk wordt. Elke extra seconde wachttijd zorgt aantoonbaar voor afhakende bezoekers bij het afrekenen.',
-        ],
-      },
-      {
-        heading: 'Praktijkvoorbeeld: Pastry Company (Luxe Patisserie & Chocolade)',
-        paragraphs: [
-          'Voor Pastry Company realiseerden wij een stijlvolle online boutique in diep chocoladebruin, warm crème en geborsteld goud. De productfotografie staat centraal en zowel particuliere klanten als zakelijke bestellers (B2B gifting) kunnen moeiteloos hun bestelling plaatsen.',
-        ],
-        bullets: [
-          'Overzichtelijke productkaarten met directe winkelwagen interactie',
-          'Naadloze betaling via iDEAL, Bancontact, creditcard en Apple Pay',
-          'Geoptimaliseerde mobiele checkout met minimale invulstappen',
-          'Verkrijgbaar als maandpakket vanaf € 99,- p/m of als eenmalige afkoop',
-        ],
-      },
-    ],
-    relatedLinks: [
-      { to: '/portfolio', label: 'Bekijk de volledige Pastry Company webshop case in ons portfolio' },
-      { to: '/investeringsplannen', label: 'Bekijk de specificaties en prijs van het Maatwerk Webshop pakket' },
-    ],
-    ctaPackage: 'webshop',
-    ctaTitle: 'Uw producten verkopen via een luxe maatwerk webshop?',
-    ctaText: 'Bespreek uw webshop wensen vrijblijvend met ons voor een passend voorstel.',
-  },
-  {
-    slug: 'website-voor-transport-en-koeriers',
-    category: 'Branche: Transport & Logistiek',
-    readTime: '3 min leestijd',
-    title: 'Website laten maken voor transportbedrijf, koeriersdienst of logistiek',
-    metaTitle: 'Website Laten Maken voor Koeriersbedrijf & Transport | B2B Logistiek',
-    metaDesc: 'Professionele website laten maken voor uw koeriersbedrijf of transportonderneming? Bekijk hoe wij voor OnPoint Koeriers een conversiegerichte Next.js website bouwden.',
-    keywords: 'website laten maken koeriersbedrijf, website transportbedrijf laten bouwen, webdesign logistiek en transport, spoedtransport website',
-    excerpt: 'In het spoedtransport en de B2B logistiek moet een opdrachtgever binnen 5 seconden zien dat u betrouwbaar en direct inzetbaar bent. Bekijk onze aanpak aan de hand van OnPoint Koeriers.',
-    intro: 'Wanneer een bedrijf met spoed een koerier of transporteur zoekt voor medische zendingen, vertrouwelijke documenten of kritieke onderdelen, is er geen tijd voor een onduidelijke website. De bezoeker wil direct weten: rijdt u vandaag nog, met welk voertuig en hoe neem ik direct contact op?',
-    sections: [
-      {
-        heading: 'Wat een transportwebsite direct moet uitstralen',
-        paragraphs: [
-          'Opdrachtgevers in de logistiek zoeken zekerheid, stiptheid en bereikbaarheid. Een professionele transportwebsite combineert een krachtige zakelijke uitstraling met directe actieknoppen voor telefonisch contact, WhatsApp en ritplanning.',
-        ],
-        bullets: [
-          'Prominente "Bel Direct" en spoedaanvraag knoppen die op mobiel direct meebewegen',
-          'Heldere presentatie van uw wagenpark en specifieke B2B sectoren',
-          'Lokale en landelijke SEO opbouw zodat bedrijven die zoeken op spoedtransport u direct vinden',
-          'Razendsnelle laadtijd voor klanten die onderweg via hun mobiele netwerk zoeken',
-        ],
-      },
-      {
-        heading: 'Case uit ons portfolio: OnPoint Koeriers',
-        paragraphs: [
-          'Voor OnPoint Koeriers ontwikkelden wij een maatwerk Next.js platform gericht op spoedtransport door heel Nederland en Europa. Door de combinatie van duidelijke dienstpagina’s en directe conversieknoppen weten zakelijke opdrachtgevers direct waar ze aan toe zijn.',
-        ],
-      },
-    ],
-    relatedLinks: [
-      { to: '/portfolio', label: 'Bekijk de volledige OnPoint Koeriers case study in ons portfolio' },
-      { to: '/digitale-groei', label: 'Ontdek hoe uw transportbedrijf hoger in Google komt op regionale en landelijke zoektermen' },
-    ],
-    ctaPackage: 'bedrijfswebsite',
-    ctaTitle: 'Actief in transport of logistiek en toe aan een sterke website?',
-    ctaText: 'Van een strakke starter website (€ 250,-) tot een compleet logistiek platform op maat.',
-  },
-  {
-    slug: 'website-voor-bouw-en-afbouw',
-    category: 'Branche: Bouw & Vakmanschap',
-    readTime: '3 min leestijd',
-    title: 'Website laten maken voor bouwbedrijf, aannemer of afbouwspecialist',
-    metaTitle: 'Website Laten Maken voor Bouwbedrijf, Aannemer of Afbouw | Maatwerk',
-    metaDesc: 'Een krachtige website laten maken voor uw bouwbedrijf, montagebedrijf of afbouwspecialist? Laat uw vakmanschap zien met echte projectfoto’s en een Voor/Na slider.',
-    keywords: 'website laten maken bouwbedrijf, website aannemer laten maken, webdesign afbouw en montage, vakmanschap website laten bouwen',
-    excerpt: 'In de bouw en afbouw verkopen uw gerealiseerde projecten het werk. Ontdek hoe u met een overzichtelijke projectgalerij en interactieve Voor/Na slider meer offerteaanvragen ontvangt.',
-    intro: 'Als bouwbedrijf, timmerbedrijf of afbouwspecialist levert u dagelijks zichtbaar vakwerk af. Toch hebben veel vakbedrijven een verouderde website die op een telefoon slecht leesbaar is en waar recente projecten nauwelijks op tot hun recht komen.',
-    sections: [
-      {
-        heading: 'Laat uw vakmanschap voor zich spreken',
-        paragraphs: [
-          'Zakelijke en particuliere opdrachtgevers kiezen een bouwpartner op basis van vertrouwen en aantoonbaar resultaat. Wij richten uw website zo in dat bezoekers direct uw expertises en afgeronde projecten kunnen bekijken.',
-        ],
-        bullets: [
-          'Interactieve Voor/Na vergelijkingsslider om het verschil tussen ruwbouw en oplevering te tonen',
-          'Duidelijke dienstblokken (zoals systeemwanden, plafonds, timmerwerk of renovatie)',
-          'Sterke regionale vindbaarheid in Google (bijvoorbeeld op uw stad en omliggende regio)',
-          'Laagdrempelig offerteformulier en directe WhatsApp knop voor snelle aanvragen',
-        ],
-      },
-      {
-        heading: 'Case uit ons portfolio: Brökling Afbouw & Montage',
-        paragraphs: [
-          'Voor Brökling Afbouw & Montage realiseerden wij een overzichtelijke vakmanschap website met een interactieve Voor/Na slider en heldere projectpresentaties in regio Eindhoven en Nijmegen. Zo zien nieuwe opdrachtgevers direct de kwaliteit van de afwerking.',
-        ],
-      },
-    ],
-    relatedLinks: [
-      { to: '/portfolio', label: 'Bekijk de Brökling Afbouw & Montage case met Voor/Na slider in ons portfolio' },
-      { to: '/investeringsplannen', label: 'Bekijk onze tarieven voor een starter website (€ 250,-) of uitgebreide projectwebsite' },
-    ],
-    ctaPackage: 'bedrijfswebsite',
-    ctaTitle: 'Uw vakwerk professioneel presenteren op een eigen website?',
-    ctaText: 'Neem vrijblijvend contact op voor de € 250,- starter actie of een uitgebreide projectwebsite.',
-  },
-];
+export { KENNISBANK_ARTICLES };
 
 export default function Kennisbank() {
   const { slug } = useParams();
@@ -272,6 +22,9 @@ export default function Kennisbank() {
       '@type': 'Article',
       headline: article.title,
       description: article.metaDesc,
+      image: article.image,
+      datePublished: article.datePublished,
+      dateModified: article.dateModified,
       author: {
         '@type': 'Organization',
         name: 'Webvastgoed.nl',
@@ -290,6 +43,10 @@ export default function Kennisbank() {
       mainEntityOfPage: {
         '@type': 'WebPage',
         '@id': `https://webvastgoed.nl/kennisbank/${article.slug}`,
+      },
+      speakable: {
+        '@type': 'SpeakableSpecification',
+        cssSelector: ['.article-intro', '.article-key-takeaways'],
       },
       inLanguage: 'nl-NL',
     };
@@ -362,7 +119,7 @@ export default function Kennisbank() {
                 {article.category}
               </span>
               <span style={{ fontSize: '0.85rem', color: '#94A3B8' }}>
-                {article.readTime}
+                {article.readTime} · Bijgewerkt oktober 2026
               </span>
             </div>
 
@@ -371,6 +128,7 @@ export default function Kennisbank() {
             </h1>
 
             <p
+              className="article-intro"
               style={{
                 fontSize: '1.1rem',
                 color: '#E2E8F0',
@@ -396,7 +154,20 @@ export default function Kennisbank() {
                     </p>
                   ))}
                   {sec.bullets && (
-                    <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.65rem', marginTop: '0.75rem', padding: '1.25rem 1.4rem', backgroundColor: 'rgba(9, 14, 23, 0.65)', borderRadius: '8px', border: '1px solid rgba(197, 160, 89, 0.22)' }}>
+                    <ul
+                      className="article-key-takeaways"
+                      style={{
+                        listStyle: 'none',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        gap: '0.65rem',
+                        marginTop: '0.75rem',
+                        padding: '1.25rem 1.4rem',
+                        backgroundColor: 'rgba(9, 14, 23, 0.65)',
+                        borderRadius: '8px',
+                        border: '1px solid rgba(197, 160, 89, 0.22)',
+                      }}
+                    >
                       {sec.bullets.map((b, bIdx) => (
                         <li key={bIdx} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.7rem', fontSize: '0.96rem', color: '#F1F5F9', lineHeight: 1.55 }}>
                           <CheckCircle2 size={17} color="#C5A059" style={{ flexShrink: 0, marginTop: '3px' }} />

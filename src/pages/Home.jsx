@@ -66,7 +66,7 @@ export default function Home() {
                   lineHeight: 1.2,
                 }}
               >
-                Razendsnelle websites op maat,{' '}
+                Maatwerk website of webshop laten maken,{' '}
                 <span style={{ color: '#C5A059', fontWeight: 700 }}>
                   gebouwd voor resultaat.
                 </span>
@@ -125,11 +125,11 @@ export default function Home() {
                 }}
               >
                 <img
-                  src="/assets/marktplaats_1_onpoint_koeriers.png"
+                  src="/assets/marktplaats_1_onpoint_koeriers.jpg"
                   alt="OnPoint Koeriers maatwerk website weergave op laptop, telefoon en tablet"
                   fetchPriority="high"
-                  width="1200"
-                  height="800"
+                  width="1280"
+                  height="853"
                   style={{ width: '100%', height: 'auto', display: 'block' }}
                 />
                 <div
@@ -224,8 +224,9 @@ export default function Home() {
                     src={project.image}
                     alt={`${project.title} website op laptop, telefoon en tablet`}
                     loading="lazy"
-                    width="1200"
-                    height="800"
+                    decoding="async"
+                    width="1280"
+                    height="853"
                     style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
                   />
                 </div>
