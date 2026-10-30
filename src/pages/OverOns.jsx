@@ -17,13 +17,13 @@ export default function OverOns() {
     >
       <SEO
         title="Over Ons & Onze Werkwijze"
-        description="Ontdek waarom Webvastgoed bewust kiest voor 100% maatwerk in React en Next.js zonder verouderde PHP-systemen of standaard templates."
+        description="Ontdek waarom Webvastgoed bewust kiest voor 100% maatwerk in React en Next.js zonder verouderde PHP systemen of standaard templates."
         keywords="over webvastgoed, maatwerk webdesign zonder wordpress, react nextjs webbureau, veilige website laten bouwen"
         schema={{
           '@context': 'https://schema.org',
           '@type': 'AboutPage',
           'name': 'Over Webvastgoed.nl & Onze Werkwijze',
-          'description': 'Waarom Webvastgoed.nl kiest voor 100% maatwerk in React en Next.js zonder verouderde PHP-plug-ins of standaard templates.',
+          'description': 'Waarom Webvastgoed.nl kiest voor 100% maatwerk in React en Next.js zonder verouderde PHP plugins of standaard templates.',
           'url': 'https://webvastgoed.nl/over-ons'
         }}
       />
@@ -123,11 +123,12 @@ export default function OverOns() {
               }}
             >
               <img
-                src="/assets/marktplaats_4_brokling_afbouw.png"
+                src="/assets/marktplaats_4_brokling_afbouw.jpg"
                 alt="Brökling Afbouw & Montage maatwerk website op laptop, telefoon en tablet"
                 loading="lazy"
-                width="1200"
-                height="800"
+                decoding="async"
+                width="1280"
+                height="853"
                 style={{ width: '100%', height: 'auto', display: 'block' }}
               />
             </div>

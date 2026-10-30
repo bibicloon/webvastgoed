@@ -1,13 +1,13 @@
 # Webvastgoed.nl
 
-> Maatwerk zakelijke websites, webshops en SEO in React & Next.js zonder standaard templates of kwetsbare PHP plugins. Tijdelijke Portfolio Actie vanaf € 250,- eenmalig of vanaf € 59,- per maand.
+> Maatwerk zakelijke websites, webshops en SEO in React & Next.js zonder standaard templates of kwetsbare PHP plugins. Tijdelijke Portfolio Actie voor € 300,- eenmalig, Bedrijfswebsites vanaf € 950,- en Maatwerk Webshops vanaf € 1.950,-.
 
 Webvastgoed.nl ontwerpt en bouwt digitaal vastgoed: razendsnelle, veilige maatwerk websites en webshops die dienen als het online fundament van ondernemingen in Nederland en België. In plaats van zware WordPress thema's of kwetsbare PHP plugins bouwen wij uitsluitend op moderne React en Next.js webarchitectuur.
 
 ## Diensten & Investeringsplannen
 
 - [Home — Maatwerk Websites & Digitaal Fundament](https://webvastgoed.nl/): Overzicht van onze visie op webvastgoed, recente referenties en veelgestelde vragen.
-- [Tarieven & Pakketten — Eenmalig of Per Maand](https://webvastgoed.nl/investeringsplannen): Tijdelijke Portfolio Actie (€ 250,- eenmalig tot 3 pagina's), Bedrijfswebsite Compleet (vanaf € 59,- p/m of eenmalige afkoop), Maatwerk Webshop (vanaf € 99,- p/m of eenmalig) en Maatwerk Platforms.
+- [Tarieven & Pakketten — Eenmalige Investering & Optioneel Onderhoud](https://webvastgoed.nl/investeringsplannen): Tijdelijke Portfolio Actie (€ 300,- eenmalig tot 3 pagina's), Bedrijfswebsite (vanaf € 950,- eenmalig), Maatwerk Webshop (vanaf € 1.950,- eenmalig), Maatwerk Platforms (op aanvraag) en losgekoppelde onderhoudspakketten: Onderhoud Basis (€ 49,- p/m) en Onderhoud & Content (€ 89,- p/m).
 - [SEO & Organische Groei in Google](https://webvastgoed.nl/digitale-groei): Structurele zoekmachine optimalisatie pakketten: SEO Start (€ 149,- p/m), SEO Grow (€ 299,- p/m) en SEO Dominate (€ 549,- p/m).
 
 ## Gerealiseerd Portfolio & Case Studies
@@ -21,9 +21,9 @@ Webvastgoed.nl ontwerpt en bouwt digitaal vastgoed: razendsnelle, veilige maatwe
 ## Kennisbank & Advies voor Ondernemers
 
 - [Kennisbank Overzicht](https://webvastgoed.nl/kennisbank): Praktische gidsen over maatwerk websites, kosten, techniek en branchegerichte oplossingen.
-- [Professionele website laten maken voor € 250,-: wat krijgt u precies?](https://webvastgoed.nl/kennisbank/website-laten-maken-250-euro): Uitleg over de tijdelijke Portfolio Actie tot maximaal 3 pagina's in React & Next.js.
+- [Professionele website laten maken voor € 300,-: wat krijgt u precies?](https://webvastgoed.nl/kennisbank/website-laten-maken-300-euro): Uitleg over de tijdelijke Portfolio Actie tot maximaal 3 pagina's in React & Next.js.
 - [Maatwerk React & Next.js website vs. WordPress](https://webvastgoed.nl/kennisbank/maatwerk-website-vs-wordpress): Vergelijking tussen moderne React webarchitectuur en traditionele PHP/WordPress thema's op snelheid, Core Web Vitals en veiligheid.
-- [Wat kost een professionele bedrijfswebsite laten maken?](https://webvastgoed.nl/kennisbank/wat-kost-een-bedrijfswebsite): Vergelijking tussen eenmalige aanschaf (afkoop) en een volledig ontzorgd maandpakket inclusief hosting en beheer.
+- [Wat kost een professionele bedrijfswebsite laten maken?](https://webvastgoed.nl/kennisbank/wat-kost-een-bedrijfswebsite): Overzicht van onze eenmalige bouwtarieven en de losgekoppelde onderhoudspakketten.
 - [Maatwerk webshop laten bouwen met iDEAL en optimale mobiele conversie](https://webvastgoed.nl/kennisbank/maatwerk-webshop-laten-maken): Hoe een snelle maatwerk webshop op smartphone, tablet en desktop zorgt voor hogere conversie.
 - [Website laten maken voor transportbedrijf, koeriersdienst of logistiek](https://webvastgoed.nl/kennisbank/website-voor-transport-en-koeriers): Essentiële onderdelen voor een conversiegerichte transport- en koerierswebsite.
 - [Website laten maken voor bouwbedrijf, aannemer of afbouwspecialist](https://webvastgoed.nl/kennisbank/website-voor-bouw-en-afbouw): Hoe vakbedrijven in de bouw en afbouw hun projecten en vakmanschap overtuigend presenteren.
@@ -31,7 +31,7 @@ Webvastgoed.nl ontwerpt en bouwt digitaal vastgoed: razendsnelle, veilige maatwe
 ## Over Ons, Veelgestelde Vragen & Juridisch
 
 - [Over Webvastgoed.nl — Visie & Werkwijze](https://webvastgoed.nl/over-ons): Waarom een website het digitale bedrijfspand en fundament van uw onderneming is.
-- [Veelgestelde Vragen (FAQ)](https://webvastgoed.nl/faq): Antwoorden op 12 veelgestelde vragen over de € 250,- actie, levertijden (5 tot 10 werkdagen), domeinverhuizing, hosting en eigendom.
+- [Veelgestelde Vragen (FAQ)](https://webvastgoed.nl/faq): Antwoorden op veelgestelde vragen over de € 300,- actie, bedrijfswebsites vanaf € 950,-, levertijden (5 tot 10 werkdagen), domeinverhuizing, onderhoud en eigendom.
 - [Contact & Vrijblijvend Voorstel Aanvragen](https://webvastgoed.nl/contact): Direct contact via het aanvraagformulier, WhatsApp of e-mail.
 - [Privacybeleid](https://webvastgoed.nl/privacybeleid): AVG/GDPR privacyverklaring van Webvastgoed.nl.
 - [Algemene Voorwaarden](https://webvastgoed.nl/algemene-voorwaarden): Leveringsvoorwaarden, eigendomsrechten en afspraken.

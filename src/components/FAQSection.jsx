@@ -9,16 +9,16 @@ export default function FAQSection() {
       answer: 'Traditionele WordPress en PHP websites zijn afhankelijk van tientallen losse plugins die regelmatig verouderen, de site vertragen of kwetsbaar maken voor aanvallen. Wij bouwen elke website met moderne React en Next.js websoftware. Daardoor laadt uw website direct, scoort deze hoger in Google en loopt u geen risico op lekke plugins.',
     },
     {
-      question: 'Wat houdt de tijdelijke Portfolio Actie van € 250,- precies in?',
-      answer: 'Omdat wij ons portfolio met onze nieuwste ontwikkelsoftware verder uitbreiden, bouwen wij tijdelijk een complete, professionele maatwerk website tot maximaal 3 pagina’s (bijvoorbeeld Home, Diensten en Contact) voor € 250,- excl. btw. Heeft u meer pagina’s of extra functies nodig? Dat is altijd mogelijk tegen een vooraf afgesproken meerprijs.',
+      question: 'Wat houdt de tijdelijke Portfolio Actie van € 300,- precies in?',
+      answer: 'Omdat wij ons portfolio met onze nieuwste ontwikkelsoftware verder uitbreiden, bouwen wij tijdelijk een complete, professionele maatwerk website tot maximaal 3 pagina’s (bijvoorbeeld Home, Diensten en Contact) voor € 300,- eenmalig excl. btw. Heeft u meer pagina’s of een uitgebreide bedrijfswebsite nodig? Onze complete bedrijfswebsites starten vanaf € 950,- eenmalig.',
     },
     {
-      question: 'Kan ik kiezen tussen eenmalig betalen of een vast bedrag per maand?',
-      answer: 'Ja. U kunt uw website eenmalig aanschaffen (eventueel met optioneel hosting en onderhoudspakket vanaf € 20,- p/m), of kiezen voor ons volledig ontzorgde maandpakket vanaf € 59,- per maand waarbij ontwerp, hosting, SSL, beveiliging en aanpassingen zijn inbegrepen.',
+      question: 'Hoe werken hosting, beveiliging en onderhoud na oplevering?',
+      answer: 'Wij koppelen het onderhoud bewust los van de bouwkosten zodat u nergens onnodig aan vastzit. Na de eenmalige bouw kunt u kiezen voor Onderhoud Basis (€ 49,- p/m voor snelle cloud hosting, SSL, back-ups en technische updates) of Onderhoud & Content (€ 89,- p/m inclusief doorlopende tekst- en fotowijzigingen). Wilt u geen onderhoud? Dan leveren wij de website op uw eigen hosting op tegen een eenmalige overdrachtstoeslag, zonder doorlopende support.',
     },
     {
       question: 'Bouwen jullie ook maatwerk webshops met iDEAL en Bancontact?',
-      answer: 'Jazeker. Wij ontwikkelen razendsnelle maatwerk webshops (zoals Pastry Company) met een luxe uitstraling, overzichtelijk productbeheer en directe betaling via iDEAL, Bancontact en creditcard. Beschikbaar vanaf € 99,- per maand of tegen een eenmalige investering.',
+      answer: 'Jazeker. Wij ontwikkelen razendsnelle maatwerk webshops (zoals Pastry Company) met een luxe uitstraling, overzichtelijk productbeheer en directe betaling via iDEAL, Bancontact en creditcard. Beschikbaar vanaf € 1.950,- eenmalig.',
     },
     {
       question: 'Voor welke branches bouwen jullie websites op maat?',

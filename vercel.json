@@ -38,6 +38,13 @@
       ]
     }
   ],
+  "redirects": [
+    {
+      "source": "/kennisbank/website-laten-maken-250-euro",
+      "destination": "/kennisbank/website-laten-maken-300-euro",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",

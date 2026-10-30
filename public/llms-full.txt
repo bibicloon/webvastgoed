@@ -1,6 +1,6 @@
 # Webvastgoed.nl — Volledige Documentatie & Kennisbank (llms-full.txt)
 
-> Maatwerk zakelijke websites, webshops en SEO in React & Next.js zonder standaard templates of kwetsbare PHP plugins. Tijdelijke Portfolio Actie vanaf € 250,- eenmalig of vanaf € 59,- per maand.
+> Maatwerk zakelijke websites, webshops en SEO in React & Next.js zonder standaard templates of kwetsbare PHP plugins. Tijdelijke Portfolio Actie voor € 300,- eenmalig, Bedrijfswebsites vanaf € 950,- en Maatwerk Webshops vanaf € 1.950,-.
 
 ---
 
@@ -18,9 +18,9 @@ Webvastgoed.nl bouwt uitsluitend vanaf een leeg canvas met moderne **React en Ne
 
 ---
 
-## 2. Overzicht van Pakketten & Tarieven (Excl. BTW)
+## 2. Overzicht van Pakketten, Tarieven & Onderhoud (Excl. BTW)
 
-### A. Tijdelijke Portfolio Actie — Starter Website (€ 250,- eenmalig)
+### A. Tijdelijke Portfolio Actie — Starter Website (€ 300,- eenmalig)
 - **Doelgroep**: Startende ondernemers, ZZP'ers en MKB-bedrijven die een krachtige, representatieve website nodig hebben zonder hoge aanloopkosten.
 - **Omvang**: Compleet op maat ontworpen website tot maximaal 3 pagina's (bijv. *Home, Diensten & Contact*).
 - **Inbegrepen**:
@@ -29,29 +29,41 @@ Webvastgoed.nl bouwt uitsluitend vanaf een leeg canvas met moderne **React en Ne
   - Werkend contactformulier en directe WhatsApp integratie
   - Technische Google SEO basis en Schema.org opzet
   - Veilige React & Next.js code zonder PHP
-- **Hosting & Beheer**: Optioneel via Webvastgoed.nl vanaf € 20,- per maand (incl. SSL, snelle Europese hosting en technische updates) of op eigen hosting.
 - **Uitbreidbaar**: Later altijd eenvoudig uit te breiden met extra pagina's of modules tegen een vooraf afgesproken meerprijs.
 
-### B. Bedrijfswebsite Compleet (Vanaf € 59,- p/m of eenmalige afkoop)
-- **Setup**: Vanaf € 299,- eenmalig (of volledige eenmalige afkoop op aanvraag).
+### B. Bedrijfswebsite op Maat (Vanaf € 950,- eenmalig)
 - **Inbegrepen**:
   - Volledig maatwerk ontwerp tot 8 pagina's
-  - Razendsnelle React & Next.js techniek
-  - Inclusief snelle cloud hosting, SSL certificaat en dagelijkse backups
-  - Inclusief doorlopend technisch onderhoud en tekst- of fotowijzigingen
+  - Razendsnelle React & Next.js webarchitectuur
+  - Geoptimaliseerd voor mobiel, tablet & desktop
   - Uitgebreide technische Google SEO en Schema.org opzet
+  - Conversiegerichte offerte- & WhatsApp modules
 
-### C. Maatwerk Webshop (Vanaf € 99,- p/m of eenmalige afkoop)
-- **Setup**: Vanaf € 499,- eenmalig (of volledige eenmalige afkoop op aanvraag).
+### C. Maatwerk Webshop (Vanaf € 1.950,- eenmalig)
 - **Inbegrepen**:
   - Luxe webshop ontwerp op maat (zoals gerealiseerd voor Pastry Company)
   - Tot 50 producten overzichtelijk ingericht
   - Directe koppeling met iDEAL, Bancontact, creditcard en Apple Pay
   - Geoptimaliseerd voor mobiel bestellen en conversie
-  - Inclusief hosting, beveiliging en technisch beheer
+  - Product Schema.org opzet voor optimale Google vindbaarheid
 
 ### D. Maatwerk Platforms & Specifieke Webapplicaties (Prijs op aanvraag)
 - Voor interactieve route- of prijsberekenaars (zoals Smart Stops Europe), Voor/Na projectsliders, meertalige Europese platforms en API/CRM-koppelingen. Altijd vooraf een vaste, transparante offerte.
+
+### E. Optioneel Losgekoppeld: Hosting, Beveiliging & Onderhoud
+Wij koppelen het onderhoud bewust los van de bouwtarieven zodat klanten zelf kunnen kiezen wat bij hun bedrijf past:
+1. **Onderhoud Basis (€ 49,- p/m)**:
+   - Razendsnelle Europese cloud hosting & SSL-certificaat
+   - Dagelijkse automatische back-ups & 24/7 uptime-monitoring
+   - Doorlopende beveiligings- & React/Next.js software-updates
+   - Technische storingsdienst & domeinbeheer
+2. **Onderhoud & Content (€ 89,- p/m — Meest Gekozen)**:
+   - Alles uit Onderhoud Basis
+   - Doorlopende tekst- en fotowijzigingen op verzoek
+   - Nieuwe projecten, cases of producten laten plaatsen
+   - Directe prioriteitssupport via WhatsApp en e-mail
+3. **Geen onderhoud?**:
+   - Oplevering op de eigen hosting van de klant tegen een eenmalige overdrachtstoeslag, zonder doorlopende support.
 
 ---
 
@@ -82,7 +94,7 @@ Webvastgoed.nl bouwt uitsluitend vanaf een leeg canvas met moderne **React en Ne
 ## 5. Werkwijze in 3 Heldere Stappen
 
 1. **Kennismaking & Blauwdruk (Dezelfde dag reactie)**:
-   - Korte inventarisatie van uw bedrijf, doelgroep en wensen. U weet direct of uw website binnen de € 250,- Portfolio Actie valt of welk pakket het beste past.
+   - Korte inventarisatie van uw bedrijf, doelgroep en wensen. U weet direct of uw website binnen de € 300,- Portfolio Actie valt of welk pakket het beste past.
 2. **Maatwerk Ontwerp & Bouw (5 tot 10 werkdagen)**:
    - Wij ontwerpen en programmeren uw website in React en Next.js en delen een werkende live proefversie die u op uw eigen telefoon en laptop kunt bekijken.
 3. **Oplevering, Google Indexatie & Volledig Eigendom**:

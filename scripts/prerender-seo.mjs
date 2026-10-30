@@ -13,10 +13,10 @@ const ROUTES = [
   {
     path: '/investeringsplannen',
     breadcrumb: 'Tarieven & Pakketten',
-    title: 'Tarieven & Pakketten - Eenmalig of Per Maand | Webvastgoed.nl',
+    title: 'Tarieven & Pakketten - Maatwerk Websites & Webshops | Webvastgoed.nl',
     description:
-      "Transparante tarieven voor maatwerk websites en webshops. Tijdelijke Portfolio Actie: complete website (tot 3 pagina's) voor € 250,- eenmalig, of volledig ontzorgd vanaf € 59,- p/m.",
-    keywords: 'website laten maken kosten, website 250 euro, maatwerk website tarieven, webshop laten bouwen prijs',
+      'Transparante eenmalige tarieven voor maatwerk websites en webshops. Tijdelijke Portfolio Actie: starter website voor € 300,-, Bedrijfswebsite vanaf € 950,- en Maatwerk Webshop vanaf € 1.950,-.',
+    keywords: 'website laten maken kosten, website 300 euro, bedrijfswebsite 950 euro, maatwerk website tarieven, webshop laten bouwen prijs',
     schema: {
       '@context': 'https://schema.org',
       '@type': 'ItemList',
@@ -28,7 +28,7 @@ const ROUTES = [
             '@type': 'Product',
             name: 'Starter Website (Portfolio Actie)',
             description: 'Maatwerk website tot maximaal 3 pagina’s, volledig responsive, inclusief contactformulier en basis SEO.',
-            offers: { '@type': 'Offer', price: '250.00', priceCurrency: 'EUR' },
+            offers: { '@type': 'Offer', price: '300.00', priceCurrency: 'EUR' },
           },
         },
         {
@@ -36,13 +36,12 @@ const ROUTES = [
           position: 2,
           item: {
             '@type': 'Product',
-            name: 'Bedrijfswebsite Compleet',
-            description: 'Uitgebreide maatwerk website tot 5-10 pagina’s, inclusief hosting, SSL, onderhoud en beheer.',
+            name: 'Bedrijfswebsite op Maat',
+            description: 'Uitgebreide maatwerk website tot 8 pagina’s in React en Next.js, volledig afgestemd op uw bedrijf en Google SEO.',
             offers: {
               '@type': 'Offer',
-              price: '59.00',
+              price: '950.00',
               priceCurrency: 'EUR',
-              eligibleQuantity: { '@type': 'QuantitativeValue', unitCode: 'MON' },
             },
           },
         },
@@ -52,10 +51,39 @@ const ROUTES = [
           item: {
             '@type': 'Product',
             name: 'Maatwerk Webshop',
-            description: 'Compleet ontworpen webshop tot 50 producten, iDEAL & betaalmethoden, voorraadbeheer.',
+            description: 'Compleet ontworpen webshop tot 50 producten, iDEAL & betaalmethoden, voorraadbeheer en mobiele checkout.',
             offers: {
               '@type': 'Offer',
-              price: '99.00',
+              price: '1950.00',
+              priceCurrency: 'EUR',
+            },
+          },
+        },
+        {
+          '@type': 'ListItem',
+          position: 4,
+          item: {
+            '@type': 'Product',
+            name: 'Onderhoud Basis',
+            description: 'Snelle Europese cloud hosting, SSL-certificaat, dagelijkse back-ups, beveiligingsmonitoring en technische updates.',
+            offers: {
+              '@type': 'Offer',
+              price: '49.00',
+              priceCurrency: 'EUR',
+              eligibleQuantity: { '@type': 'QuantitativeValue', unitCode: 'MON' },
+            },
+          },
+        },
+        {
+          '@type': 'ListItem',
+          position: 5,
+          item: {
+            '@type': 'Product',
+            name: 'Onderhoud & Content',
+            description: 'Alles uit Onderhoud Basis plus doorlopende tekst- en fotowijzigingen, nieuwe projecten of producten plaatsen en directe support.',
+            offers: {
+              '@type': 'Offer',
+              price: '89.00',
               priceCurrency: 'EUR',
               eligibleQuantity: { '@type': 'QuantitativeValue', unitCode: 'MON' },
             },
@@ -116,15 +144,15 @@ const ROUTES = [
     breadcrumb: 'Veelgestelde Vragen',
     title: 'Veelgestelde Vragen (FAQ) - Maatwerk Websites, Webshops & Tarieven | Webvastgoed.nl',
     description:
-      'Antwoorden op veelgestelde vragen over onze maatwerk websites zonder PHP, de € 250,- portfolio actie, webshops, maandpakketten, oplevertijd en Google SEO.',
-    keywords: 'veelgestelde vragen website laten maken, website zonder php, kosten website laten bouwen, webvastgoed faq, website 250 euro',
+      'Antwoorden op veelgestelde vragen over onze maatwerk websites zonder PHP, de € 300,- portfolio actie, bedrijfswebsites vanaf € 950,-, webshops vanaf € 1.950,- en onderhoud.',
+    keywords: 'veelgestelde vragen website laten maken, website zonder php, kosten website laten bouwen, webvastgoed faq, website 300 euro',
   },
   {
     path: '/kennisbank',
     breadcrumb: 'Kennisbank & Advies',
     title: 'Kennisbank & Advies - Alles over Maatwerk Websites, Kosten & SEO | Webvastgoed.nl',
     description:
-      'Lees onze praktische gidsen over het laten maken van een bedrijfswebsite of webshop, de € 250,- starter actie, waarom React sneller is dan WordPress en tips per branche.',
+      'Lees onze praktische gidsen over het laten maken van een bedrijfswebsite of webshop, de € 300,- starter actie, waarom React sneller is dan WordPress en tips per branche.',
     keywords: 'kennisbank webdesign, website laten maken advies, wat kost een website, maatwerk website voordelen, webvastgoed kennisbank',
     schema: {
       '@context': 'https://schema.org',
@@ -149,7 +177,7 @@ const ROUTES = [
     breadcrumb: 'Contact & Project Bespreken',
     title: 'Contact & Project Bespreken | Webvastgoed.nl',
     description:
-      'Neem vrijblijvend contact op met Webvastgoed.nl voor de € 250,- portfolio actie, een maatwerk bedrijfswebsite of een webshop.',
+      'Neem vrijblijvend contact op met Webvastgoed.nl voor de € 300,- portfolio actie, een maatwerk bedrijfswebsite (vanaf € 950,-) of een webshop (vanaf € 1.950,-).',
     keywords: 'contact webvastgoed, website aanvragen, offerte maatwerk website, webdesign contact',
     schema: {
       '@context': 'https://schema.org',

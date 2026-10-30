@@ -231,7 +231,7 @@ export default function Portfolio() {
             <p style={{ color: '#CBD5E1', fontSize: '1rem' }}>
               Bekijk onze{' '}
               <Link to="/investeringsplannen" style={{ color: '#C5A059', textDecoration: 'underline', fontWeight: 600 }}>
-                transparante tarieven en de € 250,- Portfolio Actie
+                transparante tarieven en de € 300,- Portfolio Actie
               </Link>{' '}
               of vraag direct vrijblijvend een voorstel aan.
             </p>

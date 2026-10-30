@@ -5,11 +5,13 @@ import SEO from '../components/SEO';
 import { WHATSAPP_URL, WHATSAPP_DISPLAY } from '../components/WhatsAppButton';
 
 const PACKAGE_MAP = {
-  actie: 'Starter Website € 250,- (tot 3 pagina’s)',
-  starter: 'Starter Website € 250,- (tot 3 pagina’s)',
-  bedrijfswebsite: 'Uitgebreide Bedrijfswebsite',
-  webshop: 'Maatwerk Webshop',
+  actie: 'Starter Website € 300,- (tot 3 pagina’s)',
+  starter: 'Starter Website € 300,- (tot 3 pagina’s)',
+  bedrijfswebsite: 'Uitgebreide Bedrijfswebsite (vanaf € 950,-)',
+  webshop: 'Maatwerk Webshop (vanaf € 1.950,-)',
   maatwerk: 'Maatwerk Platform / Specifieke Modules',
+  'onderhoud-basis': 'Onderhoud Basis (€ 49,- p/m)',
+  'onderhoud-content': 'Onderhoud & Content (€ 89,- p/m)',
   'seo-start': 'SEO Start (€ 149,- p/m)',
   'seo-grow': 'SEO Grow (€ 299,- p/m)',
   'seo-dominate': 'SEO Dominate (€ 549,- p/m)',
@@ -24,7 +26,7 @@ export default function Contact() {
   const formLoadTimeRef = useRef(Date.now());
 
   const initialPackageKey = (searchParams.get('pakket') || '').toLowerCase();
-  const initialPackage = PACKAGE_MAP[initialPackageKey] || 'Starter Website € 250,- (tot 3 pagina’s)';
+  const initialPackage = PACKAGE_MAP[initialPackageKey] || 'Starter Website € 300,- (tot 3 pagina’s)';
 
   const [formData, setFormData] = useState({
     name: '',
@@ -149,7 +151,7 @@ export default function Contact() {
     >
       <SEO
         title="Contact & Project Bespreken"
-        description="Neem vrijblijvend contact op met Webvastgoed.nl voor de € 250,- portfolio actie, een maatwerk bedrijfswebsite of een webshop."
+        description="Neem vrijblijvend contact op met Webvastgoed.nl voor de € 300,- portfolio actie, een maatwerk bedrijfswebsite (vanaf € 950,-) of een webshop (vanaf € 1.950,-)."
         keywords="contact webvastgoed, website aanvragen, offerte maatwerk website, webdesign contact"
         schema={contactSchema}
       />
@@ -321,17 +323,23 @@ export default function Contact() {
                     value={formData.packageType}
                     onChange={(e) => setFormData({ ...formData, packageType: e.target.value })}
                   >
-                    <option value="Starter Website € 250,- (tot 3 pagina’s)" style={{ backgroundColor: '#090E17', color: '#F5EFE4' }}>
-                      Starter Website € 250,- (tot 3 pagina’s)
+                    <option value="Starter Website € 300,- (tot 3 pagina’s)" style={{ backgroundColor: '#090E17', color: '#F5EFE4' }}>
+                      Starter Website € 300,- (tot 3 pagina’s)
                     </option>
-                    <option value="Uitgebreide Bedrijfswebsite" style={{ backgroundColor: '#090E17', color: '#F5EFE4' }}>
-                      Uitgebreide Bedrijfswebsite (vanaf € 59,- p/m of eenmalig)
+                    <option value="Uitgebreide Bedrijfswebsite (vanaf € 950,-)" style={{ backgroundColor: '#090E17', color: '#F5EFE4' }}>
+                      Uitgebreide Bedrijfswebsite (vanaf € 950,- eenmalig)
                     </option>
-                    <option value="Maatwerk Webshop" style={{ backgroundColor: '#090E17', color: '#F5EFE4' }}>
-                      Maatwerk Webshop (vanaf € 99,- p/m of eenmalig)
+                    <option value="Maatwerk Webshop (vanaf € 1.950,-)" style={{ backgroundColor: '#090E17', color: '#F5EFE4' }}>
+                      Maatwerk Webshop (vanaf € 1.950,- eenmalig)
                     </option>
                     <option value="Maatwerk Platform / Specifieke Modules" style={{ backgroundColor: '#090E17', color: '#F5EFE4' }}>
                       Maatwerk Platform / Specifieke Modules (op aanvraag)
+                    </option>
+                    <option value="Onderhoud Basis (€ 49,- p/m)" style={{ backgroundColor: '#090E17', color: '#F5EFE4' }}>
+                      Onderhoud Basis — Hosting, SSL &amp; Updates (€ 49,- p/m)
+                    </option>
+                    <option value="Onderhoud & Content (€ 89,- p/m)" style={{ backgroundColor: '#090E17', color: '#F5EFE4' }}>
+                      Onderhoud &amp; Content — Volledig Ontzorgd (€ 89,- p/m)
                     </option>
                     <option value="SEO Start (€ 149,- p/m)" style={{ backgroundColor: '#090E17', color: '#F5EFE4' }}>
                       SEO Start — Basis Vindbaarheid (€ 149,- p/m)
@@ -564,7 +572,7 @@ export default function Contact() {
                 In 3 stappen online
               </h3>
               <ol style={{ paddingLeft: '1.25rem', display: 'flex', flexDirection: 'column', gap: '0.85rem', fontSize: '0.95rem', color: '#CBD5E1', lineHeight: 1.65 }}>
-                <li><strong style={{ color: '#F5EFE4' }}>Korte kennismaking:</strong> wij bespreken uw wensen en geven direct aan of dit binnen het € 250,- pakket (tot 3 pagina&apos;s) valt of wat een uitgebreidere opzet kost.</li>
+                <li><strong style={{ color: '#F5EFE4' }}>Korte kennismaking:</strong> wij bespreken uw wensen en geven direct aan of dit binnen het € 300,- pakket (tot 3 pagina&apos;s) valt of wat een uitgebreidere opzet kost.</li>
                 <li><strong style={{ color: '#F5EFE4' }}>Ontwerp &amp; Bouw:</strong> wij bouwen uw maatwerk website in onze nieuwste React/Next.js omgeving en sturen u een live proefversie.</li>
                 <li><strong style={{ color: '#F5EFE4' }}>Oplevering:</strong> na uw goedkeuring zetten wij de website direct veilig en razendsnel live op uw domeinnaam.</li>
               </ol>

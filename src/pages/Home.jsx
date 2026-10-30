@@ -10,12 +10,12 @@ export default function Home() {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
     'name': 'Webvastgoed.nl',
-    'description': 'Maatwerk websites en webshops gebouwd met React en Next.js. Geen standaard templates of kwetsbare PHP plugins. Maandelijks ontzorgd of eenmalig afrekenen.',
+    'description': 'Maatwerk websites en webshops gebouwd met React en Next.js. Geen standaard templates of kwetsbare PHP plugins. Heldere eenmalige tarieven vanaf € 300,-.',
     'url': 'https://webvastgoed.nl',
     'telephone': '+31630037257',
     'email': 'info@webvastgoed.nl',
     'areaServed': ['NL', 'BE'],
-    'priceRange': '€250 - €2500',
+    'priceRange': '€300 - €2500',
     'knowsAbout': [
       'Maatwerk website laten maken',
       'Webshop laten bouwen',
@@ -28,7 +28,7 @@ export default function Home() {
     <div>
       <SEO
         title="Maatwerk Websites & Webshops zonder Standaard Templates"
-        description="Razendsnelle maatwerk websites en webshops op React & Next.js architectuur. Geen kwetsbare PHP plugins of standaard templates. Tijdelijke portfolio actie vanaf € 250,- of volledig ontzorgd per maand."
+        description="Razendsnelle maatwerk websites en webshops op React & Next.js architectuur. Geen kwetsbare PHP plugins of standaard templates. Tijdelijke portfolio actie vanaf € 300,- eenmalig."
         keywords="maatwerk website laten maken, website zonder wordpress, react webdesign, zakelijke website laten bouwen, webvastgoed"
         schema={homeSchema}
       />
@@ -86,8 +86,8 @@ export default function Home() {
               {/* Key USPs */}
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.75rem', marginBottom: '2.25rem' }}>
                 {[
-                  'Tijdelijke Portfolio Actie: complete starter website (tot 3 pagina’s) voor € 250,- eenmalig',
-                  'Uitgebreide bedrijfswebsites & webshops: eenmalig afrekenen of vast bedrag per maand',
+                  'Tijdelijke Portfolio Actie: complete starter website (tot 3 pagina’s) voor € 300,- eenmalig',
+                  'Heldere eenmalige tarieven: Bedrijfswebsite vanaf € 950,- & Maatwerk Webshop vanaf € 1.950,-',
                   'Maximale veiligheid: geen verouderde PHP systemen die gehackt kunnen worden',
                 ].map((item, idx) => (
                   <li key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.7rem', fontSize: '0.96rem', color: '#F8FAFC', fontWeight: 500 }}>
@@ -396,7 +396,7 @@ export default function Home() {
               {
                 phase: 'Stap 1 · Dezelfde dag reactie',
                 title: 'Kennismaking & Blauwdruk',
-                text: 'U laat ons kort weten wat uw bedrijf doet en waar u naar op zoek bent. Wij denken vrijblijvend mee en geven direct aan of uw project binnen de € 250,- Portfolio Actie valt of welk pakket het beste past.',
+                text: 'U laat ons kort weten wat uw bedrijf doet en waar u naar op zoek bent. Wij denken vrijblijvend mee en geven direct aan of uw project binnen de € 300,- Portfolio Actie valt of welk pakket het beste past.',
               },
               {
                 phase: 'Stap 2 · Binnen 5 tot 10 werkdagen',
@@ -463,7 +463,7 @@ export default function Home() {
 
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.85rem' }}>
               <Link to="/contact?pakket=actie" className="btn-primary">
-                <span>Start voor € 250,-</span>
+                <span>Start voor € 300,-</span>
                 <ArrowRight size={16} />
               </Link>
               <Link to="/kennisbank" className="btn-secondary">

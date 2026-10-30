@@ -17,7 +17,7 @@ export default function Investeringsplannen() {
           'description': 'Maatwerk website tot maximaal 3 pagina’s, volledig responsive, inclusief contactformulier en basis SEO.',
           'offers': {
             '@type': 'Offer',
-            'price': '250.00',
+            'price': '300.00',
             'priceCurrency': 'EUR'
           }
         }
@@ -27,13 +27,12 @@ export default function Investeringsplannen() {
         'position': 2,
         'item': {
           '@type': 'Product',
-          'name': 'Bedrijfswebsite Compleet',
-          'description': 'Uitgebreide maatwerk website tot 5-10 pagina’s, inclusief hosting, SSL, onderhoud en beheer.',
+          'name': 'Bedrijfswebsite op Maat',
+          'description': 'Uitgebreide maatwerk website tot 8 pagina’s in React en Next.js, volledig afgestemd op uw bedrijf en Google SEO.',
           'offers': {
             '@type': 'Offer',
-            'price': '59.00',
-            'priceCurrency': 'EUR',
-            'eligibleQuantity': { '@type': 'QuantitativeValue', 'unitCode': 'MON' }
+            'price': '950.00',
+            'priceCurrency': 'EUR'
           }
         }
       },
@@ -43,10 +42,39 @@ export default function Investeringsplannen() {
         'item': {
           '@type': 'Product',
           'name': 'Maatwerk Webshop',
-          'description': 'Compleet ontworpen webshop tot 50 producten, iDEAL & betaalmethoden, voorraadbeheer.',
+          'description': 'Compleet ontworpen webshop tot 50 producten, iDEAL & betaalmethoden, voorraadbeheer en mobiele checkout.',
           'offers': {
             '@type': 'Offer',
-            'price': '99.00',
+            'price': '1950.00',
+            'priceCurrency': 'EUR'
+          }
+        }
+      },
+      {
+        '@type': 'ListItem',
+        'position': 4,
+        'item': {
+          '@type': 'Product',
+          'name': 'Onderhoud Basis',
+          'description': 'Snelle Europese cloud hosting, SSL-certificaat, dagelijkse back-ups, beveiligingsmonitoring en technische updates.',
+          'offers': {
+            '@type': 'Offer',
+            'price': '49.00',
+            'priceCurrency': 'EUR',
+            'eligibleQuantity': { '@type': 'QuantitativeValue', 'unitCode': 'MON' }
+          }
+        }
+      },
+      {
+        '@type': 'ListItem',
+        'position': 5,
+        'item': {
+          '@type': 'Product',
+          'name': 'Onderhoud & Content',
+          'description': 'Alles uit Onderhoud Basis plus doorlopende tekst- en fotowijzigingen, nieuwe projecten of producten plaatsen en directe support.',
+          'offers': {
+            '@type': 'Offer',
+            'price': '89.00',
             'priceCurrency': 'EUR',
             'eligibleQuantity': { '@type': 'QuantitativeValue', 'unitCode': 'MON' }
           }
@@ -67,9 +95,9 @@ export default function Investeringsplannen() {
       }}
     >
       <SEO
-        title="Tarieven & Pakketten - Eenmalig of Per Maand"
-        description="Transparante tarieven voor maatwerk websites en webshops. Tijdelijke Portfolio Actie: complete website (tot 3 pagina's) voor € 250,- eenmalig, of volledig ontzorgd vanaf € 59,- p/m."
-        keywords="website laten maken kosten, website 250 euro, maatwerk website tarieven, webshop laten bouwen prijs"
+        title="Tarieven & Pakketten - Maatwerk Websites & Webshops"
+        description="Transparante eenmalige tarieven voor maatwerk websites en webshops. Tijdelijke Portfolio Actie: starter website voor € 300,-, Bedrijfswebsite vanaf € 950,- en Maatwerk Webshop vanaf € 1.950,-."
+        keywords="website laten maken kosten, website 300 euro, bedrijfswebsite 950 euro, maatwerk website tarieven, webshop laten bouwen prijs"
         schema={plansSchema}
       />
 
@@ -84,11 +112,11 @@ export default function Investeringsplannen() {
             Website of webshop laten maken: tarieven &amp; pakketten
           </h1>
           <p style={{ fontSize: '1.1rem', color: '#CBD5E1', lineHeight: 1.65 }}>
-            Of u nu kiest voor onze eenmalige portfolio actie van € 250,- of een volledig ontzorgd maandpakket inclusief hosting en doorlopend beheer: u krijgt altijd 100% maatwerk zonder standaard templates of verouderde PHP systemen.
+            Bij Webvastgoed betaalt u een heldere eenmalige investering voor het ontwerp en de bouw van uw website of webshop. Zo zit u nergens onnodig aan vast en krijgt u 100% maatwerk zonder standaard templates of verouderde PHP systemen.
           </p>
         </div>
 
-        {/* Highlight Banner: Portfolio Actie € 250,- */}
+        {/* Highlight Banner: Portfolio Actie € 300,- */}
         <div
           style={{
             backgroundColor: 'rgba(22, 34, 59, 0.94)',
@@ -135,10 +163,10 @@ export default function Investeringsplannen() {
               Eenmalige investering
             </div>
             <div className="font-serif" style={{ fontSize: '3.2rem', fontWeight: 700, color: '#C5A059', lineHeight: 1.1, margin: '0.35rem 0' }}>
-              € 250,-
+              € 300,-
             </div>
             <div style={{ fontSize: '0.85rem', color: '#CBD5E1', marginBottom: '1.25rem' }}>
-              Excl. btw · Optioneel hosting &amp; beheer vanaf € 20,- p/m
+              Eenmalig (excl. btw) · Geen verplichte maandkosten
             </div>
             <Link to="/contact?pakket=actie" className="btn-primary" style={{ width: '100%' }}>
               <span>Actie Aanvragen</span>
@@ -175,7 +203,7 @@ export default function Investeringsplannen() {
             <div>
               <div style={{ marginBottom: '0.85rem', paddingBottom: '0.75rem', borderBottom: '1px solid rgba(148, 163, 184, 0.16)' }}>
                 <span style={{ fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#C5A059' }}>
-                  Compleet Ontzorgd
+                  Zakelijk &amp; Compleet
                 </span>
               </div>
 
@@ -187,12 +215,11 @@ export default function Investeringsplannen() {
                 <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.35rem' }}>
                   <span style={{ fontSize: '0.9rem', color: '#94A3B8' }}>vanaf</span>
                   <span className="font-serif" style={{ fontSize: '3rem', fontWeight: 700, color: '#C5A059', lineHeight: 1 }}>
-                    € 59,-
+                    € 950,-
                   </span>
-                  <span style={{ fontSize: '0.9rem', color: '#94A3B8' }}>p/m</span>
                 </div>
                 <div style={{ fontSize: '0.88rem', color: '#CBD5E1', marginTop: '0.4rem', fontWeight: 500 }}>
-                  Setup vanaf € 299,- (of eenmalige afkoop mogelijk)
+                  Eenmalige investering (excl. btw) · 100% uw eigendom
                 </div>
               </div>
 
@@ -201,10 +228,10 @@ export default function Investeringsplannen() {
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.85rem', marginBottom: '2rem' }}>
                 {[
                   'Volledig maatwerk ontwerp (tot 8 pagina’s)',
-                  'Razendsnelle React & Next.js techniek',
-                  'Inclusief snelle hosting, SSL & dagelijkse backups',
-                  'Doorlopend technisch onderhoud & tekstwijzigingen',
-                  'Technische Google SEO & Schema.org opzet',
+                  'Razendsnelle React & Next.js webarchitectuur',
+                  'Geoptimaliseerd voor mobiel, tablet & desktop',
+                  'Uitgebreide technische Google SEO & Schema.org opzet',
+                  'Conversiegerichte offerte- & WhatsApp modules',
                 ].map((feat, idx) => (
                   <li key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.7rem', fontSize: '0.94rem', color: '#E2E8F0' }}>
                     <Check size={17} color="#C5A059" style={{ flexShrink: 0, marginTop: '3px' }} />
@@ -268,12 +295,11 @@ export default function Investeringsplannen() {
                 <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.35rem' }}>
                   <span style={{ fontSize: '0.9rem', color: '#94A3B8' }}>vanaf</span>
                   <span className="font-serif" style={{ fontSize: '3rem', fontWeight: 700, color: '#C5A059', lineHeight: 1 }}>
-                    € 99,-
+                    € 1.950,-
                   </span>
-                  <span style={{ fontSize: '0.9rem', color: '#94A3B8' }}>p/m</span>
                 </div>
                 <div style={{ fontSize: '0.88rem', color: '#CBD5E1', marginTop: '0.4rem', fontWeight: 500 }}>
-                  Setup vanaf € 499,- (of eenmalige afkoop mogelijk)
+                  Eenmalige investering (excl. btw) · Direct klaar voor verkoop
                 </div>
               </div>
 
@@ -285,7 +311,7 @@ export default function Investeringsplannen() {
                   'Tot 50 producten overzichtelijk ingericht',
                   'Directe koppeling met iDEAL, Bancontact & creditcard',
                   'Geoptimaliseerd voor mobiel bestellen & conversie',
-                  'Inclusief hosting, beveiliging & technisch beheer',
+                  'Product Schema.org opzet voor optimale Google vindbaarheid',
                 ].map((feat, idx) => (
                   <li key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.7rem', fontSize: '0.94rem', color: '#E2E8F0' }}>
                     <Check size={17} color="#C5A059" style={{ flexShrink: 0, marginTop: '3px' }} />
@@ -373,10 +399,208 @@ export default function Investeringsplannen() {
           </div>
         </div>
 
-        {/* EERLIJKE PRIJSVERGELIJKING & WAARDEVERANKERING */}
+        {/* OPTIONEEL LOSGEKOPPELD: HOSTING, BEVEILIGING & ONDERHOUD */}
         <div
           style={{
             marginTop: '4.5rem',
+            backgroundColor: 'rgba(22, 34, 59, 0.94)',
+            backdropFilter: 'blur(12px)',
+            border: '1px solid rgba(197, 160, 89, 0.35)',
+            borderTop: '3px solid #C5A059',
+            borderRadius: '10px',
+            padding: 'clamp(1.85rem, 4vw, 3rem)',
+            boxShadow: '0 20px 48px rgba(0, 0, 0, 0.45)',
+          }}
+        >
+          <div style={{ textAlign: 'center', maxWidth: '780px', margin: '0 auto 2.5rem auto' }}>
+            <div className="badge-tag" style={{ marginBottom: '0.85rem' }}>
+              <span>Optioneel &amp; Flexibel Losgekoppeld</span>
+            </div>
+            <h2 style={{ fontSize: 'clamp(1.6rem, 2.3vw, 2.25rem)', color: '#F5EFE4', marginBottom: '0.75rem' }}>
+              Onderhoud, Hosting &amp; Doorlopende Support
+            </h2>
+            <p style={{ color: '#CBD5E1', fontSize: '0.98rem', lineHeight: 1.7 }}>
+              Wij koppelen het onderhoud bewust los van de bouwkosten van uw website. Zo betaalt u voor de bouw slechts eenmalig en kiest u daarna zelf of u de hosting, beveiliging en wijzigingen zorgeloos door ons laat verzorgen.
+            </p>
+          </div>
+
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
+              gap: '1.75rem',
+              alignItems: 'stretch',
+            }}
+          >
+            {/* Optie 1: Onderhoud Basis (€ 49,- p/m) */}
+            <div
+              style={{
+                backgroundColor: 'rgba(9, 14, 23, 0.78)',
+                border: '1px solid rgba(197, 160, 89, 0.32)',
+                borderRadius: '8px',
+                padding: '2rem 1.75rem',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+              }}
+            >
+              <div>
+                <div style={{ fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.07em', color: '#C5A059', marginBottom: '0.4rem' }}>
+                  Technisch Ontzorgd
+                </div>
+                <h3 style={{ fontSize: '1.55rem', color: '#F5EFE4', marginBottom: '0.5rem' }}>
+                  Onderhoud Basis
+                </h3>
+                <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.35rem', marginBottom: '1.1rem' }}>
+                  <span className="font-serif" style={{ fontSize: '2.4rem', fontWeight: 700, color: '#C5A059', lineHeight: 1 }}>
+                    € 49,-
+                  </span>
+                  <span style={{ fontSize: '0.9rem', color: '#94A3B8' }}>p/m (excl. btw)</span>
+                </div>
+                <p style={{ fontSize: '0.92rem', color: '#CBD5E1', lineHeight: 1.6, marginBottom: '1.25rem' }}>
+                  Voor ondernemers die willen dat hun website of webshop altijd razendsnel, veilig en up-to-date in de lucht blijft zonder er zelf naar om te kijken.
+                </p>
+                <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.7rem', fontSize: '0.9rem', color: '#E2E8F0', marginBottom: '1.5rem' }}>
+                  <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.6rem' }}>
+                    <Check size={16} color="#C5A059" style={{ flexShrink: 0, marginTop: '3px' }} />
+                    <span>Razendsnelle Europese cloud hosting &amp; SSL-certificaat</span>
+                  </li>
+                  <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.6rem' }}>
+                    <Check size={16} color="#C5A059" style={{ flexShrink: 0, marginTop: '3px' }} />
+                    <span>Dagelijkse automatische back-ups &amp; 24/7 uptime-monitoring</span>
+                  </li>
+                  <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.6rem' }}>
+                    <Check size={16} color="#C5A059" style={{ flexShrink: 0, marginTop: '3px' }} />
+                    <span>Doorlopende beveiligings- &amp; React/Next.js software-updates</span>
+                  </li>
+                  <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.6rem' }}>
+                    <Check size={16} color="#C5A059" style={{ flexShrink: 0, marginTop: '3px' }} />
+                    <span>Technische storingsdienst &amp; domeinbeheer</span>
+                  </li>
+                </ul>
+              </div>
+              <Link to="/contact?pakket=onderhoud-basis" className="btn-secondary" style={{ width: '100%' }}>
+                <span>Onderhoud Basis Kiezen</span>
+                <ArrowRight size={15} color="#C5A059" />
+              </Link>
+            </div>
+
+            {/* Optie 2: Onderhoud & Content (€ 89,- p/m) */}
+            <div
+              style={{
+                backgroundColor: 'rgba(17, 26, 46, 0.98)',
+                border: '2px solid #C5A059',
+                borderRadius: '8px',
+                padding: '2rem 1.75rem',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+                boxShadow: '0 14px 36px rgba(0, 0, 0, 0.45)',
+              }}
+            >
+              <div>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.4rem' }}>
+                  <span style={{ fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.07em', color: '#C5A059' }}>
+                    Volledig Ontzorgd
+                  </span>
+                  <span
+                    style={{
+                      backgroundColor: '#C5A059',
+                      color: '#090E17',
+                      padding: '0.2rem 0.55rem',
+                      borderRadius: '4px',
+                      fontSize: '0.68rem',
+                      fontWeight: 700,
+                      letterSpacing: '0.06em',
+                      textTransform: 'uppercase',
+                    }}
+                  >
+                    Meest Gekozen
+                  </span>
+                </div>
+                <h3 style={{ fontSize: '1.55rem', color: '#F5EFE4', marginBottom: '0.5rem' }}>
+                  Onderhoud &amp; Content
+                </h3>
+                <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.35rem', marginBottom: '1.1rem' }}>
+                  <span className="font-serif" style={{ fontSize: '2.4rem', fontWeight: 700, color: '#C5A059', lineHeight: 1 }}>
+                    € 89,-
+                  </span>
+                  <span style={{ fontSize: '0.9rem', color: '#94A3B8' }}>p/m (excl. btw)</span>
+                </div>
+                <p style={{ fontSize: '0.92rem', color: '#CBD5E1', lineHeight: 1.6, marginBottom: '1.25rem' }}>
+                  Voor bedrijven die naast snelle hosting ook regelmatig teksten, foto&apos;s, projecten of producten willen laten aanpassen zonder losse uurtarieven.
+                </p>
+                <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.7rem', fontSize: '0.9rem', color: '#E2E8F0', marginBottom: '1.5rem' }}>
+                  <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.6rem' }}>
+                    <Check size={16} color="#C5A059" style={{ flexShrink: 0, marginTop: '3px' }} />
+                    <span><strong>Alles uit Onderhoud Basis</strong> (hosting, SSL, back-ups &amp; updates)</span>
+                  </li>
+                  <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.6rem' }}>
+                    <Check size={16} color="#C5A059" style={{ flexShrink: 0, marginTop: '3px' }} />
+                    <span>Doorlopende tekst- en fotowijzigingen op verzoek</span>
+                  </li>
+                  <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.6rem' }}>
+                    <Check size={16} color="#C5A059" style={{ flexShrink: 0, marginTop: '3px' }} />
+                    <span>Nieuwe projecten, cases of producten laten plaatsen</span>
+                  </li>
+                  <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.6rem' }}>
+                    <Check size={16} color="#C5A059" style={{ flexShrink: 0, marginTop: '3px' }} />
+                    <span>Directe prioriteitssupport via WhatsApp en e-mail</span>
+                  </li>
+                </ul>
+              </div>
+              <Link to="/contact?pakket=onderhoud-content" className="btn-primary" style={{ width: '100%' }}>
+                <span>Onderhoud &amp; Content Kiezen</span>
+                <ArrowRight size={15} />
+              </Link>
+            </div>
+
+            {/* Optie 3: Geen onderhoud? Eigen hosting */}
+            <div
+              style={{
+                backgroundColor: 'rgba(9, 14, 23, 0.65)',
+                border: '1px solid rgba(148, 163, 184, 0.24)',
+                borderRadius: '8px',
+                padding: '2rem 1.75rem',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+              }}
+            >
+              <div>
+                <div style={{ fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.07em', color: '#94A3B8', marginBottom: '0.4rem' }}>
+                  Zelf Beheerd
+                </div>
+                <h3 style={{ fontSize: '1.55rem', color: '#F5EFE4', marginBottom: '0.5rem' }}>
+                  Geen onderhoud?
+                </h3>
+                <div style={{ display: 'flex', alignItems: 'baseline', gap: '0.35rem', marginBottom: '1.1rem' }}>
+                  <span className="font-serif" style={{ fontSize: '1.65rem', fontWeight: 700, color: '#F5EFE4', lineHeight: 1.2 }}>
+                    Eigen hosting
+                  </span>
+                </div>
+                <p style={{ fontSize: '0.92rem', color: '#CBD5E1', lineHeight: 1.65, marginBottom: '1.25rem' }}>
+                  Wilt u geen maandelijks onderhoudspakket? Dan verzorgen wij de volledige oplevering op de eigen hosting van de klant tegen een eenmalige overdrachtstoeslag, zonder doorlopende support.
+                </p>
+                <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.65rem', fontSize: '0.88rem', color: '#CBD5E1', lineHeight: 1.55, marginBottom: '1.5rem' }}>
+                  <li>• Volledige overdracht van de gecompileerde broncode op uw eigen server</li>
+                  <li>• Eenmalige overdrachtstoeslag voor externe serverconfiguratie</li>
+                  <li>• Geen maandelijkse kosten bij Webvastgoed.nl</li>
+                  <li>• Zonder doorlopende technische updates of support</li>
+                </ul>
+              </div>
+              <Link to="/contact" className="btn-secondary" style={{ width: '100%' }}>
+                <span>Vraag naar de Voorwaarden</span>
+                <ArrowRight size={15} color="#C5A059" />
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        {/* EERLIJKE PRIJSVERGELIJKING & WAARDEVERANKERING */}
+        <div
+          style={{
+            marginTop: '4rem',
             backgroundColor: 'rgba(22, 34, 59, 0.94)',
             backdropFilter: 'blur(12px)',
             border: '1px solid rgba(197, 160, 89, 0.35)',
@@ -464,7 +688,7 @@ export default function Investeringsplannen() {
                 Webvastgoed.nl Maatwerk
               </div>
               <div className="font-serif" style={{ fontSize: '1.65rem', color: '#C5A059', fontWeight: 700, marginBottom: '1rem' }}>
-                € 250,- eenmalig of v.a. € 59,- p/m
+                € 300,- actie of v.a. € 950,-
               </div>
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.65rem', fontSize: '0.9rem', color: '#F1F5F9', lineHeight: 1.55 }}>
                 <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.55rem' }}>
@@ -481,7 +705,7 @@ export default function Investeringsplannen() {
                 </li>
                 <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.55rem' }}>
                   <Check size={16} color="#C5A059" style={{ flexShrink: 0, marginTop: '3px' }} />
-                  <span>100% eigendom van uw eigen domeinnaam en content</span>
+                  <span>Onderhoud &amp; hosting flexibel los te kiezen (vanaf € 49,- p/m)</span>
                 </li>
               </ul>
             </div>
@@ -503,7 +727,7 @@ export default function Investeringsplannen() {
             }}
           >
             <span>
-              Meer weten over de afweging tussen eenmalig afrekenen en een maandpakket? Lees onze gids:{' '}
+              Meer weten over de opbouw van onze tarieven en het losgekoppelde onderhoud? Lees onze gids:{' '}
               <Link to="/kennisbank/wat-kost-een-bedrijfswebsite" style={{ color: '#C5A059', textDecoration: 'underline', fontWeight: 600 }}>
                 Wat kost een professionele bedrijfswebsite laten maken?
               </Link>

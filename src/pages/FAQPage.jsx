@@ -12,20 +12,20 @@ export default function FAQPage() {
       answer: 'De meeste goedkope aanbieders gebruiken standaard WordPress thema’s met tientallen PHP plugins. Als een plugin veroudert, wordt uw site traag of kwetsbaar voor hackers. Wij bouwen al onze websites vanaf de basis op met moderne React en Next.js software. Dat betekent: geen kwetsbare PHP databases, directe laadtijden en een 100% uniek ontwerp.',
     },
     {
-      question: 'Wat houdt de tijdelijke Portfolio Actie van € 250,- in?',
-      answer: 'Wij zijn overgestapt op de nieuwste generatie ontwikkeltools en breiden ons portfolio graag verder uit met uiteenlopende branches. Daarom bouwen wij tijdelijk een complete, professionele maatwerk website tot maximaal 3 pagina’s (bijv. Home, Diensten en Contact) voor eenmalig € 250,- excl. btw.',
+      question: 'Wat houdt de tijdelijke Portfolio Actie van € 300,- in?',
+      answer: 'Wij zijn overgestapt op de nieuwste generatie ontwikkeltools en breiden ons portfolio graag verder uit met uiteenlopende branches. Daarom bouwen wij tijdelijk een complete, professionele maatwerk website tot maximaal 3 pagina’s (bijv. Home, Diensten en Contact) voor eenmalig € 300,- excl. btw.',
     },
     {
-      question: 'Kan ik bij de € 250,- actie ook extra pagina’s of specifieke functies laten toevoegen?',
-      answer: 'Jazeker. Heeft u bijvoorbeeld 5 of 8 pagina’s nodig, een interactieve Voor/Na slider (zoals bij Brökling Afbouw), een route en prijsmodule (zoals bij Smart Stops Europe) of een webshop? Dan bespreken we vooraf een heldere, eerlijke meerprijs zodat u precies weet waar u aan toe bent.',
+      question: 'Wat kost een uitgebreide bedrijfswebsite of maatwerk webshop?',
+      answer: 'Voor een uitgebreide maatwerk bedrijfswebsite (tot 8 pagina’s) hanteren wij een helder eenmalig tarief vanaf € 950,- excl. btw. Een complete maatwerk webshop (tot 50 producten, inclusief iDEAL en Bancontact) bouwen wij vanaf € 1.950,- eenmalig. Voor grote platforms of specifieke maatwerkmodules (zoals Smart Stops Europe) maken wij vooraf een vaste offerte op aanvraag.',
     },
     {
-      question: 'Wat is het verschil tussen eenmalig afrekenen en het maandpakket?',
-      answer: 'Bij eenmalige afrekening betaalt u een vast bedrag voor de bouw van de website (en eventueel optioneel € 20,- p/m voor snelle hosting, SSL en technisch onderhoud). Bij het maandpakket vanaf € 59,- p/m spreidt u de investering en zijn alle hosting, updates en aanpassingen doorlopend inbegrepen.',
+      question: 'Hoe werken hosting, onderhoud en aanpassingen na oplevering?',
+      answer: 'Wij hebben het onderhoud losgekoppeld van de bouwtarieven zodat u vooraf precies weet wat de bouw kost. Na oplevering kunt u kiezen uit twee optionele pakketten: Onderhoud Basis (€ 49,- p/m voor snelle Europese cloud hosting, SSL, dagelijkse back-ups en technische updates) of Onderhoud & Content (€ 89,- p/m inclusief doorlopende tekst- en fotowijzigingen en nieuwe projecten of producten plaatsen). Wilt u geen onderhoud bij ons? Dan leveren wij de website op uw eigen hosting op tegen een eenmalige overdrachtstoeslag, zonder doorlopende support.',
     },
     {
       question: 'Kunnen jullie ook een maatwerk webshop met iDEAL bouwen?',
-      answer: 'Ja. Wij bouwen complete maatwerk webshops (zoals Pastry Company) die razendsnel laden op smartphone, tablet en desktop. Uw klanten rekenen direct af via iDEAL, Bancontact of creditcard. Beschikbaar vanaf € 99,- per maand of als eenmalige investering.',
+      answer: 'Ja. Wij bouwen complete maatwerk webshops (zoals Pastry Company) die razendsnel laden op smartphone, tablet en desktop. Uw klanten rekenen direct af via iDEAL, Bancontact of creditcard. Beschikbaar vanaf een eenmalige investering van € 1.950,-.',
     },
     {
       question: 'Bouwen jullie ook websites voor transportbedrijven, koeriers en bouwbedrijven?',
@@ -53,7 +53,7 @@ export default function FAQPage() {
     },
     {
       question: 'Wat als ik later zelf een tekst of foto wil laten aanpassen?',
-      answer: 'Heeft u een maandpakket of onderhoudspakket? Dan stuurt u ons eenvoudig een kort berichtje via WhatsApp of e-mail en voeren wij de aanpassing vaak nog dezelfde dag voor u door. Zo hoeft u zelf nooit in een ingewikkeld systeem te zoeken.',
+      answer: 'Met het pakket Onderhoud & Content (€ 89,- p/m) stuurt u ons eenvoudig een kort berichtje via WhatsApp of e-mail en voeren wij tekst- en fotowijzigingen of nieuwe projecten vaak nog dezelfde dag voor u door. Zo hoeft u zelf nooit in een ingewikkeld systeem te zoeken.',
     },
   ];
 
@@ -83,8 +83,8 @@ export default function FAQPage() {
     >
       <SEO
         title="Veelgestelde Vragen (FAQ) - Maatwerk Websites, Webshops & Tarieven"
-        description="Antwoorden op veelgestelde vragen over onze maatwerk websites zonder PHP, de € 250,- portfolio actie, webshops, maandpakketten, oplevertijd en Google SEO."
-        keywords="veelgestelde vragen website laten maken, website zonder php, kosten website laten bouwen, webvastgoed faq, website 250 euro"
+        description="Antwoorden op veelgestelde vragen over onze maatwerk websites zonder PHP, de € 300,- portfolio actie, bedrijfswebsites vanaf € 950,-, webshops vanaf € 1.950,- en onderhoud."
+        keywords="veelgestelde vragen website laten maken, website zonder php, kosten website laten bouwen, webvastgoed faq, website 300 euro"
         schema={faqSchema}
       />
 
@@ -98,7 +98,7 @@ export default function FAQPage() {
             Veelgestelde vragen
           </h1>
           <p style={{ fontSize: '1.1rem', color: '#CBD5E1', lineHeight: 1.65 }}>
-            Vind direct antwoord op de meest gestelde vragen over onze werkwijze, de € 250,- starter actie, maatwerk webshops en onze techniek.
+            Vind direct antwoord op de meest gestelde vragen over onze werkwijze, de € 300,- starter actie, bedrijfswebsites, maatwerk webshops en onderhoud.
           </p>
         </div>
 

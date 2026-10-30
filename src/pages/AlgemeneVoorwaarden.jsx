@@ -106,13 +106,13 @@ export default function AlgemeneVoorwaarden() {
           {/* Section 3 */}
           <section>
             <h2 style={{ fontSize: '1.45rem', color: '#C5A059', marginBottom: '0.75rem' }}>
-              Artikel 3. Uitvoering, Oplevering &amp; € 250,- Starter-actie
+              Artikel 3. Uitvoering, Oplevering &amp; € 300,- Starter-actie
             </h2>
             <p style={{ color: '#CBD5E1', lineHeight: 1.7, marginBottom: '0.75rem' }}>
               Webvastgoed.nl ontwikkelt maatwerk websites en webshops op basis van moderne React en Next.js webarchitectuur.
             </p>
             <ul style={{ paddingLeft: '1.35rem', color: '#CBD5E1', lineHeight: 1.8, display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
-              <li>Bij de eenmalige starter actie (€ 250,- excl. btw) levert Webvastgoed.nl een complete maatwerk bedrijfswebsite op tot maximaal 3 pagina&apos;s, inclusief mobielvriendelijke weergave en contactformulier.</li>
+              <li>Bij de eenmalige starter actie (€ 300,- excl. btw) levert Webvastgoed.nl een complete maatwerk bedrijfswebsite op tot maximaal 3 pagina&apos;s, inclusief mobielvriendelijke weergave en contactformulier.</li>
               <li>Voor oplevering ontvangt de opdrachtgever een live proefomgeving ter beoordeling. Eventuele tekstuele of visuele correcties worden in overleg verwerkt voor livegang.</li>
               <li>Opdrachtgever draagt zorg voor tijdige aanlevering van benodigde teksten, bedrijfsgegevens of beeldmateriaal, tenzij is overeengekomen dat Webvastgoed.nl dit verzorgt.</li>
             </ul>
@@ -124,17 +124,17 @@ export default function AlgemeneVoorwaarden() {
               Artikel 4. Eigendomsrecht van Domeinnaam &amp; Website
             </h2>
             <p style={{ color: '#CBD5E1', lineHeight: 1.7 }}>
-              Uw domeinnaam, bedrijfsnaam, logo&apos;s en aangeleverde content blijven te allen tijde <strong style={{ color: '#F5EFE4' }}>100% eigendom van de opdrachtgever</strong>. Na volledige voldoening van de overeengekomen eenmalige afkoopsom verkrijgt de opdrachtgever het volledige gebruiksrecht op de opgeleverde maatwerk website.
+              Uw domeinnaam, bedrijfsnaam, logo&apos;s en aangeleverde content blijven te allen tijde <strong style={{ color: '#F5EFE4' }}>100% eigendom van de opdrachtgever</strong>. Na volledige voldoening van de overeengekomen eenmalige koopsom verkrijgt de opdrachtgever het volledige gebruiksrecht op de opgeleverde maatwerk website.
             </p>
           </section>
 
           {/* Section 5 */}
           <section>
             <h2 style={{ fontSize: '1.45rem', color: '#C5A059', marginBottom: '0.75rem' }}>
-              Artikel 5. Maandpakketten, Hosting &amp; Onderhoud
+              Artikel 5. Onderhoud, Hosting &amp; Eigen Hosting Overdracht
             </h2>
             <p style={{ color: '#CBD5E1', lineHeight: 1.7 }}>
-              Indien opdrachtgever kiest voor een maandelijks pakket of een hosting en onderhoudspakket, zorgt Webvastgoed.nl voor snelle cloud hosting, SSL beveiliging, technische updates en tekstuele of visuele aanpassingen conform het gekozen pakket. Na de overeengekomen eerste looptijd zijn maandpakketten maandelijks opzegbaar met een opzegtermijn van een kalendermaand.
+              Indien opdrachtgever kiest voor een optioneel onderhoudspakket (Onderhoud Basis voor € 49,- p/m of Onderhoud &amp; Content voor € 89,- p/m), zorgt Webvastgoed.nl voor snelle cloud hosting, SSL beveiliging, technische updates en (bij Onderhoud &amp; Content) doorlopende tekstuele of visuele aanpassingen. Na de overeengekomen eerste looptijd zijn onderhoudspakketten maandelijks opzegbaar met een opzegtermijn van een kalendermaand. Kiest opdrachtgever voor oplevering zonder onderhoudspakket, dan vindt oplevering plaats op de eigen hosting van de opdrachtgever tegen een eenmalige overdrachtstoeslag, zonder doorlopende support.
             </p>
           </section>
 

@@ -366,7 +366,7 @@ export default function DigitaleGroei() {
               </Link>{' '}
               of bekijk onze{' '}
               <Link to="/investeringsplannen" style={{ color: '#C5A059', textDecoration: 'underline', fontWeight: 600 }}>
-                website pakketten vanaf € 250,-
+                website pakketten vanaf € 300,-
               </Link>
               .
             </p>

@@ -12,6 +12,9 @@ export default function Kennisbank() {
 
   // If a specific article slug is requested, render the full article view
   if (slug) {
+    if (slug === 'website-laten-maken-250-euro') {
+      return <Navigate to="/kennisbank/website-laten-maken-300-euro" replace />;
+    }
     const article = KENNISBANK_ARTICLES.find((a) => a.slug === slug);
     if (!article) {
       return <Navigate to="/kennisbank" replace />;
@@ -338,7 +341,7 @@ export default function Kennisbank() {
     >
       <SEO
         title="Kennisbank & Advies - Alles over Maatwerk Websites, Kosten & SEO"
-        description="Lees onze praktische gidsen over het laten maken van een bedrijfswebsite of webshop, de € 250,- starter actie, waarom React sneller is dan WordPress en tips per branche."
+        description="Lees onze praktische gidsen over het laten maken van een bedrijfswebsite of webshop, de € 300,- starter actie, waarom React sneller is dan WordPress en tips per branche."
         keywords="kennisbank webdesign, website laten maken advies, wat kost een website, maatwerk website voordelen, webvastgoed kennisbank"
         schema={collectionSchema}
       />

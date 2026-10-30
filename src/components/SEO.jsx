@@ -8,7 +8,8 @@ const BREADCRUMB_NAMES = {
   '/over-ons': 'Over Ons & Werkwijze',
   '/faq': 'Veelgestelde Vragen',
   '/kennisbank': 'Kennisbank & Advies',
-  '/kennisbank/website-laten-maken-250-euro': 'Website Laten Maken voor € 250,-',
+  '/kennisbank/website-laten-maken-300-euro': 'Website Laten Maken voor € 300,-',
+  '/kennisbank/website-laten-maken-250-euro': 'Website Laten Maken voor € 300,-',
   '/kennisbank/maatwerk-website-vs-wordpress': 'Maatwerk Website vs. WordPress',
   '/kennisbank/wat-kost-een-bedrijfswebsite': 'Wat Kost een Bedrijfswebsite?',
   '/kennisbank/maatwerk-webshop-laten-maken': 'Maatwerk Webshop Laten Maken',
@@ -31,7 +32,7 @@ export default function SEO({ title, description, keywords, schema }) {
       : 'Maatwerk Websites & Webshops zonder Standaard Templates | Webvastgoed.nl';
     const fullDesc =
       description ||
-      'Razendsnelle maatwerk websites en webshops op React & Next.js architectuur. Geen kwetsbare PHP plugins of standaard templates. Tijdelijke portfolio actie vanaf € 250,- of volledig ontzorgd per maand.';
+      'Razendsnelle maatwerk websites en webshops op React & Next.js architectuur. Geen kwetsbare PHP plugins of standaard templates. Tijdelijke portfolio actie vanaf € 300,- eenmalig.';
 
     document.title = fullTitle;
 
