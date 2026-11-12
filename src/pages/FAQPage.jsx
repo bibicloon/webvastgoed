@@ -181,7 +181,7 @@ export default function FAQPage() {
 
           <div style={{ textAlign: 'center', marginTop: '1.75rem' }}>
             <Link to="/kennisbank" className="btn-secondary">
-              <span>Bekijk Alle 6 Kennisbank Artikelen</span>
+              <span>Bekijk Alle {KENNISBANK_ARTICLES.length} Kennisbank &amp; Branche Artikelen</span>
               <ArrowRight size={15} />
             </Link>
           </div>

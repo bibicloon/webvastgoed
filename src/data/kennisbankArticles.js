@@ -303,4 +303,242 @@ export const KENNISBANK_ARTICLES = [
     ctaTitle: 'Uw vakwerk professioneel presenteren op een eigen website?',
     ctaText: 'Neem vrijblijvend contact op voor de € 300,- starter actie of een uitgebreide projectwebsite.',
   },
+  {
+    slug: 'website-voor-installatiebedrijf-en-techniek',
+    category: 'Branche: Installatie & Techniek',
+    readTime: '5 min leestijd',
+    datePublished: '2026-11-12',
+    dateModified: '2026-11-12',
+    image: 'https://webvastgoed.nl/assets/marktplaats_4_brokling_afbouw.jpg',
+    title: 'Website laten maken voor installatiebedrijf, loodgieter of elektricien',
+    metaTitle: 'Website Laten Maken voor Installatiebedrijf, Loodgieter & Elektricien',
+    metaDesc: 'Professionele website laten maken voor uw installatiebedrijf, loodgieter, elektricien of duurzame techniek? Ontvang meer regionale aanvragen zonder standaard templates.',
+    keywords: 'website laten maken installatiebedrijf, website loodgieter laten maken, website elektricien laten bouwen, webdesign installatietechniek, warmtepomp en airco website',
+    excerpt: 'Voor installateurs, loodgieters en elektrotechnische bedrijven draait een goede website om regionale vindbaarheid, keurmerken en gerichte offerteaanvragen.',
+    intro: 'Of uw bedrijf nu gespecialiseerd is in elektrotechniek, loodgieterswerk, airconditioning, warmtepompen of compleet installatiewerk: particuliere en zakelijke klanten zoeken vrijwel altijd via hun smartphone in hun eigen regio. Een razendsnelle maatwerk website zorgt ervoor dat u direct vertrouwen wekt en kwalitatieve aanvragen binnenhaalt.',
+    sections: [
+      {
+        heading: 'Waarom veel installatiebedrijven online opdrachten mislopen',
+        paragraphs: [
+          'Veel gevestigde installateurs en technische vakbedrijven leveren uitstekend werk, maar hebben een verouderde website die traag laadt op mobiel en niet duidelijk laat zien welke diensten er wel en niet worden uitgevoerd. Hierdoor bellen klanten met onduidelijke vragen of stappen ze over naar een concurrent die online wel direct overzicht biedt.',
+          'Met een schone, overzichtelijke website filtert u de juiste opdrachten eruit en bespaart u kostbare tijd aan de telefoon.',
+        ],
+      },
+      {
+        heading: 'Wat een sterke installatiewebsite direct moet bevatten',
+        paragraphs: [
+          'Wij bouwen uw website specifiek rondom de manier waarop opdrachtgevers een installateur of technisch specialist kiezen:',
+        ],
+        bullets: [
+          'Duidelijke pagina’s per specialisme (zoals meterkast en elektra, badkamer en sanitair, klimaattechniek of verduurzaming)',
+          'Slimme offerteaanvraag waarbij klanten direct foto’s van de huidige situatie of meterkast kunnen meesturen',
+          'Prominente weergave van uw certificeringen, garanties en regionale werkgebied',
+          'Snelle mobiele laadtijd en directe WhatsApp of belknop voor storingen en spoedklussen',
+        ],
+      },
+      {
+        heading: 'Regionale vindbaarheid op uw vakgebied en werkgebied',
+        paragraphs: [
+          'Wanneer iemand in uw stad of regio zoekt op bijvoorbeeld installatiebedrijf, elektricien of airco laten plaatsen, wilt u bovenaan staan zonder per klik te hoeven betalen aan dure leadplatformen. Door elke dienst technisch juist op te bouwen in React en Next.js met lokale Schema.org data, bouwt u een duurzaam digitaal fundament dat jarenlang eigen klanten oplevert.',
+        ],
+      },
+    ],
+    relatedLinks: [
+      { to: '/investeringsplannen', label: 'Bekijk onze pakketten: Starter Actie (€ 300,-) of complete Bedrijfswebsite (vanaf € 950,-)' },
+      { to: '/kennisbank/website-voor-bouw-en-afbouw', label: 'Lees ook hoe bouw- en afbouwbedrijven hun projecten online presenteren' },
+    ],
+    ctaPackage: 'bedrijfswebsite',
+    ctaTitle: 'Meer gerichte installatie- en techniekaanvragen via uw eigen website?',
+    ctaText: 'Bespreek vrijblijvend uw wensen. Binnen 5 tot 10 werkdagen staat uw nieuwe website live.',
+  },
+  {
+    slug: 'website-voor-hovenier-en-groenvoorziening',
+    category: 'Branche: Tuin & Buitenruimte',
+    readTime: '4 min leestijd',
+    datePublished: '2026-11-12',
+    dateModified: '2026-11-12',
+    image: 'https://webvastgoed.nl/assets/marktplaats_4_brokling_afbouw.jpg',
+    title: 'Website laten maken voor hovenier, tuinontwerper of bestratingsbedrijf',
+    metaTitle: 'Website Laten Maken voor Hovenier, Tuinontwerp & Bestrating | Maatwerk',
+    metaDesc: 'Een sfeervolle, snelle website laten maken voor uw hoveniersbedrijf, tuinontwerper of grondwerkbedrijf? Laat uw tuinaanleg en projecten schitteren met een Voor/Na slider.',
+    keywords: 'website laten maken hovenier, hoveniersbedrijf website laten bouwen, webdesign tuinontwerp en tuinaanleg, website bestratingsbedrijf',
+    excerpt: 'Tuinaanleg, sierbestrating en luxe overkappingen verkoopt u met sterk beeldmateriaal. Ontdek hoe een maatwerk hovenierswebsite zorgt voor lucratievere tuinprojecten.',
+    intro: 'Voor hoveniers, tuinarchitecten, grondwerkers en bestratingsbedrijven is visuele overtuigingskracht allesbepalend. Een huiseigenaar of bedrijf dat investeert in een compleet nieuwe tuin, oprit of houten overkapping wil vooraf uw stijl, afwerking en eerdere transformaties kunnen bewonderen.',
+    sections: [
+      {
+        heading: 'Van kale achtertuin naar droomtuin: kracht van de Voor/Na slider',
+        paragraphs: [
+          'Niets overtuigt een nieuwe klant zo snel als het visuele verschil tussen de oude situatie en het eindresultaat. Net zoals wij voor vakbedrijven in de afbouw toepassen, kunnen wij uw hovenierswebsite uitrusten met een interactieve Voor/Na vergelijkingsslider.',
+          'Bezoekers schuiven met hun vinger op hun telefoon of muis op de laptop direct over de foto en zien in een oogopslag de waarde van uw vakmanschap.',
+        ],
+      },
+      {
+        heading: 'Structuur die grotere tuinprojecten aantrekt',
+        paragraphs: [
+          'Met een doordachte opbouw trekt u precies het type opdrachten aan waar uw hoveniersbedrijf het liefst aan werkt:',
+        ],
+        bullets: [
+          'Overzichtelijke indeling in tuinontwerp, complete tuinaanleg, sierbestrating, veranda’s en periodiek tuinonderhoud',
+          'Haarscherpe projectgalerij die dankzij slimme beeldcompressie toch binnen een seconde laadt op mobiel',
+          'Lokale SEO focus op uw regio zodat u gevonden wordt door klanten in uw directe rijgebied',
+          'Eenvoudig nieuwe foto’s van opgeleverde tuinen laten plaatsen via WhatsApp met ons Onderhoud & Content pakket',
+        ],
+      },
+      {
+        heading: 'Geen zorgen over techniek tijdens het hoogseizoen',
+        paragraphs: [
+          'In het voorjaar en de zomer bent u buiten aan het werk en wilt u geen tijd verliezen aan een trage WordPress website of technische storingen. Onze React en Next.js websites draaien volledig onderhoudsvrij en veilig, zodat uw digitale etalage het hele jaar door professioneel presteert.',
+        ],
+      },
+    ],
+    relatedLinks: [
+      { to: '/portfolio', label: 'Bekijk onze gerealiseerde maatwerk cases en interactieve projectpresentaties' },
+      { to: '/investeringsplannen', label: 'Bekijk onze heldere eenmalige tarieven vanaf € 300,- en € 950,-' },
+    ],
+    ctaPackage: 'bedrijfswebsite',
+    ctaTitle: 'Uw mooiste tuinprojecten presenteren op een razendsnelle website?',
+    ctaText: 'Vraag vrijblijvend een voorstel aan voor uw hoveniers- of bestratingsbedrijf.',
+  },
+  {
+    slug: 'website-voor-horeca-bakkerij-en-food',
+    category: 'Branche: Horeca & Food',
+    readTime: '4 min leestijd',
+    datePublished: '2026-11-12',
+    dateModified: '2026-11-12',
+    image: 'https://webvastgoed.nl/assets/marktplaats_3_pastry_company.jpg',
+    title: 'Website of webshop laten maken voor horeca, patisserie, bakkerij of catering',
+    metaTitle: 'Website of Webshop Laten Maken voor Horeca, Bakkerij & Catering',
+    metaDesc: 'Een smaakvolle website of bestelwebshop laten maken voor uw restaurant, patisserie, bakkerij of cateringbedrijf? Bekijk onze aanpak zoals bij Pastry Company.',
+    keywords: 'website laten maken horeca, webshop bakkerij patisserie, website laten maken catering, restaurant website laten bouwen, food webshop met ideal',
+    excerpt: 'In de horeca, patisserie en catering beslist een bezoeker met zijn ogen. Ontdek hoe een luxe ontwerp en een razendsnelle mobiele bestelmodule zorgen voor meer reserveringen en bestellingen.',
+    intro: 'Of u nu een ambachtelijke patisserie, bakkerij, cateringbedrijf, delicatessezaak of restaurant runt: uw website moet direct dezelfde beleving en kwaliteit uitstralen als uw producten. Bovendien zoeken vrijwel al uw gasten en bestellers op hun smartphone, vaak vlak voor het moment dat zij willen reserveren of bestellen.',
+    sections: [
+      {
+        heading: 'Smaakvolle vormgeving gecombineerd met directe actie',
+        paragraphs: [
+          'Veel horeca- en foodwebsites dwingen bezoekers om trage PDF-menukaarten te downloaden of door onoverzichtelijke bestelpagina’s te klikken. Wij ontwerpen uw menukaart, cateringpakketten of assortiment direct leesbaar op elk mobiel scherm, met heldere knoppen om te bestellen, te reserveren of een offerte voor een evenement aan te vragen.',
+        ],
+        bullets: [
+          'Luxe merkpresentatie met warme kleuren en hoogwaardige typografie die uw ambacht onderstreept',
+          'Direct online bestellen en afrekenen via iDEAL en Bancontact zonder commissie per bestelling af te dragen aan thuisbezorgd-platforms',
+          'Aparte module voor zakelijke bestellingen, bedrijfslunches of relatiegeschenken op factuur',
+          'Razendsnelle mobiele laadtijd zodat hongerige bezoekers nooit afhaken',
+        ],
+      },
+      {
+        heading: 'Case uit ons portfolio: Pastry Company',
+        paragraphs: [
+          'Voor Pastry Company ontwikkelden wij een luxe online boutique en webshop voor handgemaakte bonbons, patisserie en zakelijke geschenkdozen. Door de rijke donkere vormgeving met gouden accenten en een soepele mobiele winkelwagen bestellen zowel consumenten als bedrijven binnen enkele tikken.',
+        ],
+      },
+      {
+        heading: 'Volledige marge behouden op uw eigen bestellingen',
+        paragraphs: [
+          'Externe bestelplatforms rekenen vaak 13% tot 30% commissie op elke bestelling. Met een eigen maatwerk website (vanaf € 300,- starter of € 950,- uitgebreid) of een eigen webshop (vanaf € 1.950,- eenmalig) bouwt u aan uw eigen klantenbestand en houdt u de volledige marge in eigen huis.',
+        ],
+      },
+    ],
+    relatedLinks: [
+      { to: '/portfolio', label: 'Bekijk de Pastry Company case study in ons portfolio' },
+      { to: '/kennisbank/maatwerk-webshop-laten-maken', label: 'Lees meer over onze maatwerk webshops met iDEAL en mobiele conversie' },
+    ],
+    ctaPackage: 'webshop',
+    ctaTitle: 'Uw gerechten, catering of foodproducten stijlvol online presenteren?',
+    ctaText: 'Neem vrijblijvend contact op voor een horeca-website of eigen bestelwebshop op maat.',
+  },
+  {
+    slug: 'website-voor-zakelijke-dienstverlening-en-advies',
+    category: 'Branche: Zakelijke Dienstverlening',
+    readTime: '5 min leestijd',
+    datePublished: '2026-11-12',
+    dateModified: '2026-11-12',
+    image: 'https://webvastgoed.nl/assets/marktplaats_2_smartstops_europe.jpg',
+    title: 'Website laten maken voor zakelijke dienstverlening, financieel adviseur of makelaar',
+    metaTitle: 'Website Laten Maken voor Zakelijke Dienstverlening, Advies & Makelaardij',
+    metaDesc: 'Een representatieve, veilige website laten maken voor uw adviesbureau, boekhouder, makelaar of consultancy? Straal direct rust, autoriteit en betrouwbaarheid uit.',
+    keywords: 'website laten maken zakelijke dienstverlening, website boekhouder accountant, website laten maken adviesbureau, website makelaar vastgoed, b2b website laten bouwen',
+    excerpt: 'In de financiële, juridische en zakelijke dienstverlening draait alles om vertrouwen en deskundigheid. Ontdek hoe digitaal vastgoed uw positie als expert versterkt.',
+    intro: 'Wanneer een ondernemer of particulier op zoek gaat naar een boekhouder, financieel adviseur, makelaar, jurist, recruiter of consultant, wordt uw website altijd vooraf gecontroleerd. Zelfs wanneer iemand via een persoonlijke aanbeveling bij u terechtkomt, bepaalt de uitstraling van uw website of diegene daadwerkelijk een kennismakingsgesprek inplant.',
+    sections: [
+      {
+        heading: 'Autoriteit en rust in plaats van schreeuwerige templates',
+        paragraphs: [
+          'In de zakelijke dienstverlening werkt een standaard template vaak averechts: het oogt generiek en onderscheidt uw kantoor niet van andere aanbieders. Wij ontwerpen een rustige, monumentale online omgeving die direct vakbekwaamheid, discretie en betrouwbaarheid uitstraalt.',
+        ],
+        bullets: [
+          'Heldere positionering van uw expertise, werkwijze en doelgroep op de eerste schermhoogte',
+          'Geen kwetsbare PHP plugins of onveilige formulieren: maximale dataveiligheid en sterke beveiligingsheaders (CSP & HSTS)',
+          'Mogelijkheid voor interactieve rekentools, keuzehulpen of directe afspraakplanning',
+          'Sterke organische vindbaarheid in Google en AI zoekmachines (zoals ChatGPT en Perplexity) dankzij uitgebreide Schema.org opmaak',
+        ],
+      },
+      {
+        heading: 'Kennisbank en inhoudelijke diepgang als klantenmagneet',
+        paragraphs: [
+          'Als adviseur of zakelijk specialist wint u het vertrouwen van potentiële cliënten door heldere antwoorden te geven op veelvoorkomende vraagstukken. Wij richten uw website zo in dat uw diensten en eventuele kennisartikelen naadloos in elkaar overlopen, met op elk moment een laagdrempelige stap naar een vrijblijvend adviesgesprek.',
+        ],
+      },
+      {
+        heading: 'Snel en zonder tijdrovende vergadertrajecten geregeld',
+        paragraphs: [
+          'Uw eigen uren zijn kostbaar. Daarom nemen wij de volledige technische en visuele realisatie uit handen en leveren wij uw nieuwe kantoorwebsite binnen 5 tot 10 werkdagen turn-key op.',
+        ],
+      },
+    ],
+    relatedLinks: [
+      { to: '/over-ons', label: 'Lees meer over onze visie op digitaal vastgoed als fundament van uw onderneming' },
+      { to: '/investeringsplannen', label: 'Bekijk onze tarieven voor een starter website (€ 300,-) of complete kantoorwebsite (vanaf € 950,-)' },
+    ],
+    ctaPackage: 'bedrijfswebsite',
+    ctaTitle: 'Een website die de kwaliteit en autoriteit van uw kantoor weerspiegelt?',
+    ctaText: 'Bespreek vrijblijvend uw wensen met ons voor een voorstel op maat.',
+  },
+  {
+    slug: 'wordpress-website-vervangen-door-maatwerk',
+    category: 'Overstappen & Moderniseren',
+    readTime: '5 min leestijd',
+    datePublished: '2026-11-12',
+    dateModified: '2026-11-12',
+    image: 'https://webvastgoed.nl/assets/marktplaats_2_smartstops_europe.jpg',
+    title: 'Oude of trage WordPress website laten vervangen door razendsnel maatwerk (zonder Google-verlies)',
+    metaTitle: 'WordPress Website Laten Vervangen of Vernieuwen | Snel & Zonder SEO Verlies',
+    metaDesc: 'Is uw huidige WordPress website traag, verouderd of onveilig? Laat uw website professioneel vervangen door modern React & Next.js maatwerk met behoud van uw Google positie.',
+    keywords: 'wordpress website vervangen, oude website laten vernieuwen, trage website sneller maken, overstappen van wordpress naar maatwerk, website restylen mkb',
+    excerpt: 'Loopt uw huidige website achter op hoe uw bedrijf nu werkt? Ontdek hoe wij uw verouderde WordPress site naadloos vervangen door modern maatwerk met behoud van uw domein en Google-positie.',
+    intro: 'Veel bedrijven werken nog met een website die vier tot acht jaar geleden in WordPress is gebouwd. In de tussentijd is het bedrijf gegroeid, maar laadt de website traag op moderne smartphones, werken bepaalde plugins niet meer goed en durft niemand meer op de update-knop te drukken uit angst dat de opmaak verspringt.',
+    sections: [
+      {
+        heading: 'Wanneer is het slimmer om uw website te vervangen in plaats van op te lappen?',
+        paragraphs: [
+          'Het repareren van een verouderd WordPress thema met twintig losse plugins kost bij een traditioneel bureau vaak honderden euro’s aan losse uren, terwijl de onderliggende trage techniek hetzelfde blijft. Door over te stappen op een schone React en Next.js opbouw bent u in een keer verlost van plugin-conflicten, trage laadtijden en kwetsbare PHP updates.',
+        ],
+        bullets: [
+          'Van 4 tot 6 seconden wachttijd naar directe paginalading op mobiel en desktop',
+          'Een frisse, moderne en luxe uitstraling die past bij waar uw bedrijf vandaag staat',
+          'Nooit meer kapotte formulieren of verspringende pagina’s na een automatische plugin-update',
+          'Lagere maandlasten of direct eenmalig afrekenen vanaf € 300,- (tot 3 pagina’s) of € 950,- (complete bedrijfswebsite)',
+        ],
+      },
+      {
+        heading: 'Overstappen met 100% behoud van uw domeinnaam en Google-positie',
+        paragraphs: [
+          'Een veelgestelde vraag bij het vernieuwen van een bestaande website is: raak ik mijn opgebouwde vindbaarheid in Google niet kwijt? Het antwoord is nee, mits de overstap technisch zorgvuldig wordt uitgevoerd.',
+          'Wij brengen vooraf uw bestaande URL’s in kaart en stellen indien nodig nette 301 doorverwijzingen in naar de nieuwe structuur. Doordat uw nieuwe website bovendien vele malen sneller laadt en voorzien wordt van moderne Schema.org data, stijgt uw positie in Google na de overstap vrijwel altijd.',
+        ],
+      },
+      {
+        heading: 'Geen enkele seconde offline tijdens de verhuizing',
+        paragraphs: [
+          'Wij bouwen en testen uw volledig nieuwe website eerst op een besloten live testlink. Uw huidige website blijft ondertussen gewoon bereikbaar voor uw klanten. Pas op het moment dat u 100% tevreden bent over het nieuwe ontwerp, schakelen wij uw domeinnaam naadloos om naar uw nieuwe digitale bedrijfspand.',
+        ],
+      },
+    ],
+    relatedLinks: [
+      { to: '/kennisbank/maatwerk-website-vs-wordpress', label: 'Lees ook: De technische vergelijking tussen React & Next.js en WordPress' },
+      { to: '/investeringsplannen', label: 'Bekijk onze eenmalige tarieven voor het vernieuwen van uw website' },
+    ],
+    ctaPackage: 'bedrijfswebsite',
+    ctaTitle: 'Uw verouderde website zorgeloos laten vervangen door modern maatwerk?',
+    ctaText: 'Stuur ons uw huidige website-adres en wij laten u vrijblijvend zien welke winst er voor uw bedrijf te behalen is.',
+  },
 ];
