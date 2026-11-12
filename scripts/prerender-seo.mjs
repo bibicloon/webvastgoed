@@ -1,15 +1,48 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 import { KENNISBANK_ARTICLES } from '../src/data/kennisbankArticles.js';
 import { PORTFOLIO_PROJECTS } from '../src/data/portfolioProjects.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const distDir = path.resolve(__dirname, '../dist');
+const ssrDir = path.resolve(__dirname, '../dist-ssr');
 const baseHtmlPath = path.join(distDir, 'index.html');
 const baseUrl = 'https://webvastgoed.nl';
 
+// Dynamically import the SSR bundle built by Vite
+const ssrEntryUrl = pathToFileURL(path.join(ssrDir, 'entry-server.js')).href;
+const { renderRoute } = await import(ssrEntryUrl);
+
 const ROUTES = [
+  {
+    path: '/',
+    isHome: true,
+    breadcrumb: 'Home',
+    title: 'Maatwerk Websites & Webshops zonder Standaard Templates | Webvastgoed.nl',
+    description:
+      'Razendsnelle maatwerk websites en webshops op React & Next.js architectuur. Geen kwetsbare PHP plugins of standaard templates. Tijdelijke portfolio actie vanaf € 300,- eenmalig.',
+    keywords:
+      'maatwerk website laten maken, website zonder wordpress, website zonder php, react webdesign, zakelijke website laten bouwen, webshop laten maken, webvastgoed',
+    schema: {
+      '@context': 'https://schema.org',
+      '@type': 'ProfessionalService',
+      name: 'Webvastgoed.nl',
+      description:
+        'Maatwerk websites en webshops gebouwd met React en Next.js. Geen standaard templates of kwetsbare PHP plugins. Heldere eenmalige tarieven vanaf € 300,-.',
+      url: 'https://webvastgoed.nl',
+      telephone: '+31630037257',
+      email: 'info@webvastgoed.nl',
+      areaServed: ['NL', 'BE'],
+      priceRange: '€300 - €2500',
+      knowsAbout: [
+        'Maatwerk website laten maken',
+        'Webshop laten bouwen',
+        'React & Next.js webarchitectuur',
+        'Zoekmachine optimalisatie (SEO)',
+      ],
+    },
+  },
   {
     path: '/investeringsplannen',
     breadcrumb: 'Tarieven & Pakketten',
@@ -259,7 +292,7 @@ function escapeAttr(str) {
 const baseHtml = fs.readFileSync(baseHtmlPath, 'utf8');
 
 for (const route of ROUTES) {
-  const canonicalUrl = `${baseUrl}${route.path}`;
+  const canonicalUrl = route.isHome ? `${baseUrl}/` : `${baseUrl}${route.path}`;
   const ogImage = route.ogImage || `${baseUrl}/assets/marktplaats_1_onpoint_koeriers.jpg`;
   const ogType = route.isArticle ? 'article' : 'website';
 
@@ -279,7 +312,7 @@ for (const route of ROUTES) {
       name: route.breadcrumb,
       item: canonicalUrl,
     });
-  } else {
+  } else if (!route.isHome) {
     breadcrumbItems.push({
       '@type': 'ListItem',
       position: 2,
@@ -296,7 +329,11 @@ for (const route of ROUTES) {
 
   const combinedSchema = route.schema ? [route.schema, breadcrumbSchema] : [breadcrumbSchema];
 
+  // Render full static HTML body for Googlebot first-pass indexing
+  const renderedAppHtml = renderRoute(route.path);
+
   let html = baseHtml
+    .replace('<div id="root"></div>', `<div id="root">${renderedAppHtml}</div>`)
     .replace(/<title>[\s\S]*?<\/title>/, `<title>${route.title}</title>`)
     .replace(
       /<meta\s+name="description"\s+content="[^"]*"\s*\/>/,
@@ -343,7 +380,7 @@ for (const route of ROUTES) {
       `<meta name="twitter:image" content="${ogImage}" />`
     )
     .replace(
-      route.path === '/portfolio'
+      route.isHome || route.path === '/portfolio'
         ? /(?!)/
         : /\s*<!-- Preload Homepage LCP Showcase Image -->\s*<link\s+rel="preload"[^>]*\/>/,
       ''
@@ -353,9 +390,19 @@ for (const route of ROUTES) {
       `    <script id="jsonld-schema" type="application/ld+json">${JSON.stringify(combinedSchema)}</script>\n  </head>`
     );
 
-  const routeDir = path.join(distDir, route.path.replace(/^\//, ''));
-  fs.mkdirSync(routeDir, { recursive: true });
-  fs.writeFileSync(path.join(routeDir, 'index.html'), html, 'utf8');
+  if (route.isHome) {
+    fs.writeFileSync(baseHtmlPath, html, 'utf8');
+  } else {
+    const cleanRoute = route.path.replace(/^\//, '');
+    const routeDir = path.join(distDir, cleanRoute);
+    fs.mkdirSync(routeDir, { recursive: true });
+    // Write both dist/<route>/index.html AND dist/<route>.html for Vercel cleanUrls & direct directory lookup
+    fs.writeFileSync(path.join(routeDir, 'index.html'), html, 'utf8');
+    fs.writeFileSync(path.join(distDir, `${cleanRoute}.html`), html, 'utf8');
+  }
 }
 
-console.log(`Pre-rendered static SEO HTML and JSON-LD for ${ROUTES.length} routes (+ homepage = ${ROUTES.length + 1} total URLs).`);
+// Remove temporary SSR build artifacts
+fs.rmSync(ssrDir, { recursive: true, force: true });
+
+console.log(`Pre-rendered full SSR HTML + JSON-LD for ${ROUTES.length} routes.`);
