@@ -8,7 +8,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const distDir = path.resolve(__dirname, '../dist');
 const ssrDir = path.resolve(__dirname, '../dist-ssr');
 const baseHtmlPath = path.join(distDir, 'index.html');
-const baseUrl = 'https://webvastgoed.nl';
+const baseUrl = 'https://www.webvastgoed.nl';
 
 // Dynamically import the SSR bundle built by Vite
 const ssrEntryUrl = pathToFileURL(path.join(ssrDir, 'entry-server.js')).href;
@@ -30,7 +30,7 @@ const ROUTES = [
       name: 'Webvastgoed.nl',
       description:
         'Maatwerk websites en webshops gebouwd met React en Next.js. Geen standaard templates of kwetsbare PHP plugins. Heldere eenmalige tarieven vanaf € 300,-.',
-      url: 'https://webvastgoed.nl',
+      url: 'https://www.webvastgoed.nl',
       telephone: '+31630037257',
       email: 'info@webvastgoed.nl',
       areaServed: ['NL', 'BE'],
@@ -145,7 +145,7 @@ const ROUTES = [
       '@type': 'CollectionPage',
       name: 'Portfolio & Case Studies - Webvastgoed.nl',
       description: 'Overzicht van maatwerk websites en webshops gerealiseerd door Webvastgoed.nl in React en Next.js.',
-      url: 'https://webvastgoed.nl/portfolio',
+      url: 'https://www.webvastgoed.nl/portfolio',
       mainEntity: {
         '@type': 'ItemList',
         itemListElement: PORTFOLIO_PROJECTS.map((proj, i) => ({
@@ -169,7 +169,7 @@ const ROUTES = [
       '@type': 'AboutPage',
       name: 'Over Webvastgoed.nl & Onze Werkwijze',
       description: 'Waarom Webvastgoed.nl kiest voor 100% maatwerk in React en Next.js zonder verouderde PHP plugins of standaard templates.',
-      url: 'https://webvastgoed.nl/over-ons',
+      url: 'https://www.webvastgoed.nl/over-ons',
     },
   },
   {
@@ -193,14 +193,14 @@ const ROUTES = [
       name: 'Kennisbank & Advies over Maatwerk Websites | Webvastgoed.nl',
       description:
         'Praktische artikelen en gidsen voor ondernemers over maatwerk websites, kosten, het verschil met WordPress en branchegerichte weboplossingen.',
-      url: 'https://webvastgoed.nl/kennisbank',
+      url: 'https://www.webvastgoed.nl/kennisbank',
       mainEntity: {
         '@type': 'ItemList',
         itemListElement: KENNISBANK_ARTICLES.map((art, idx) => ({
           '@type': 'ListItem',
           position: idx + 1,
           name: art.title,
-          url: `https://webvastgoed.nl/kennisbank/${art.slug}`,
+          url: `https://www.webvastgoed.nl/kennisbank/${art.slug}`,
         })),
       },
     },
@@ -216,7 +216,7 @@ const ROUTES = [
       '@context': 'https://schema.org',
       '@type': 'ContactPage',
       name: 'Contact Webvastgoed.nl',
-      url: 'https://webvastgoed.nl/contact',
+      url: 'https://www.webvastgoed.nl/contact',
       mainEntity: {
         '@type': 'ContactPoint',
         telephone: '+31630037257',
@@ -260,21 +260,21 @@ const ROUTES = [
       author: {
         '@type': 'Organization',
         name: 'Webvastgoed.nl',
-        url: 'https://webvastgoed.nl',
+        url: 'https://www.webvastgoed.nl',
       },
       publisher: {
         '@type': 'Organization',
         name: 'Webvastgoed.nl',
         logo: {
           '@type': 'ImageObject',
-          url: 'https://webvastgoed.nl/favicon-512x512.png',
+          url: 'https://www.webvastgoed.nl/favicon-512x512.png',
           width: 512,
           height: 512,
         },
       },
       mainEntityOfPage: {
         '@type': 'WebPage',
-        '@id': `https://webvastgoed.nl/kennisbank/${art.slug}`,
+        '@id': `https://www.webvastgoed.nl/kennisbank/${art.slug}`,
       },
       speakable: {
         '@type': 'SpeakableSpecification',

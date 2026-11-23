@@ -11,7 +11,7 @@ export default function Home() {
     '@type': 'ProfessionalService',
     'name': 'Webvastgoed.nl',
     'description': 'Maatwerk websites en webshops gebouwd met React en Next.js. Geen standaard templates of kwetsbare PHP plugins. Heldere eenmalige tarieven vanaf € 300,-.',
-    'url': 'https://webvastgoed.nl',
+    'url': 'https://www.webvastgoed.nl',
     'telephone': '+31630037257',
     'email': 'info@webvastgoed.nl',
     'areaServed': ['NL', 'BE'],

@@ -8,7 +8,7 @@ export default function AlgemeneVoorwaarden() {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
     name: 'Algemene Voorwaarden | Webvastgoed.nl',
-    url: 'https://webvastgoed.nl/algemene-voorwaarden',
+    url: 'https://www.webvastgoed.nl/algemene-voorwaarden',
     inLanguage: 'nl-NL',
   };
 

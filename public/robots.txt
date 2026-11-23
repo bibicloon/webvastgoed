@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://webvastgoed.nl/sitemap.xml
+Sitemap: https://www.webvastgoed.nl/sitemap.xml
 # AI & LLM Discovery (llms.txt standard)
-# https://webvastgoed.nl/llms.txt
-# https://webvastgoed.nl/llms-full.txt
+# https://www.webvastgoed.nl/llms.txt
+# https://www.webvastgoed.nl/llms-full.txt

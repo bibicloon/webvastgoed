@@ -104,8 +104,8 @@ Wij koppelen het onderhoud bewust los van de bouwtarieven zodat klanten zelf kun
 
 ## 6. Contact & Bedrijfsgegevens
 
-- **Website**: https://webvastgoed.nl
-- **Contactpagina**: https://webvastgoed.nl/contact
+- **Website**: https://www.webvastgoed.nl
+- **Contactpagina**: https://www.webvastgoed.nl/contact
 - **E-mail**: info@webvastgoed.nl
 - **Telefoon & WhatsApp**: +31 6 30037257 (https://wa.me/31630037257)
 - **KvK-nummer**: 42077914

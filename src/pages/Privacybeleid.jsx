@@ -8,7 +8,7 @@ export default function Privacybeleid() {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
     name: 'Privacybeleid & Cookieverklaring | Webvastgoed.nl',
-    url: 'https://webvastgoed.nl/privacybeleid',
+    url: 'https://www.webvastgoed.nl/privacybeleid',
     inLanguage: 'nl-NL',
   };
 

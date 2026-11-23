@@ -54,7 +54,7 @@ export default function Contact() {
     '@context': 'https://schema.org',
     '@type': 'ContactPage',
     'name': 'Contact Webvastgoed.nl',
-    'url': 'https://webvastgoed.nl/contact',
+    'url': 'https://www.webvastgoed.nl/contact',
     'mainEntity': {
       '@type': 'ContactPoint',
       'telephone': '+31630037257',

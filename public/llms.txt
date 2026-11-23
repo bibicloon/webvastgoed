@@ -6,13 +6,13 @@ Webvastgoed.nl ontwerpt en bouwt digitaal vastgoed: razendsnelle, veilige maatwe
 
 ## Diensten & Investeringsplannen
 
-- [Home — Maatwerk Websites & Digitaal Fundament](https://webvastgoed.nl/): Overzicht van onze visie op webvastgoed, recente referenties en veelgestelde vragen.
-- [Tarieven & Pakketten — Eenmalige Investering & Optioneel Onderhoud](https://webvastgoed.nl/investeringsplannen): Tijdelijke Portfolio Actie (€ 300,- eenmalig tot 3 pagina's), Bedrijfswebsite (vanaf € 950,- eenmalig), Maatwerk Webshop (vanaf € 1.950,- eenmalig), Maatwerk Platforms (op aanvraag) en losgekoppelde onderhoudspakketten: Onderhoud Basis (€ 49,- p/m) en Onderhoud & Content (€ 89,- p/m).
-- [SEO & Organische Groei in Google](https://webvastgoed.nl/digitale-groei): Structurele zoekmachine optimalisatie pakketten: SEO Start (€ 149,- p/m), SEO Grow (€ 299,- p/m) en SEO Dominate (€ 549,- p/m).
+- [Home — Maatwerk Websites & Digitaal Fundament](https://www.webvastgoed.nl/): Overzicht van onze visie op webvastgoed, recente referenties en veelgestelde vragen.
+- [Tarieven & Pakketten — Eenmalige Investering & Optioneel Onderhoud](https://www.webvastgoed.nl/investeringsplannen): Tijdelijke Portfolio Actie (€ 300,- eenmalig tot 3 pagina's), Bedrijfswebsite (vanaf € 950,- eenmalig), Maatwerk Webshop (vanaf € 1.950,- eenmalig), Maatwerk Platforms (op aanvraag) en losgekoppelde onderhoudspakketten: Onderhoud Basis (€ 49,- p/m) en Onderhoud & Content (€ 89,- p/m).
+- [SEO & Organische Groei in Google](https://www.webvastgoed.nl/digitale-groei): Structurele zoekmachine optimalisatie pakketten: SEO Start (€ 149,- p/m), SEO Grow (€ 299,- p/m) en SEO Dominate (€ 549,- p/m).
 
 ## Gerealiseerd Portfolio & Case Studies
 
-- [Portfolio & Recente Projecten](https://webvastgoed.nl/portfolio): Case studies van door Webvastgoed.nl gerealiseerde maatwerk websites en webshops:
+- [Portfolio & Recente Projecten](https://www.webvastgoed.nl/portfolio): Case studies van door Webvastgoed.nl gerealiseerde maatwerk websites en webshops:
   - **OnPoint Koeriers**: Zakelijk spoedtransport en B2B logistiek door Nederland en Europa (Next.js maatwerk).
   - **Smart Stops Europe**: Interactieve Europese reis- en routeplanner met tolvignetten en milieuzone-check.
   - **Pastry Company**: Luxe chocolade en patisserie webshop met B2B gifting en mobiele iDEAL checkout.
@@ -20,26 +20,26 @@ Webvastgoed.nl ontwerpt en bouwt digitaal vastgoed: razendsnelle, veilige maatwe
 
 ## Kennisbank & Advies voor Ondernemers
 
-- [Kennisbank Overzicht](https://webvastgoed.nl/kennisbank): Praktische gidsen over maatwerk websites, kosten, techniek en branchegerichte oplossingen.
-- [Professionele website laten maken voor € 300,-: wat krijgt u precies?](https://webvastgoed.nl/kennisbank/website-laten-maken-300-euro): Uitleg over de tijdelijke Portfolio Actie tot maximaal 3 pagina's in React & Next.js.
-- [Maatwerk React & Next.js website vs. WordPress](https://webvastgoed.nl/kennisbank/maatwerk-website-vs-wordpress): Vergelijking tussen moderne React webarchitectuur en traditionele PHP/WordPress thema's op snelheid, Core Web Vitals en veiligheid.
-- [Wat kost een professionele bedrijfswebsite laten maken?](https://webvastgoed.nl/kennisbank/wat-kost-een-bedrijfswebsite): Overzicht van onze eenmalige bouwtarieven en de losgekoppelde onderhoudspakketten.
-- [Maatwerk webshop laten bouwen met iDEAL en optimale mobiele conversie](https://webvastgoed.nl/kennisbank/maatwerk-webshop-laten-maken): Hoe een snelle maatwerk webshop op smartphone, tablet en desktop zorgt voor hogere conversie.
-- [Website laten maken voor transportbedrijf, koeriersdienst of logistiek](https://webvastgoed.nl/kennisbank/website-voor-transport-en-koeriers): Essentiële onderdelen voor een conversiegerichte transport- en koerierswebsite.
-- [Website laten maken voor bouwbedrijf, aannemer of afbouwspecialist](https://webvastgoed.nl/kennisbank/website-voor-bouw-en-afbouw): Hoe vakbedrijven in de bouw en afbouw hun projecten en vakmanschap overtuigend presenteren.
-- [Website laten maken voor installatiebedrijf, loodgieter of elektricien](https://webvastgoed.nl/kennisbank/website-voor-installatiebedrijf-en-techniek): Gerichte offerteaanvragen en regionale vindbaarheid voor installateurs en techniekbedrijven.
-- [Website laten maken voor hovenier, tuinontwerper of bestratingsbedrijf](https://webvastgoed.nl/kennisbank/website-voor-hovenier-en-groenvoorziening): Visuele projectpresentatie en Voor/Na sliders voor hoveniers en tuinaanleg.
-- [Website of webshop laten maken voor horeca, patisserie, bakkerij of catering](https://webvastgoed.nl/kennisbank/website-voor-horeca-bakkerij-en-food): Eigen online bestelmodule met iDEAL zonder commissie af te dragen.
-- [Website laten maken voor zakelijke dienstverlening, financieel adviseur of makelaar](https://webvastgoed.nl/kennisbank/website-voor-zakelijke-dienstverlening-en-advies): Autoriteit, dataveiligheid en sterke Google/AI-vindbaarheid voor zakelijke kantoren.
-- [Oude of trage WordPress website laten vervangen door razendsnel maatwerk](https://webvastgoed.nl/kennisbank/wordpress-website-vervangen-door-maatwerk): Zorgeloos overstappen van WordPress naar React & Next.js zonder verlies van Google-posities.
+- [Kennisbank Overzicht](https://www.webvastgoed.nl/kennisbank): Praktische gidsen over maatwerk websites, kosten, techniek en branchegerichte oplossingen.
+- [Professionele website laten maken voor € 300,-: wat krijgt u precies?](https://www.webvastgoed.nl/kennisbank/website-laten-maken-300-euro): Uitleg over de tijdelijke Portfolio Actie tot maximaal 3 pagina's in React & Next.js.
+- [Maatwerk React & Next.js website vs. WordPress](https://www.webvastgoed.nl/kennisbank/maatwerk-website-vs-wordpress): Vergelijking tussen moderne React webarchitectuur en traditionele PHP/WordPress thema's op snelheid, Core Web Vitals en veiligheid.
+- [Wat kost een professionele bedrijfswebsite laten maken?](https://www.webvastgoed.nl/kennisbank/wat-kost-een-bedrijfswebsite): Overzicht van onze eenmalige bouwtarieven en de losgekoppelde onderhoudspakketten.
+- [Maatwerk webshop laten bouwen met iDEAL en optimale mobiele conversie](https://www.webvastgoed.nl/kennisbank/maatwerk-webshop-laten-maken): Hoe een snelle maatwerk webshop op smartphone, tablet en desktop zorgt voor hogere conversie.
+- [Website laten maken voor transportbedrijf, koeriersdienst of logistiek](https://www.webvastgoed.nl/kennisbank/website-voor-transport-en-koeriers): Essentiële onderdelen voor een conversiegerichte transport- en koerierswebsite.
+- [Website laten maken voor bouwbedrijf, aannemer of afbouwspecialist](https://www.webvastgoed.nl/kennisbank/website-voor-bouw-en-afbouw): Hoe vakbedrijven in de bouw en afbouw hun projecten en vakmanschap overtuigend presenteren.
+- [Website laten maken voor installatiebedrijf, loodgieter of elektricien](https://www.webvastgoed.nl/kennisbank/website-voor-installatiebedrijf-en-techniek): Gerichte offerteaanvragen en regionale vindbaarheid voor installateurs en techniekbedrijven.
+- [Website laten maken voor hovenier, tuinontwerper of bestratingsbedrijf](https://www.webvastgoed.nl/kennisbank/website-voor-hovenier-en-groenvoorziening): Visuele projectpresentatie en Voor/Na sliders voor hoveniers en tuinaanleg.
+- [Website of webshop laten maken voor horeca, patisserie, bakkerij of catering](https://www.webvastgoed.nl/kennisbank/website-voor-horeca-bakkerij-en-food): Eigen online bestelmodule met iDEAL zonder commissie af te dragen.
+- [Website laten maken voor zakelijke dienstverlening, financieel adviseur of makelaar](https://www.webvastgoed.nl/kennisbank/website-voor-zakelijke-dienstverlening-en-advies): Autoriteit, dataveiligheid en sterke Google/AI-vindbaarheid voor zakelijke kantoren.
+- [Oude of trage WordPress website laten vervangen door razendsnel maatwerk](https://www.webvastgoed.nl/kennisbank/wordpress-website-vervangen-door-maatwerk): Zorgeloos overstappen van WordPress naar React & Next.js zonder verlies van Google-posities.
 
 ## Over Ons, Veelgestelde Vragen & Juridisch
 
-- [Over Webvastgoed.nl — Visie & Werkwijze](https://webvastgoed.nl/over-ons): Waarom een website het digitale bedrijfspand en fundament van uw onderneming is.
-- [Veelgestelde Vragen (FAQ)](https://webvastgoed.nl/faq): Antwoorden op veelgestelde vragen over de € 300,- actie, bedrijfswebsites vanaf € 950,-, levertijden (5 tot 10 werkdagen), domeinverhuizing, onderhoud en eigendom.
-- [Contact & Vrijblijvend Voorstel Aanvragen](https://webvastgoed.nl/contact): Direct contact via het aanvraagformulier, WhatsApp of e-mail.
-- [Privacybeleid](https://webvastgoed.nl/privacybeleid): AVG/GDPR privacyverklaring van Webvastgoed.nl.
-- [Algemene Voorwaarden](https://webvastgoed.nl/algemene-voorwaarden): Leveringsvoorwaarden, eigendomsrechten en afspraken.
+- [Over Webvastgoed.nl — Visie & Werkwijze](https://www.webvastgoed.nl/over-ons): Waarom een website het digitale bedrijfspand en fundament van uw onderneming is.
+- [Veelgestelde Vragen (FAQ)](https://www.webvastgoed.nl/faq): Antwoorden op veelgestelde vragen over de € 300,- actie, bedrijfswebsites vanaf € 950,-, levertijden (5 tot 10 werkdagen), domeinverhuizing, onderhoud en eigendom.
+- [Contact & Vrijblijvend Voorstel Aanvragen](https://www.webvastgoed.nl/contact): Direct contact via het aanvraagformulier, WhatsApp of e-mail.
+- [Privacybeleid](https://www.webvastgoed.nl/privacybeleid): AVG/GDPR privacyverklaring van Webvastgoed.nl.
+- [Algemene Voorwaarden](https://www.webvastgoed.nl/algemene-voorwaarden): Leveringsvoorwaarden, eigendomsrechten en afspraken.
 
 ## Kernfeiten & Bedrijfsgegevens
 
@@ -52,4 +52,4 @@ Webvastgoed.nl ontwerpt en bouwt digitaal vastgoed: razendsnelle, veilige maatwe
 - **Telefoon / WhatsApp**: +31 6 30037257 (06 30037257)
 - **KvK-nummer**: 42077914
 - **BTW-nummer**: NL005478178B19
-- **Uitgebreide versie voor AI-systemen**: [https://webvastgoed.nl/llms-full.txt](https://webvastgoed.nl/llms-full.txt)
+- **Uitgebreide versie voor AI-systemen**: [https://www.webvastgoed.nl/llms-full.txt](https://www.webvastgoed.nl/llms-full.txt)

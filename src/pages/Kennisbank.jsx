@@ -31,21 +31,21 @@ export default function Kennisbank() {
       author: {
         '@type': 'Organization',
         name: 'Webvastgoed.nl',
-        url: 'https://webvastgoed.nl',
+        url: 'https://www.webvastgoed.nl',
       },
       publisher: {
         '@type': 'Organization',
         name: 'Webvastgoed.nl',
         logo: {
           '@type': 'ImageObject',
-          url: 'https://webvastgoed.nl/favicon-512x512.png',
+          url: 'https://www.webvastgoed.nl/favicon-512x512.png',
           width: 512,
           height: 512,
         },
       },
       mainEntityOfPage: {
         '@type': 'WebPage',
-        '@id': `https://webvastgoed.nl/kennisbank/${article.slug}`,
+        '@id': `https://www.webvastgoed.nl/kennisbank/${article.slug}`,
       },
       speakable: {
         '@type': 'SpeakableSpecification',
@@ -316,14 +316,14 @@ export default function Kennisbank() {
     '@type': 'CollectionPage',
     name: 'Kennisbank & Advies over Maatwerk Websites | Webvastgoed.nl',
     description: 'Praktische artikelen en gidsen voor ondernemers over maatwerk websites, kosten, het verschil met WordPress en branchegerichte weboplossingen.',
-    url: 'https://webvastgoed.nl/kennisbank',
+    url: 'https://www.webvastgoed.nl/kennisbank',
     mainEntity: {
       '@type': 'ItemList',
       itemListElement: KENNISBANK_ARTICLES.map((art, idx) => ({
         '@type': 'ListItem',
         position: idx + 1,
         name: art.title,
-        url: `https://webvastgoed.nl/kennisbank/${art.slug}`,
+        url: `https://www.webvastgoed.nl/kennisbank/${art.slug}`,
       })),
     },
   };

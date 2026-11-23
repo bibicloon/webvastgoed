@@ -27,7 +27,7 @@ const BREADCRUMB_NAMES = {
 
 export default function SEO({ title, description, keywords, schema }) {
   const location = useLocation();
-  const baseUrl = 'https://webvastgoed.nl';
+  const baseUrl = 'https://www.webvastgoed.nl';
   const cleanPath = location.pathname === '/' ? '/' : location.pathname.replace(/\/$/, '');
   const canonicalUrl = `${baseUrl}${cleanPath}`;
 

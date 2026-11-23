@@ -24,7 +24,7 @@ export default function OverOns() {
           '@type': 'AboutPage',
           'name': 'Over Webvastgoed.nl & Onze Werkwijze',
           'description': 'Waarom Webvastgoed.nl kiest voor 100% maatwerk in React en Next.js zonder verouderde PHP plugins of standaard templates.',
-          'url': 'https://webvastgoed.nl/over-ons'
+          'url': 'https://www.webvastgoed.nl/over-ons'
         }}
       />
 

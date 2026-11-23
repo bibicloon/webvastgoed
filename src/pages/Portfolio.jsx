@@ -80,7 +80,7 @@ export default function Portfolio() {
           '@type': 'CollectionPage',
           'name': 'Portfolio & Case Studies - Webvastgoed.nl',
           'description': 'Overzicht van maatwerk websites en webshops gerealiseerd door Webvastgoed.nl in React en Next.js.',
-          'url': 'https://webvastgoed.nl/portfolio',
+          'url': 'https://www.webvastgoed.nl/portfolio',
           'mainEntity': {
             '@type': 'ItemList',
             'itemListElement': PORTFOLIO_PROJECTS.map((proj, i) => ({
