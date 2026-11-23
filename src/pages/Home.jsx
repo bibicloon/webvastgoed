@@ -471,6 +471,49 @@ export default function Home() {
               </Link>
             </div>
           </div>
+
+          {/* Directe SEO Snelkoppelingen naar Veelgezochte Onderwerpen */}
+          <div
+            style={{
+              marginTop: '2.25rem',
+              paddingTop: '1.85rem',
+              borderTop: '1px solid rgba(148, 163, 184, 0.16)',
+              display: 'flex',
+              flexWrap: 'wrap',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              gap: '1rem',
+            }}
+          >
+            <span style={{ fontSize: '0.82rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.07em', color: '#C5A059' }}>
+              Veelgezochte specialismen:
+            </span>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.65rem' }}>
+              {[
+                { to: '/kennisbank/bestaande-website-laten-vernieuwen', label: 'Bestaande Website Vernieuwen' },
+                { to: '/kennisbank/wordpress-website-vervangen-door-maatwerk', label: 'WordPress Website of Webshop Vernieuwen' },
+                { to: '/kennisbank/website-voor-hovenier-en-groenvoorziening', label: 'Website Laten Maken Hovenier' },
+                { to: '/kennisbank/website-voor-installatiebedrijf-en-techniek', label: 'Website Elektricien & Installatiebedrijf' },
+              ].map((link, idx) => (
+                <Link
+                  key={idx}
+                  to={link.to}
+                  style={{
+                    fontSize: '0.86rem',
+                    color: '#E2E8F0',
+                    backgroundColor: 'rgba(17, 26, 46, 0.9)',
+                    border: '1px solid rgba(197, 160, 89, 0.28)',
+                    borderRadius: '6px',
+                    padding: '0.45rem 0.85rem',
+                    textDecoration: 'none',
+                    fontWeight: 500,
+                  }}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 

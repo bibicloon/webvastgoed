@@ -75,16 +75,17 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Kolom 3: Gerealiseerde Projecten */}
+          {/* Kolom 3: Populaire Oplossingen & Branches */}
           <div>
             <h4 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.15rem', color: '#F5EFE4', marginBottom: '1rem' }}>
-              Recente Projecten
+              Populaire Gidsen
             </h4>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.65rem', fontSize: '0.9rem', color: '#CBD5E1' }}>
-              <li><Link to="/portfolio" style={{ color: '#CBD5E1', textDecoration: 'none' }}>OnPoint Koeriers (Logistiek)</Link></li>
-              <li><Link to="/portfolio" style={{ color: '#CBD5E1', textDecoration: 'none' }}>Smart Stops Europe (Reisplatform)</Link></li>
-              <li><Link to="/portfolio" style={{ color: '#CBD5E1', textDecoration: 'none' }}>Pastry Company (Webshop)</Link></li>
-              <li><Link to="/portfolio" style={{ color: '#CBD5E1', textDecoration: 'none' }}>Brökling Afbouw &amp; Montage</Link></li>
+              <li><Link to="/kennisbank/bestaande-website-laten-vernieuwen" style={{ color: '#CBD5E1', textDecoration: 'none' }}>Bestaande Website Vernieuwen</Link></li>
+              <li><Link to="/kennisbank/wordpress-website-vervangen-door-maatwerk" style={{ color: '#CBD5E1', textDecoration: 'none' }}>WordPress Website Vernieuwen</Link></li>
+              <li><Link to="/kennisbank/website-voor-hovenier-en-groenvoorziening" style={{ color: '#CBD5E1', textDecoration: 'none' }}>Website Laten Maken Hovenier</Link></li>
+              <li><Link to="/kennisbank/website-voor-installatiebedrijf-en-techniek" style={{ color: '#CBD5E1', textDecoration: 'none' }}>Website Elektricien &amp; Installateur</Link></li>
+              <li><Link to="/kennisbank/website-laten-maken-300-euro" style={{ color: '#CBD5E1', textDecoration: 'none' }}>Starter Website Actie (€ 300,-)</Link></li>
             </ul>
           </div>
 
